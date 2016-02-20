@@ -161,6 +161,18 @@ public class PoultryDemo extends JPanel{
 		tbButton = new JButton(new ImageIcon(
 				this.getClass().getResource("resources/help.png")));
 		tbButton.setToolTipText("HelpToolTip");
+		tbButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//
+				//new help frame popup
+				JFrame helpFrame = new JFrame();
+				helpFrame.setSize(400, 300);
+				helpFrame.setTitle("Help Frame");
+				helpFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				//need to add code to pop up center of existing main frame 
+				helpFrame.setVisible(true);
+			}
+		});
 		topToolBar.add(tbButton);
 		topToolBar.addSeparator();
 		
