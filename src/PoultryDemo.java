@@ -5,6 +5,7 @@ import javax.swing.*;
 
 import com.sun.glass.events.KeyEvent;
 
+
 //
 //
 //Icons courtesy http://www.aha-soft.com/
@@ -219,22 +220,22 @@ public class PoultryDemo extends JFrame{
 		JTabbedPane wastePanel = new JTabbedPane();
 		
 		JPanel wasteCard1 = new JPanel();
-		wasteCard1.setLayout(new BorderLayout());
+		wasteCard1.setLayout(new FlowLayout(FlowLayout.LEFT));
 		wasteCard1.setVisible(true);
 		wasteCard1.setBackground(new Color(0,0,255));
 		
 		JPanel wasteCard2 = new JPanel();
-		wasteCard2.setLayout(new BorderLayout());
+		wasteCard2.setLayout(new FlowLayout(FlowLayout.LEFT));
 		wasteCard2.setVisible(true);
 		wasteCard2.setBackground(new Color(0,0,169));
 		
 		JPanel wasteCard3 = new JPanel();
-		wasteCard3.setLayout(new BorderLayout());
+		wasteCard3.setLayout(new FlowLayout(FlowLayout.LEFT));
 		wasteCard3.setVisible(true);
 		wasteCard3.setBackground(new Color(0,0,128));
 		
 		JPanel wasteCard4 = new JPanel();
-		wasteCard4.setLayout(new BorderLayout());
+		wasteCard4.setLayout(new FlowLayout(FlowLayout.LEFT));
 		wasteCard4.setVisible(true);
 		wasteCard4.setBackground(new Color(0,0,64));
 		
@@ -250,22 +251,22 @@ public class PoultryDemo extends JFrame{
 		JTabbedPane barnPanel = new JTabbedPane();
 		
 		JPanel barnCard1 = new JPanel();
-		barnCard1.setLayout(new BorderLayout());
+		barnCard1.setLayout(new FlowLayout(FlowLayout.LEFT));
 		barnCard1.setVisible(true);
 		barnCard1.setBackground(new Color(69,64,25)); //BROWN
 		
 		JPanel barnCard2 = new JPanel();
-		barnCard2.setLayout(new BorderLayout());
+		barnCard2.setLayout(new FlowLayout(FlowLayout.LEFT));
 		barnCard2.setVisible(true);
 		barnCard2.setBackground(new Color(90,60,30)); //BROWN
 		
 		JPanel barnCard3 = new JPanel();
-		barnCard3.setLayout(new BorderLayout());
+		barnCard3.setLayout(new FlowLayout(FlowLayout.LEFT));
 		barnCard3.setVisible(true);
 		barnCard3.setBackground(new Color(60,70,25)); //BROWN
 		
 		JPanel barnCard4 = new JPanel();
-		barnCard4.setLayout(new BorderLayout());
+		barnCard4.setLayout(new FlowLayout(FlowLayout.LEFT));
 		barnCard4.setVisible(true);
 		barnCard4.setBackground(new Color(69,64,30)); //BROWN
 		
@@ -280,28 +281,35 @@ public class PoultryDemo extends JFrame{
 	private JTabbedPane createFeedPanel() {
 		JTabbedPane feedPanel = new JTabbedPane();
 		
-		JPanel feedCard1 = new JPanel();
-		feedCard1.setLayout(new BorderLayout());
-		feedCard1.setVisible(true);
-		feedCard1.setBackground(new Color(0, 255, 0));
+		FlowLayout feedFlowLayout = new FlowLayout(FlowLayout.LEFT);
+		feedFlowLayout.setHgap(10);  //horizontal gap between input boxes
+		feedFlowLayout.setVgap(30);  //vertical
 		
-		JPanel feedCard2 = new JPanel();
-		feedCard2.setLayout(new BorderLayout());
-		feedCard2.setVisible(true);
-		feedCard2.setBackground(new Color(0, 128, 0));
+		//panels on the feed window
+		JPanel feedIngredientsPanel = new JPanel();
+		feedIngredientsPanel.setLayout(feedFlowLayout);
+		loadInputMethods.loadFeedIngredPanel(feedIngredientsPanel);
+		feedIngredientsPanel.setVisible(true);
+		feedIngredientsPanel.setBackground(Color.WHITE);
+		
+		JPanel feedShippingPanel = new JPanel();
+		feedShippingPanel.setLayout(feedFlowLayout);
+		loadInputMethods.loadFeedShippingPanel(feedShippingPanel);
+		feedShippingPanel.setVisible(true);
+		feedShippingPanel.setBackground(Color.WHITE);
 		
 		JPanel feedCard3 = new JPanel();
-		feedCard3.setLayout(new BorderLayout());
+		feedCard3.setLayout(feedFlowLayout);
 		feedCard3.setVisible(true);
 		feedCard3.setBackground(new Color(0, 64, 0));
 		
 		JPanel feedCard4 = new JPanel();
-		feedCard4.setLayout(new BorderLayout());
+		feedCard4.setLayout(feedFlowLayout);
 		feedCard4.setVisible(true);
 		feedCard4.setBackground(new Color(0, 196, 0));
 		
-		feedPanel.add("Feed Card 1", feedCard1);
-		feedPanel.add("Feed Card 2", feedCard2);
+		feedPanel.add("Ingredients", feedIngredientsPanel);
+		feedPanel.add("Shipping", feedShippingPanel);
 		feedPanel.add("Feed Card 3", feedCard3);
 		feedPanel.add("Feed Card 4", feedCard4);
 	
@@ -310,27 +318,34 @@ public class PoultryDemo extends JFrame{
 	
 	public JTabbedPane createBirdPanel(){
 		JTabbedPane birdPanel = new JTabbedPane();
-		JPanel birdCard1 = new JPanel();
-		birdCard1.setLayout(new BorderLayout());
-		birdCard1.setBackground(new Color(128, 0, 0));
-		birdCard1.setVisible(true);
+		
+		FlowLayout birdFlowLayout = new FlowLayout(FlowLayout.LEFT);
+		birdFlowLayout.setHgap(10);  //horizontal gap between input boxes
+		birdFlowLayout.setVgap(30);  //vertical
+		
+		//panels on the bird window
+		JPanel birdDataPanel = new JPanel();
+		birdDataPanel.setLayout(birdFlowLayout);
+		birdDataPanel.setBackground(Color.WHITE);
+		loadInputMethods.loadBirdDataPanel(birdDataPanel);
+		birdDataPanel.setVisible(true);
 		
 		JPanel birdCard2 = new JPanel();
-		birdCard2.setLayout(new BorderLayout());
+		birdCard2.setLayout(birdFlowLayout);
 		birdCard2.setBackground(new Color(90, 0, 0));
 		birdCard2.setVisible(true);
 		
 		JPanel birdCard3 = new JPanel();
-		birdCard3.setLayout(new BorderLayout());
+		birdCard3.setLayout(birdFlowLayout);
 		birdCard3.setBackground(new Color(64, 0, 0));
 		birdCard3.setVisible(true);
 		
 		JPanel birdCard4 = new JPanel();
-		birdCard4.setLayout(new BorderLayout());
+		birdCard4.setLayout(birdFlowLayout);
 		birdCard4.setBackground(new Color(32, 0, 0));
 		birdCard4.setVisible(true);
 		
-		birdPanel.add("Bird Card 1", birdCard1);
+		birdPanel.add("Bird Data", birdDataPanel);
 		birdPanel.add("Bird Card 2", birdCard2);
 		birdPanel.add("Bird Card 3", birdCard3);
 		birdPanel.add("Bird Card 4", birdCard4);
@@ -370,9 +385,10 @@ public class PoultryDemo extends JFrame{
 		return topPane;
 	}//end create desktop pane
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException {
         UIManager.put("swing.boldMetal", Boolean.FALSE);
-        PoultryDemo demo = new PoultryDemo();
+		//UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		PoultryDemo demo = new PoultryDemo();
 
 	}//end main
 
