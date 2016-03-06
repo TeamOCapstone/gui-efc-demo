@@ -18,7 +18,7 @@ public class PoultryDemo extends JFrame{
 	public PoultryDemo() {
 		
 		// main frame
-		topFrame.setSize(800, 600);
+		topFrame.setSize(600, 500);
 		topFrame.setTitle("Poultry Demo");
 		topFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		topFrame.setLocationRelativeTo(null); //center on screen
@@ -298,21 +298,9 @@ public class PoultryDemo extends JFrame{
 		feedShippingPanel.setVisible(true);
 		feedShippingPanel.setBackground(Color.WHITE);
 		
-		JPanel feedCard3 = new JPanel();
-		feedCard3.setLayout(feedFlowLayout);
-		feedCard3.setVisible(true);
-		feedCard3.setBackground(new Color(0, 64, 0));
-		
-		JPanel feedCard4 = new JPanel();
-		feedCard4.setLayout(feedFlowLayout);
-		feedCard4.setVisible(true);
-		feedCard4.setBackground(new Color(0, 196, 0));
-		
 		feedPanel.add("Ingredients", feedIngredientsPanel);
 		feedPanel.add("Shipping", feedShippingPanel);
-		feedPanel.add("Feed Card 3", feedCard3);
-		feedPanel.add("Feed Card 4", feedCard4);
-	
+
 		return feedPanel;
 	}//end create feed pane
 	

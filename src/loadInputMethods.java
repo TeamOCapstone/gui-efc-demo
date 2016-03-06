@@ -1,4 +1,6 @@
 import java.awt.Color;
+import java.awt.Dimension;
+
 import javax.swing.*;
 import javax.swing.border.Border;
 
@@ -50,7 +52,7 @@ public class loadInputMethods {
 		//the top vertical box to align the other boxes
 		Box top = Box.createVerticalBox();
 		//top.setBorder(blackline);
-		top.add(Box.createVerticalStrut(30));
+		//top.add(Box.createVerticalStrut(30));
 		top.add(breedBox);
 		top.add(Box.createVerticalStrut(10));
 		top.add(weightBox);
@@ -60,7 +62,7 @@ public class loadInputMethods {
 		top.add(fatalBox);
 		top.add(Box.createVerticalStrut(30));
 		
-		top.add(Box.createHorizontalStrut(300));
+		//top.add(Box.createHorizontalStrut(300));
 		
 		birdCard1.add(top);
 	}//END loadBirdDataPanel
@@ -74,32 +76,75 @@ public class loadInputMethods {
 		
 		//input areas on the right
 		JTextField numPhasesField = new JTextField();
-		numPhasesField.setColumns(10);
+		numPhasesField.setColumns(5);
+		JTextField phaseNameField = new JTextField();
+		JTextField numDaysPerPhaseField = new JTextField();
 
-		Box numPhasesBox = Box.createHorizontalBox();
-		numPhasesBox.add(numPhasesLabel);
-		numPhasesBox.add(numPhasesField);
+		Box labelsBox = Box.createVerticalBox();
+		labelsBox.add(numPhasesLabel);
+		labelsBox.add(Box.createVerticalStrut(5));
+		labelsBox.add(phaseNameLabel);
+		labelsBox.add(Box.createVerticalStrut(5));
+		labelsBox.add(numDaysPerPhaseLabel);
 		
+		Box fieldsBox = Box.createVerticalBox();
+		fieldsBox.add(numPhasesField);
+		fieldsBox.add(phaseNameField);
+		fieldsBox.add(numDaysPerPhaseField);
 		
-		Box top = Box.createVerticalBox();
-		top.add(Box.createVerticalStrut(10));
-		top.add(numPhasesBox);
-		top.add(Box.createVerticalStrut(10));
+		Box top = Box.createHorizontalBox();
+		top.add(labelsBox);
+		top.add(fieldsBox);
 		
-		top.setBorder(blackline);
 		//top.add(Box.createHorizontalStrut(300));
 		feedIngredientsPanel.add(top);
 		
-	}
+	}//end loadFeedIngredPanel
 
 	public static void loadFeedShippingPanel(JPanel feedShippingPanel) {
+		
+		JButton ingredientButton = new JButton("Add New Ingredient");
+		JPanel buttonPane = new JPanel();
+		buttonPane.setLayout(new BoxLayout(buttonPane, BoxLayout.LINE_AXIS));
+		//buttonPane.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+		buttonPane.add(Box.createHorizontalGlue());
 		
 		JLabel feedDistanceLabel = new JLabel("  Distance from Feed Mill: (miles)  ");
 		JLabel feedMassDelLabel = new JLabel("  Amount of Feed Delivered (lb)  ");
 		
 		JTextField feedDistanceField = new JTextField();
+		feedDistanceField.setColumns(5);
 		JTextField feedMassDelField = new JTextField();
+		JTextField ingredientsField = new JTextField("Enter Ingredient Name");
+		JTextField percentIngedField = new JTextField("%");
 		
-	}
+		Box labelsBox = Box.createVerticalBox();
+		labelsBox.add(feedDistanceLabel);
+		labelsBox.add(Box.createVerticalStrut(5));
+		labelsBox.add(feedMassDelLabel);
+		labelsBox.add(Box.createVerticalStrut(5));
+		
+		Box fieldsBox = Box.createVerticalBox();
+		fieldsBox.add(feedDistanceField);
+		fieldsBox.add(feedMassDelField);
+		
+		Box top = Box.createHorizontalBox();
+		top.add(labelsBox);
+		top.add(fieldsBox);
+		
+		Box bottom = Box.createHorizontalBox();
+		bottom.add(ingredientsField);
+		bottom.add(percentIngedField);
+		
+		Box main = Box.createVerticalBox();
+		main.add(top);
+		main.add(Box.createVerticalStrut(50));
+		main.add(bottom);
+		
+		buttonPane.add(ingredientButton);
+		main.add(buttonPane);
+		feedShippingPanel.add(main);
+		
+	}//end loadFeedShippingPanel
 
 }
