@@ -9,7 +9,7 @@ public class loadInputMethods {
 	
 	static Border blackline = BorderFactory.createLineBorder(Color.black);
 
-	public static void loadBirdDataPanel(JPanel birdCard1, IOclass ioclass){
+	public static void loadBirdDataPanel(JPanel birdCard1){
 		
 		String[] breedStrings = {" Cobb 500 ", " Cobb 700 ", " Ross 308 ", " Ross 708 "};
 		
@@ -21,26 +21,12 @@ public class loadInputMethods {
 		
 		//the input areas themselves, on the right
 		JComboBox<String> breedInputBox = new JComboBox<>(breedStrings);
-		JTextField targetWeightField = new JTextField();
-		JTextField numBroilersField = new JFormattedTextField();
-		JTextField numFatalitiesField = new JFormattedTextField();
-        
-        //adding to reference class
-        ioclass.addInput(breedInputBox);
-        ioclass.addInput(targetWeightField);
-        ioclass.addInput(numBroilersField);
-        ioclass.addInput(numFatalitiesField);
-        
-        //naming IO components with the same name they will have in the XML file
-        breedInputBox.setName("Breed_Input");
-        targetWeightField.setName("Target_Weight");
-        numBroilersField.setName("Number_Of_Broilers");
-        numFatalitiesField.setName("Number_Of_Fatalities");
-        
-        //Settings and layouts
 		breedInputBox.setMaximumSize(breedInputBox.getPreferredSize());
+		JTextField targetWeightField = new JTextField();
 		targetWeightField.setMaximumSize(breedInputBox.getPreferredSize());
+		JTextField numBroilersField = new JFormattedTextField();
 		numBroilersField.setMaximumSize(breedInputBox.getPreferredSize());
+		JTextField numFatalitiesField = new JFormattedTextField();
 		numFatalitiesField.setMaximumSize(breedInputBox.getPreferredSize());
 		
 		Box breedBox = Box.createHorizontalBox();
@@ -81,7 +67,7 @@ public class loadInputMethods {
 		birdCard1.add(top);
 	}//END loadBirdDataPanel
 
-	public static void loadFeedIngredPanel(JPanel feedIngredientsPanel, IOclass ioclass) {
+	public static void loadFeedIngredPanel(JPanel feedIngredientsPanel) {
 		
 		//labels on the left
 		JLabel numPhasesLabel = new JLabel("  Number of Feeding Phases:  ");
@@ -90,21 +76,10 @@ public class loadInputMethods {
 		
 		//input areas on the right
 		JTextField numPhasesField = new JTextField();
+		numPhasesField.setColumns(5);
 		JTextField phaseNameField = new JTextField();
 		JTextField numDaysPerPhaseField = new JTextField();
-        
-        ioclass.addInput(numPhasesField);
-        ioclass.addInput(phaseNameField);
-        ioclass.addInput(numDaysPerPhaseField);
-        
-        //naming IO components with the same name they will have in the XML file
-        numPhasesField.setName("Number_Of_Phases");
-        phaseNameField.setName("Phase_Name");
-        numDaysPerPhaseField.setName("Days_Per_Phase");
 
-        //Settings and layout
-		numPhasesField.setColumns(5);
-        
 		Box labelsBox = Box.createVerticalBox();
 		labelsBox.add(numPhasesLabel);
 		labelsBox.add(Box.createVerticalStrut(5));
@@ -126,7 +101,7 @@ public class loadInputMethods {
 		
 	}//end loadFeedIngredPanel
 
-	public static void loadFeedShippingPanel(JPanel feedShippingPanel, IOclass ioclass) {
+	public static void loadFeedShippingPanel(JPanel feedShippingPanel) {
 		
 		JButton ingredientButton = new JButton("Add New Ingredient");
 		JPanel buttonPane = new JPanel();
@@ -137,25 +112,11 @@ public class loadInputMethods {
 		JLabel feedDistanceLabel = new JLabel("  Distance from Feed Mill: (miles)  ");
 		JLabel feedMassDelLabel = new JLabel("  Amount of Feed Delivered (lb)  ");
 		
-        //Inputs themselves
 		JTextField feedDistanceField = new JTextField();
+		feedDistanceField.setColumns(5);
 		JTextField feedMassDelField = new JTextField();
 		JTextField ingredientsField = new JTextField("Enter Ingredient Name");
 		JTextField percentIngedField = new JTextField("%");
-        
-        ioclass.addInput(feedDistanceField);
-        ioclass.addInput(feedMassDelField);
-        ioclass.addInput(ingredientsField);
-        ioclass.addInput(percentIngedField);
-        
-        //naming IO components with the same name they will have in the XML file
-        feedDistanceField.setName("Feed_Distance");
-        feedMassDelField.setName("Feed_Mass");
-        ingredientsField.setName("Ingredients");
-        percentIngedField.setName("Percentage_Sign");
-        
-        //Settings and layouts
-		feedDistanceField.setColumns(5);
 		
 		Box labelsBox = Box.createVerticalBox();
 		labelsBox.add(feedDistanceLabel);
