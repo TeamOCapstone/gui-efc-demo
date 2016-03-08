@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<inputs>
+    <Target_Weight>
+        <value>44</value>
+    </Target_Weight>
+    <Number_Of_Broilers>
+        <value>237</value>
+    </Number_Of_Broilers>
+    <Number_Of_Fatalities>
+        <value>228</value>
+    </Number_Of_Fatalities>
+    <Number_Of_Phases>
+        <value>411</value>
+    </Number_Of_Phases>
+    <Phase_Name>
+        <value>153</value>
+    </Phase_Name>
+    <Days_Per_Phase>
+        <value>443</value>
+    </Days_Per_Phase>
+    <Feed_Distance>
+        <value>443</value>
+    </Feed_Distance>
+    <Feed_Mass>
+        <value>443</value>
+    </Feed_Mass>
+    <Ingredients>
+        <value>443</value>
+    </Ingredients>
+    <Percentage_Sign>
+        <value>%</value>
+    </Percentage_Sign>
+    <Breed_Input>
+        <value> Cobb 500 </value>
+    </Breed_Input>
+</inputs>
