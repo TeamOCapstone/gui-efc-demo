@@ -254,7 +254,7 @@ public class PoultryDemo extends JFrame{
     
     
     private void OpenActionPerformed(java.awt.event.ActionEvent evt) {
-        String startingDirectory = "./inputfiles";
+        String startingDirectory = "../inputfiles";
         JFileChooser fileChooser = new javax.swing.JFileChooser(new File(startingDirectory));
         fileChooser.setFileFilter(new MyCustomFilter());
         
@@ -269,7 +269,7 @@ public class PoultryDemo extends JFrame{
     
     
     private void SaveActionPerformed(java.awt.event.ActionEvent evt) {
-        String startingDirectory = "./inputfiles";
+        String startingDirectory = "../inputfiles";
         JFileChooser fileChooser = new javax.swing.JFileChooser(new File(startingDirectory));
         fileChooser.setFileFilter(new MyCustomFilter());
         
