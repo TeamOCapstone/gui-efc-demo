@@ -3,6 +3,10 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
 import com.sun.glass.events.KeyEvent;
 
 
@@ -14,6 +18,21 @@ public class PoultryDemo extends JFrame{
 
 	//The top, all inclusive frame
 	JFrame topFrame = new JFrame();
+    //one class that holds references to all inputs (and future outputs) w/methods for IO
+    IOclass ioclass = new IOclass();
+    
+    class MyCustomFilter extends javax.swing.filechooser.FileFilter {
+        @Override
+        public boolean accept(File file) {
+            // Allow only directories, or files with ".txt" extension
+            return file.isDirectory() || file.getAbsolutePath().endsWith(".xml");
+        }
+        @Override
+        public String getDescription() {
+            // This description will be displayed in the dialog
+            return "XML Files (*.xml)";
+        }
+    }
 	
 	public PoultryDemo() {
 		
@@ -62,12 +81,13 @@ public class PoultryDemo extends JFrame{
 		topFrame.add(topToolBar, BorderLayout.WEST);
 		topFrame.add(desktopPane, BorderLayout.CENTER);
 	    topFrame.setVisible(true);
+        
 			
 	}//end PoultryDemo
 	
 	/*                Creation Methods              */
 
-	private JToolBar createToolBar(JDesktopPane desktopPane, CardLayout cardLayout) {
+	private JToolBar createToolBar(final JDesktopPane desktopPane, final CardLayout cardLayout) {
 		JToolBar topToolBar = new JToolBar();
 		topToolBar.setOrientation(SwingConstants.VERTICAL);
 		JButton tbButton = new JButton();
@@ -198,21 +218,70 @@ public class PoultryDemo extends JFrame{
 		JMenu mainMenuFile = new JMenu("File");
 		mainMenuFile.setMnemonic(KeyEvent.VK_F);
 		mainMenuFile.getAccessibleContext().setAccessibleDescription("File Menu");
-		menuItem = new JMenuItem("New Farm",KeyEvent.VK_N);
-		mainMenuFile.add(menuItem);
-		menuItem = new JMenuItem("Load Farm",KeyEvent.VK_L);
-		mainMenuFile.add(menuItem);
-		menuItem = new JMenuItem("Save Farm",KeyEvent.VK_S);
-		mainMenuFile.add(menuItem);
-		menuItem = new JMenuItem("Exit",KeyEvent.VK_X);
+		
+        menuItem = new JMenuItem("New Project",KeyEvent.VK_N);
+        mainMenuFile.add(menuItem);
+        
+        menuItem = new JMenuItem("Load Project",KeyEvent.VK_L);
+        menuItem.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ev){OpenActionPerformed(ev);}
+        });
+        mainMenuFile.add(menuItem);
+        
+        menuItem = new JMenuItem("Load and Run Project",KeyEvent.VK_L);
+        mainMenuFile.add(menuItem);
+        
+        menuItem = new JMenuItem("Save Project",KeyEvent.VK_S);
+        mainMenuFile.add(menuItem);
+        
+        menuItem = new JMenuItem("Save Project As..",KeyEvent.VK_S);
+        menuItem.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ev){SaveActionPerformed(ev);}
+        });
+        mainMenuFile.add(menuItem);
+		
+        menuItem = new JMenuItem("Exit",KeyEvent.VK_X);
 		menuItem.addActionListener(new ActionListener(){
-			public void actionPerformed(ActionEvent ev){
-				System.exit(0);
-			}
+			public void actionPerformed(ActionEvent ev){System.exit(0);}
 		});
 		mainMenuFile.add(menuItem);
+        
 		topMenuBar.add(mainMenuFile);
 	}
+    
+    //Action Events for menu selections
+    
+    
+    
+    private void OpenActionPerformed(java.awt.event.ActionEvent evt) {
+        String startingDirectory = "./inputfiles";
+        JFileChooser fileChooser = new javax.swing.JFileChooser(new File(startingDirectory));
+        fileChooser.setFileFilter(new MyCustomFilter());
+        
+        int returnVal = fileChooser.showOpenDialog(this);
+        if (returnVal == fileChooser.APPROVE_OPTION) {
+            File file = fileChooser.getSelectedFile();
+            ioclass.loadInputs(file);//This loads the file
+        } else {
+            System.out.println("File access cancelled by user.");
+        }
+    }
+    
+    
+    private void SaveActionPerformed(java.awt.event.ActionEvent evt) {
+        String startingDirectory = "./inputfiles";
+        JFileChooser fileChooser = new javax.swing.JFileChooser(new File(startingDirectory));
+        fileChooser.setFileFilter(new MyCustomFilter());
+        
+        int returnVal = fileChooser.showSaveDialog(this);
+        if (returnVal == fileChooser.APPROVE_OPTION) {
+            File file = fileChooser.getSelectedFile();
+            ioclass.saveInputs(file);//This loads the file
+        } else {
+            System.out.println("File access cancelled by user.");
+        }
+    }
+    
 
 	/*           Create-Internal-Pane Methods             */
 	
@@ -288,13 +357,13 @@ public class PoultryDemo extends JFrame{
 		//panels on the feed window
 		JPanel feedIngredientsPanel = new JPanel();
 		feedIngredientsPanel.setLayout(feedFlowLayout);
-		loadInputMethods.loadFeedIngredPanel(feedIngredientsPanel);
+		loadInputMethods.loadFeedIngredPanel(feedIngredientsPanel, ioclass);
 		feedIngredientsPanel.setVisible(true);
 		feedIngredientsPanel.setBackground(Color.WHITE);
 		
 		JPanel feedShippingPanel = new JPanel();
 		feedShippingPanel.setLayout(feedFlowLayout);
-		loadInputMethods.loadFeedShippingPanel(feedShippingPanel);
+		loadInputMethods.loadFeedShippingPanel(feedShippingPanel, ioclass);
 		feedShippingPanel.setVisible(true);
 		feedShippingPanel.setBackground(Color.WHITE);
 		
@@ -315,7 +384,7 @@ public class PoultryDemo extends JFrame{
 		JPanel birdDataPanel = new JPanel();
 		birdDataPanel.setLayout(birdFlowLayout);
 		birdDataPanel.setBackground(Color.WHITE);
-		loadInputMethods.loadBirdDataPanel(birdDataPanel);
+		loadInputMethods.loadBirdDataPanel(birdDataPanel, ioclass);
 		birdDataPanel.setVisible(true);
 		
 		JPanel birdCard2 = new JPanel();
