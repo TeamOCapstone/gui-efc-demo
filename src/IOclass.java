@@ -25,10 +25,12 @@ public class IOclass {
 
     List<JTextField> textFields;
     List<JComboBox> comboBoxes;
+    List<JCheckBox> checkBoxes;
     
     public IOclass () {
         textFields = new ArrayList<JTextField>();
         comboBoxes = new ArrayList<JComboBox>();
+        checkBoxes = new ArrayList<JCheckBox>();
         
     }
     
@@ -38,6 +40,10 @@ public class IOclass {
     
     public void addInput(JComboBox newInput){
         comboBoxes.add(newInput);
+    }
+    
+    public void addInput(JCheckBox newInput){
+        checkBoxes.add(newInput);
     }
 
     public void loadInputs(File inputFile){
@@ -65,6 +71,13 @@ public class IOclass {
                 comboBoxes.get(i).setSelectedItem(eElement.getElementsByTagName("value").item(0).getTextContent());
                 
             }
+            
+            //Not sure how to make the program load the checkbox states correctly
+            /*for(int i=0; i<checkBoxes.size(); i++){
+                tagname = checkBoxes.get(i).getName();
+                eElement = (Element) doc.getElementsByTagName(tagname).item(0);
+                checkBoxes.get(i).setSelected(eElement.getElementsByTagName("value").item(0).getTextContent());
+            }*/
             
         } catch (Exception e) {e.printStackTrace();}
         
@@ -102,6 +115,17 @@ public class IOclass {
                 newValueElement.appendChild(doc.createTextNode((String)comboBoxes.get(i).getSelectedItem()));
                 newElement.appendChild(newValueElement);
             }
+            
+            //Not sure which method to use to get Checkboxes to work here either
+            /*for(int i=0; i<checkBoxes.size(); i++){
+                tagname = checkBoxes.get(i).getName();
+                newElement = doc.createElement(tagname);
+                rootElement.appendChild(newElement);
+                
+                newValueElement = doc.createElement("value");
+                newValueElement.appendChild(doc.createTextNode(checkBoxes.get(i).isSelected()));
+                newElement.appendChild(newValueElement);
+            }*/
             
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();

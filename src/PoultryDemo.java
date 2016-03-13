@@ -288,12 +288,17 @@ public class PoultryDemo extends JFrame{
 	private JTabbedPane createWastePanel() {
 		JTabbedPane wastePanel = new JTabbedPane();
 		
-		JPanel wasteCard1 = new JPanel();
-		wasteCard1.setLayout(new FlowLayout(FlowLayout.LEFT));
-		wasteCard1.setVisible(true);
-		wasteCard1.setBackground(new Color(0,0,255));
+		JPanel wasteData = new JPanel();
+		wasteData.setLayout(new FlowLayout(FlowLayout.LEFT));
+		wasteData.setVisible(true);
+                loadInputMethods.loadWastePanel(wasteData, ioclass);
+		wasteData.setBackground(Color.WHITE);
+                
+		wastePanel.add("Waste Data", wasteData);
 		
-		JPanel wasteCard2 = new JPanel();
+                //Removing these extra cards, leaving them in case we need them                
+                
+		/*JPanel wasteCard2 = new JPanel();
 		wasteCard2.setLayout(new FlowLayout(FlowLayout.LEFT));
 		wasteCard2.setVisible(true);
 		wasteCard2.setBackground(new Color(0,0,169));
@@ -306,12 +311,11 @@ public class PoultryDemo extends JFrame{
 		JPanel wasteCard4 = new JPanel();
 		wasteCard4.setLayout(new FlowLayout(FlowLayout.LEFT));
 		wasteCard4.setVisible(true);
-		wasteCard4.setBackground(new Color(0,0,64));
-		
-		wastePanel.add("Barn Card 1", wasteCard1);
-		wastePanel.add("Barn Card 2", wasteCard2);
+		wasteCard4.setBackground(new Color(0,0,64));*/                
+
+		/*wastePanel.add("Barn Card 2", wasteCard2);
 		wastePanel.add("Barn Card 3", wasteCard3);
-		wastePanel.add("Barn Card 4", wasteCard4);
+		wastePanel.add("Barn Card 4", wasteCard4);*/
 	
 		return wastePanel;
 	}//end create waste pane
@@ -319,30 +323,34 @@ public class PoultryDemo extends JFrame{
 	private JTabbedPane createBarnPanel() {
 		JTabbedPane barnPanel = new JTabbedPane();
 		
-		JPanel barnCard1 = new JPanel();
-		barnCard1.setLayout(new FlowLayout(FlowLayout.LEFT));
-		barnCard1.setVisible(true);
-		barnCard1.setBackground(new Color(69,64,25)); //BROWN
+		JPanel BarnLocationSize = new JPanel();
+		BarnLocationSize.setLayout(new FlowLayout(FlowLayout.LEFT));
+		BarnLocationSize.setVisible(true);
+		loadInputMethods.loadBarnLocSizePanel(BarnLocationSize, ioclass);
+		BarnLocationSize.setBackground(Color.WHITE); 
+
+		JPanel BarnHeatCool = new JPanel();
+		BarnHeatCool.setLayout(new FlowLayout(FlowLayout.LEFT));
+		BarnHeatCool.setVisible(true);
+                loadInputMethods.loadBarnHeatCoolPanel(BarnHeatCool, ioclass);
+		BarnHeatCool.setBackground(Color.WHITE); 
 		
-		JPanel barnCard2 = new JPanel();
-		barnCard2.setLayout(new FlowLayout(FlowLayout.LEFT));
-		barnCard2.setVisible(true);
-		barnCard2.setBackground(new Color(90,60,30)); //BROWN
+		JPanel BarnWater = new JPanel();
+		BarnWater.setLayout(new FlowLayout(FlowLayout.LEFT));
+		BarnWater.setVisible(true);
+                loadInputMethods.loadBarnWater(BarnWater, ioclass);
+		BarnWater.setBackground(Color.WHITE); 
 		
-		JPanel barnCard3 = new JPanel();
-		barnCard3.setLayout(new FlowLayout(FlowLayout.LEFT));
-		barnCard3.setVisible(true);
-		barnCard3.setBackground(new Color(60,70,25)); //BROWN
+		JPanel BarnLighting = new JPanel();
+		BarnLighting.setLayout(new FlowLayout(FlowLayout.LEFT));
+		BarnLighting.setVisible(true);
+                loadInputMethods.loadBarnLighting(BarnLighting, ioclass);
+		BarnLighting.setBackground(Color.WHITE); 
 		
-		JPanel barnCard4 = new JPanel();
-		barnCard4.setLayout(new FlowLayout(FlowLayout.LEFT));
-		barnCard4.setVisible(true);
-		barnCard4.setBackground(new Color(69,64,30)); //BROWN
-		
-		barnPanel.add("Barn Card 1", barnCard1);
-		barnPanel.add("Barn Card 2", barnCard2);
-		barnPanel.add("Barn Card 3", barnCard3);
-		barnPanel.add("Barn Card 4", barnCard4);
+		barnPanel.add("Location and Size", BarnLocationSize);
+		barnPanel.add("Heating and Cooling", BarnHeatCool);
+		barnPanel.add("Water", BarnWater);
+		barnPanel.add("Lighting", BarnLighting);
 	
 		return barnPanel;
 	}//end create barn pane
@@ -386,7 +394,10 @@ public class PoultryDemo extends JFrame{
 		birdDataPanel.setBackground(Color.WHITE);
 		loadInputMethods.loadBirdDataPanel(birdDataPanel, ioclass);
 		birdDataPanel.setVisible(true);
+                
+		birdPanel.add("Bird Data", birdDataPanel);
 		
+                /*Leaving extra cards in code in case we need them.
 		JPanel birdCard2 = new JPanel();
 		birdCard2.setLayout(birdFlowLayout);
 		birdCard2.setBackground(new Color(90, 0, 0));
@@ -402,10 +413,9 @@ public class PoultryDemo extends JFrame{
 		birdCard4.setBackground(new Color(32, 0, 0));
 		birdCard4.setVisible(true);
 		
-		birdPanel.add("Bird Data", birdDataPanel);
 		birdPanel.add("Bird Card 2", birdCard2);
 		birdPanel.add("Bird Card 3", birdCard3);
-		birdPanel.add("Bird Card 4", birdCard4);
+		birdPanel.add("Bird Card 4", birdCard4);*/
 		
 		return birdPanel;
 	}//end create bird panel

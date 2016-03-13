@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<inputs>
+    <Target_Weight>
+        <value/>
+    </Target_Weight>
+    <Number_Of_Broilers>
+        <value/>
+    </Number_Of_Broilers>
+    <Number_Of_Fatalities>
+        <value/>
+    </Number_Of_Fatalities>
+    <Number_Of_Phases>
+        <value/>
+    </Number_Of_Phases>
+    <Phase_Name>
+        <value/>
+    </Phase_Name>
+    <Days_Per_Phase>
+        <value/>
+    </Days_Per_Phase>
+    <Feed_Distance>
+        <value/>
+    </Feed_Distance>
+    <Feed_Mass>
+        <value/>
+    </Feed_Mass>
+    <Ingredients>
+        <value>Enter Ingredient Name</value>
+    </Ingredients>
+    <Percentage_Sign>
+        <value>%</value>
+    </Percentage_Sign>
+    <Barn_Length>
+        <value>120</value>
+    </Barn_Length>
+    <Barn_Width>
+        <value>30</value>
+    </Barn_Width>
+    <Barn_Average_Height>
+        <value>20</value>
+    </Barn_Average_Height>
+    <Breed_Input>
+        <value> Cobb 500 </value>
+    </Breed_Input>
+    <Barn_State>
+        <value> AR </value>
+    </Barn_State>
+    <Barn_State_County>
+        <value> Test County 2 </value>
+    </Barn_State_County>
+</inputs>
