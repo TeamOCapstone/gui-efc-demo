@@ -3,6 +3,10 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
 import com.sun.glass.events.KeyEvent;
 
 
@@ -14,6 +18,21 @@ public class PoultryDemo extends JFrame{
 
 	//The top, all inclusive frame
 	JFrame topFrame = new JFrame();
+    //one class that holds references to all inputs (and future outputs) w/methods for IO
+    IOclass ioclass = new IOclass();
+    
+    class MyCustomFilter extends javax.swing.filechooser.FileFilter {
+        @Override
+        public boolean accept(File file) {
+            // Allow only directories, or files with ".txt" extension
+            return file.isDirectory() || file.getAbsolutePath().endsWith(".xml");
+        }
+        @Override
+        public String getDescription() {
+            // This description will be displayed in the dialog
+            return "XML Files (*.xml)";
+        }
+    }
 	
 	public PoultryDemo() {
 		
@@ -62,12 +81,13 @@ public class PoultryDemo extends JFrame{
 		topFrame.add(topToolBar, BorderLayout.WEST);
 		topFrame.add(desktopPane, BorderLayout.CENTER);
 	    topFrame.setVisible(true);
+        
 			
 	}//end PoultryDemo
 	
 	/*                Creation Methods              */
 
-	private JToolBar createToolBar(JDesktopPane desktopPane, CardLayout cardLayout) {
+	private JToolBar createToolBar(final JDesktopPane desktopPane, final CardLayout cardLayout) {
 		JToolBar topToolBar = new JToolBar();
 		topToolBar.setOrientation(SwingConstants.VERTICAL);
 		JButton tbButton = new JButton();
@@ -198,33 +218,87 @@ public class PoultryDemo extends JFrame{
 		JMenu mainMenuFile = new JMenu("File");
 		mainMenuFile.setMnemonic(KeyEvent.VK_F);
 		mainMenuFile.getAccessibleContext().setAccessibleDescription("File Menu");
-		menuItem = new JMenuItem("New Farm",KeyEvent.VK_N);
-		mainMenuFile.add(menuItem);
-		menuItem = new JMenuItem("Load Farm",KeyEvent.VK_L);
-		mainMenuFile.add(menuItem);
-		menuItem = new JMenuItem("Save Farm",KeyEvent.VK_S);
-		mainMenuFile.add(menuItem);
-		menuItem = new JMenuItem("Exit",KeyEvent.VK_X);
+		
+        menuItem = new JMenuItem("New Project",KeyEvent.VK_N);
+        mainMenuFile.add(menuItem);
+        
+        menuItem = new JMenuItem("Load Project",KeyEvent.VK_L);
+        menuItem.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ev){OpenActionPerformed(ev);}
+        });
+        mainMenuFile.add(menuItem);
+        
+        menuItem = new JMenuItem("Load and Run Project",KeyEvent.VK_L);
+        mainMenuFile.add(menuItem);
+        
+        menuItem = new JMenuItem("Save Project",KeyEvent.VK_S);
+        mainMenuFile.add(menuItem);
+        
+        menuItem = new JMenuItem("Save Project As..",KeyEvent.VK_S);
+        menuItem.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ev){SaveActionPerformed(ev);}
+        });
+        mainMenuFile.add(menuItem);
+		
+        menuItem = new JMenuItem("Exit",KeyEvent.VK_X);
 		menuItem.addActionListener(new ActionListener(){
-			public void actionPerformed(ActionEvent ev){
-				System.exit(0);
-			}
+			public void actionPerformed(ActionEvent ev){System.exit(0);}
 		});
 		mainMenuFile.add(menuItem);
+        
 		topMenuBar.add(mainMenuFile);
 	}
+    
+    //Action Events for menu selections
+    
+    
+    
+    private void OpenActionPerformed(java.awt.event.ActionEvent evt) {
+        String startingDirectory = "../inputfiles";
+        JFileChooser fileChooser = new javax.swing.JFileChooser(new File(startingDirectory));
+        fileChooser.setFileFilter(new MyCustomFilter());
+        
+        int returnVal = fileChooser.showOpenDialog(this);
+        if (returnVal == fileChooser.APPROVE_OPTION) {
+            File file = fileChooser.getSelectedFile();
+            ioclass.loadInputs(file);//This loads the file
+        } else {
+            System.out.println("File access cancelled by user.");
+        }
+    }
+    
+    
+    private void SaveActionPerformed(java.awt.event.ActionEvent evt) {
+        String startingDirectory = "../inputfiles";
+        JFileChooser fileChooser = new javax.swing.JFileChooser(new File(startingDirectory));
+        fileChooser.setFileFilter(new MyCustomFilter());
+        
+        int returnVal = fileChooser.showSaveDialog(this);
+        if (returnVal == fileChooser.APPROVE_OPTION) {
+            File file = fileChooser.getSelectedFile();
+            ioclass.saveInputs(file);//This loads the file
+        } else {
+            System.out.println("File access cancelled by user.");
+        }
+    }
+    
 
 	/*           Create-Internal-Pane Methods             */
 	
 	private JTabbedPane createWastePanel() {
 		JTabbedPane wastePanel = new JTabbedPane();
 		
-		JPanel wasteCard1 = new JPanel();
-		wasteCard1.setLayout(new FlowLayout(FlowLayout.LEFT));
-		wasteCard1.setVisible(true);
-		wasteCard1.setBackground(new Color(0,0,255));
+		JPanel wasteData = new JPanel();
+		wasteData.setLayout(new FlowLayout(FlowLayout.LEFT));
+		wasteData.setVisible(true);
+                loadInputMethods.loadWastePanel(wasteData, ioclass);
+		wasteData.setBackground(Color.WHITE);
+                
+		wastePanel.add("Waste Data", wasteData);
 		
-		JPanel wasteCard2 = new JPanel();
+                //Removing these extra cards, leaving them in case we need them                
+                
+		/*JPanel wasteCard2 = new JPanel();
 		wasteCard2.setLayout(new FlowLayout(FlowLayout.LEFT));
 		wasteCard2.setVisible(true);
 		wasteCard2.setBackground(new Color(0,0,169));
@@ -237,12 +311,11 @@ public class PoultryDemo extends JFrame{
 		JPanel wasteCard4 = new JPanel();
 		wasteCard4.setLayout(new FlowLayout(FlowLayout.LEFT));
 		wasteCard4.setVisible(true);
-		wasteCard4.setBackground(new Color(0,0,64));
-		
-		wastePanel.add("Barn Card 1", wasteCard1);
-		wastePanel.add("Barn Card 2", wasteCard2);
+		wasteCard4.setBackground(new Color(0,0,64));*/                
+
+		/*wastePanel.add("Barn Card 2", wasteCard2);
 		wastePanel.add("Barn Card 3", wasteCard3);
-		wastePanel.add("Barn Card 4", wasteCard4);
+		wastePanel.add("Barn Card 4", wasteCard4);*/
 	
 		return wastePanel;
 	}//end create waste pane
@@ -250,30 +323,34 @@ public class PoultryDemo extends JFrame{
 	private JTabbedPane createBarnPanel() {
 		JTabbedPane barnPanel = new JTabbedPane();
 		
-		JPanel barnCard1 = new JPanel();
-		barnCard1.setLayout(new FlowLayout(FlowLayout.LEFT));
-		barnCard1.setVisible(true);
-		barnCard1.setBackground(new Color(69,64,25)); //BROWN
+		JPanel BarnLocationSize = new JPanel();
+		BarnLocationSize.setLayout(new FlowLayout(FlowLayout.LEFT));
+		BarnLocationSize.setVisible(true);
+		loadInputMethods.loadBarnLocSizePanel(BarnLocationSize, ioclass);
+		BarnLocationSize.setBackground(Color.WHITE); 
+
+		JPanel BarnHeatCool = new JPanel();
+		BarnHeatCool.setLayout(new FlowLayout(FlowLayout.LEFT));
+		BarnHeatCool.setVisible(true);
+                loadInputMethods.loadBarnHeatCoolPanel(BarnHeatCool, ioclass);
+		BarnHeatCool.setBackground(Color.WHITE); 
 		
-		JPanel barnCard2 = new JPanel();
-		barnCard2.setLayout(new FlowLayout(FlowLayout.LEFT));
-		barnCard2.setVisible(true);
-		barnCard2.setBackground(new Color(90,60,30)); //BROWN
+		JPanel BarnWater = new JPanel();
+		BarnWater.setLayout(new FlowLayout(FlowLayout.LEFT));
+		BarnWater.setVisible(true);
+                loadInputMethods.loadBarnWater(BarnWater, ioclass);
+		BarnWater.setBackground(Color.WHITE); 
 		
-		JPanel barnCard3 = new JPanel();
-		barnCard3.setLayout(new FlowLayout(FlowLayout.LEFT));
-		barnCard3.setVisible(true);
-		barnCard3.setBackground(new Color(60,70,25)); //BROWN
+		JPanel BarnLighting = new JPanel();
+		BarnLighting.setLayout(new FlowLayout(FlowLayout.LEFT));
+		BarnLighting.setVisible(true);
+                loadInputMethods.loadBarnLighting(BarnLighting, ioclass);
+		BarnLighting.setBackground(Color.WHITE); 
 		
-		JPanel barnCard4 = new JPanel();
-		barnCard4.setLayout(new FlowLayout(FlowLayout.LEFT));
-		barnCard4.setVisible(true);
-		barnCard4.setBackground(new Color(69,64,30)); //BROWN
-		
-		barnPanel.add("Barn Card 1", barnCard1);
-		barnPanel.add("Barn Card 2", barnCard2);
-		barnPanel.add("Barn Card 3", barnCard3);
-		barnPanel.add("Barn Card 4", barnCard4);
+		barnPanel.add("Location and Size", BarnLocationSize);
+		barnPanel.add("Heating and Cooling", BarnHeatCool);
+		barnPanel.add("Water", BarnWater);
+		barnPanel.add("Lighting", BarnLighting);
 	
 		return barnPanel;
 	}//end create barn pane
@@ -288,13 +365,13 @@ public class PoultryDemo extends JFrame{
 		//panels on the feed window
 		JPanel feedIngredientsPanel = new JPanel();
 		feedIngredientsPanel.setLayout(feedFlowLayout);
-		loadInputMethods.loadFeedIngredPanel(feedIngredientsPanel);
+		loadInputMethods.loadFeedIngredPanel(feedIngredientsPanel, ioclass);
 		feedIngredientsPanel.setVisible(true);
 		feedIngredientsPanel.setBackground(Color.WHITE);
 		
 		JPanel feedShippingPanel = new JPanel();
 		feedShippingPanel.setLayout(feedFlowLayout);
-		loadInputMethods.loadFeedShippingPanel(feedShippingPanel);
+		loadInputMethods.loadFeedShippingPanel(feedShippingPanel, ioclass);
 		feedShippingPanel.setVisible(true);
 		feedShippingPanel.setBackground(Color.WHITE);
 		
@@ -315,9 +392,12 @@ public class PoultryDemo extends JFrame{
 		JPanel birdDataPanel = new JPanel();
 		birdDataPanel.setLayout(birdFlowLayout);
 		birdDataPanel.setBackground(Color.WHITE);
-		loadInputMethods.loadBirdDataPanel(birdDataPanel);
+		loadInputMethods.loadBirdDataPanel(birdDataPanel, ioclass);
 		birdDataPanel.setVisible(true);
+                
+		birdPanel.add("Bird Data", birdDataPanel);
 		
+                /*Leaving extra cards in code in case we need them.
 		JPanel birdCard2 = new JPanel();
 		birdCard2.setLayout(birdFlowLayout);
 		birdCard2.setBackground(new Color(90, 0, 0));
@@ -333,10 +413,9 @@ public class PoultryDemo extends JFrame{
 		birdCard4.setBackground(new Color(32, 0, 0));
 		birdCard4.setVisible(true);
 		
-		birdPanel.add("Bird Data", birdDataPanel);
 		birdPanel.add("Bird Card 2", birdCard2);
 		birdPanel.add("Bird Card 3", birdCard3);
-		birdPanel.add("Bird Card 4", birdCard4);
+		birdPanel.add("Bird Card 4", birdCard4);*/
 		
 		return birdPanel;
 	}//end create bird panel
