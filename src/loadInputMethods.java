@@ -10,7 +10,12 @@ public class loadInputMethods {
 
 	public static void loadBirdDataPanel(JPanel birdPanel, IOclass ioclass) {
 
-		String[] breedStrings = { " Cobb 500 ", " Cobb 700 ", " Ross 308 ",
+		GroupLayout layout = new GroupLayout(birdPanel);
+		birdPanel.setLayout(layout);
+		layout.setAutoCreateGaps(true);
+		layout.setAutoCreateContainerGaps(true);
+		
+		String[] breedStrings = { "-Choose Breed-", " Cobb 500 ", " Cobb 700 ", " Ross 308 ",
 				" Ross 708 " };
 
 		// the labels to the left of the inputs
@@ -39,7 +44,49 @@ public class loadInputMethods {
 		numFatalitiesField.setName("Number_Of_Fatalities");
 
 		// Settings and layouts
-		breedInputBox.setMaximumSize(breedInputBox.getPreferredSize());
+		layout.setHorizontalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(birdBreedLabel)
+				.addComponent(targetWeightLabel)
+				.addComponent(numBroilersLabel)
+				.addComponent(numFatalitiesLabel)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(breedInputBox)
+				.addComponent(targetWeightField)
+				.addComponent(numBroilersField)
+				.addComponent(numFatalitiesField)
+			)
+			
+		);
+
+
+
+		layout.setVerticalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(birdBreedLabel)
+				.addComponent(breedInputBox)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(targetWeightLabel)
+				.addComponent(targetWeightField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(numBroilersLabel)
+				.addComponent(numBroilersField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(numFatalitiesLabel)
+				.addComponent(numFatalitiesField)
+			)
+		);
+
+		layout.linkSize(SwingConstants.VERTICAL, birdBreedLabel, breedInputBox, targetWeightLabel, targetWeightField, numBroilersLabel, numBroilersField, numFatalitiesLabel, numFatalitiesField);
+		layout.linkSize(SwingConstants.HORIZONTAL,birdBreedLabel, targetWeightLabel,  numBroilersLabel, numFatalitiesLabel);
+		layout.linkSize(SwingConstants.HORIZONTAL, breedInputBox, targetWeightField,  numBroilersField,  numFatalitiesField);
+
+		//previous methods		--can be deleted once we are sure to use the new method
+/*		breedInputBox.setMaximumSize(breedInputBox.getPreferredSize());
 		targetWeightField.setMaximumSize(breedInputBox.getPreferredSize());
 		numBroilersField.setMaximumSize(breedInputBox.getPreferredSize());
 		numFatalitiesField.setMaximumSize(breedInputBox.getPreferredSize());
@@ -81,10 +128,42 @@ public class loadInputMethods {
 		// top.add(Box.createHorizontalStrut(300));
 
 		birdPanel.add(top);
+*/
+
+
+
 	}// END loadBirdDataPanel
 
-	public static void loadFeedIngredPanel(JPanel feedIngredientsPanel,
-			IOclass ioclass) {
+	public static void loadFeedIngredPanel(JPanel feedIngredientsPanel, IOclass ioclass) {
+
+
+		GroupLayout layout = new GroupLayout(feedIngredientsPanel);
+		feedIngredientsPanel.setLayout(layout);
+		layout.setAutoCreateGaps(true);
+		layout.setAutoCreateContainerGaps(true);
+
+
+//for multiple ingredients
+/*
+		JButton ingredientButton = new JButton("Add New Ingredient");
+		JPanel buttonPane = new JPanel();
+		buttonPane.setLayout(new BoxLayout(buttonPane, BoxLayout.LINE_AXIS));
+		// buttonPane.setBorder(BorderFactory.createEmptyBorder(10, 10, 10,
+		// 10));
+		buttonPane.add(Box.createHorizontalGlue());
+
+		JTextField ingredientsField = new JTextField("Enter Ingredient Name");
+		JTextField percentIngedField = new JTextField("%");
+
+		ioclass.addInput(ingredientsField);
+		ioclass.addInput(percentIngedField);
+
+		ingredientsField.setName("Ingredients");
+		percentIngedField.setName("Percentage_Sign");
+
+
+*/
+
 
 		// labels on the left
 		JLabel numPhasesLabel = new JLabel("  Number of Feeding Phases:  ");
@@ -107,6 +186,44 @@ public class loadInputMethods {
 		numDaysPerPhaseField.setName("Days_Per_Phase");
 
 		// Settings and layout
+		
+		
+		layout.setHorizontalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(numPhasesLabel)
+				.addComponent(phaseNameLabel)
+				.addComponent(numDaysPerPhaseLabel)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(numPhasesField)
+				.addComponent(phaseNameField)
+				.addComponent(numDaysPerPhaseField)
+			)
+			
+		);
+
+		layout.setVerticalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(numPhasesLabel)
+				.addComponent(numPhasesField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(phaseNameLabel)
+				.addComponent(phaseNameField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(numDaysPerPhaseLabel)
+				.addComponent(numDaysPerPhaseField)
+			)
+		);
+		
+		numPhasesField.setColumns(5);
+		layout.linkSize(SwingConstants.VERTICAL, numPhasesLabel, numPhasesField, phaseNameLabel, phaseNameField, numDaysPerPhaseLabel, numDaysPerPhaseField);
+		layout.linkSize(SwingConstants.HORIZONTAL, numPhasesLabel,  phaseNameLabel,  numDaysPerPhaseLabel);
+		layout.linkSize(SwingConstants.HORIZONTAL, numPhasesField,  phaseNameField,  numDaysPerPhaseField);
+
+		//previous methods
+		/*
 		numPhasesField.setColumns(5);
 
 		Box labelsBox = Box.createVerticalBox();
@@ -126,43 +243,66 @@ public class loadInputMethods {
 		top.add(fieldsBox);
 
 		feedIngredientsPanel.add(top);
+		*/
 
 	}// end loadFeedIngredPanel
 
-	public static void loadFeedShippingPanel(JPanel feedShippingPanel,
-			IOclass ioclass) {
+	public static void loadFeedShippingPanel(JPanel feedShippingPanel, IOclass ioclass) {
 
-		JButton ingredientButton = new JButton("Add New Ingredient");
-		JPanel buttonPane = new JPanel();
-		buttonPane.setLayout(new BoxLayout(buttonPane, BoxLayout.LINE_AXIS));
-		// buttonPane.setBorder(BorderFactory.createEmptyBorder(10, 10, 10,
-		// 10));
-		buttonPane.add(Box.createHorizontalGlue());
 
-		JLabel feedDistanceLabel = new JLabel(
-				"  Distance from Feed Mill: (miles)  ");
-		JLabel feedMassDelLabel = new JLabel(
-				"  Amount of Feed Delivered (lb)  ");
+		GroupLayout layout = new GroupLayout(feedShippingPanel);
+		feedShippingPanel.setLayout(layout);
+		layout.setAutoCreateGaps(true);
+		layout.setAutoCreateContainerGaps(true);
+
+
+		JLabel feedDistanceLabel = new JLabel("  Distance from Feed Mill: (miles)  ");
+		JLabel feedMassDelLabel = new JLabel("  Amount of Feed Delivered (lb)  ");
 
 		// Inputs themselves
 		JTextField feedDistanceField = new JTextField();
 		JTextField feedMassDelField = new JTextField();
-		JTextField ingredientsField = new JTextField("Enter Ingredient Name");
-		JTextField percentIngedField = new JTextField("%");
 
 		ioclass.addInput(feedDistanceField);
 		ioclass.addInput(feedMassDelField);
-		ioclass.addInput(ingredientsField);
-		ioclass.addInput(percentIngedField);
 
-		// naming IO components with the same name they will have in the XML
-		// file
+		// naming IO components with the same name they will have in the XML file
 		feedDistanceField.setName("Feed_Distance");
 		feedMassDelField.setName("Feed_Mass");
-		ingredientsField.setName("Ingredients");
-		percentIngedField.setName("Percentage_Sign");
 
 		// Settings and layouts
+		
+		layout.setHorizontalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(feedDistanceLabel)
+				.addComponent(feedMassDelLabel)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(feedDistanceField)
+				.addComponent(feedMassDelField)
+			)
+			
+		);
+
+		layout.setVerticalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(feedDistanceLabel)
+				.addComponent(feedDistanceField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(feedMassDelLabel)
+				.addComponent(feedMassDelField)
+			)
+		);
+
+		feedDistanceField.setColumns(5);
+		layout.linkSize(SwingConstants.VERTICAL, feedDistanceLabel, feedMassDelLabel, feedDistanceField, feedMassDelField);
+		layout.linkSize(SwingConstants.HORIZONTAL,feedDistanceLabel, feedMassDelLabel);
+		layout.linkSize(SwingConstants.HORIZONTAL, feedDistanceField, feedMassDelField);
+
+		
+		//previous methods
+		/*
 		feedDistanceField.setColumns(5);
 
 		Box labelsBox = Box.createVerticalBox();
@@ -191,14 +331,20 @@ public class loadInputMethods {
 		buttonPane.add(ingredientButton);
 		main.add(buttonPane);
 		feedShippingPanel.add(main);
+		*/
 
 	}// end loadFeedShippingPanel
 
-	public static void loadBarnLocSizePanel(JPanel BarnLocationSize,
-			IOclass ioclass) {
+	public static void loadBarnLocSizePanel(JPanel BarnLocationSize, IOclass ioclass) {
+
+		GroupLayout layout = new GroupLayout(BarnLocationSize);
+		BarnLocationSize.setLayout(layout);
+		layout.setAutoCreateGaps(true);
+		layout.setAutoCreateContainerGaps(true);
+		
 
 		// Strings for the State dropdown
-		String[] barnStates = { " AL ", " AK ", " AZ ", " AR ", " CA ", " CO ",
+		String[] barnStates = { "-Chose State-"," AL ", " AK ", " AZ ", " AR ", " CA ", " CO ",
 				" CT ", " DE ", " FL ", " GA ", " HI ", " ID ", " IL ", " IN ",
 				" IA ", " KS ", " KY ", " LA ", " ME ", " MD ", " MA ", " MI ",
 				" MN ", " MS ", " MO ", " MT ", " NE ", " NV ", " NH ", " NJ ",
@@ -207,7 +353,7 @@ public class loadInputMethods {
 				" WA ", " WV ", " WI ", " WY " };
 
 		// Test strings for the County dropdown
-		String[] barnCounties = { " Test County 1", " Test County 2 ",
+		String[] barnCounties = { "-Choose County-"," Test County 1", " Test County 2 ",
 				" Test County 3" };
 
 		// The names for the inputs on the left side
@@ -240,9 +386,58 @@ public class loadInputMethods {
 		barnHeightField.setName("Barn_Average_Height");
 
 		// Settings and layouts
+		layout.setHorizontalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(barnLocationState)
+				.addComponent(barnLocationCounty)
+				.addComponent(barnLength)
+				.addComponent(barnWidth)
+				.addComponent(barnHeight)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(barnStateInputBox)
+				.addComponent(barnCountyInputBox)
+				.addComponent(barnLengthField)
+				.addComponent(barnWidthField)
+				.addComponent(barnHeightField)
+			)
+			
+		);
+
+
+
+		layout.setVerticalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(barnLocationState)
+				.addComponent(barnStateInputBox)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(barnLocationCounty)
+				.addComponent(barnCountyInputBox)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(barnLength)
+				.addComponent(barnLengthField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(barnWidth)
+				.addComponent(barnWidthField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(barnHeight)
+				.addComponent(barnHeightField)
+			)
+		);
+
+		layout.linkSize(SwingConstants.VERTICAL, barnLocationState, barnLocationCounty, barnLength, barnWidth, barnHeight, barnStateInputBox, barnCountyInputBox, barnHeightField, barnWidthField, barnLengthField);
+		layout.linkSize(SwingConstants.HORIZONTAL, barnLocationState, barnLocationCounty, barnLength, barnWidth, barnHeight);
+		layout.linkSize(SwingConstants.HORIZONTAL, barnStateInputBox, barnCountyInputBox, barnHeightField, barnWidthField, barnLengthField);
+
+		
+		//previous
+		/*
 		barnStateInputBox.setMaximumSize(barnCountyInputBox.getPreferredSize());
-		barnCountyInputBox
-				.setMaximumSize(barnCountyInputBox.getPreferredSize());
+		barnCountyInputBox.setMaximumSize(barnCountyInputBox.getPreferredSize());
 		barnLengthField.setMaximumSize(barnCountyInputBox.getPreferredSize());
 		barnWidthField.setMaximumSize(barnCountyInputBox.getPreferredSize());
 		barnHeightField.setMaximumSize(barnCountyInputBox.getPreferredSize());
@@ -286,28 +481,40 @@ public class loadInputMethods {
 		top.add(Box.createVerticalStrut(30));
 
 		BarnLocationSize.add(top);
+		*/
 	}// END loadBirdDataPanel
 
-	public static void loadBarnHeatCoolPanel(JPanel BarnHeatCool,
-			IOclass ioclass) {
+	public static void loadBarnHeatCoolPanel(JPanel BarnHeatCool, IOclass ioclass) {
+	
+		GroupLayout layout = new GroupLayout(BarnHeatCool);
+		BarnHeatCool.setLayout(layout);
+		//layout.setAutoCreateGaps(true);
+		//layout.setAutoCreateContainerGaps(true);
+		
+	
+		JLabel blankspace = new JLabel("");
 		// String for Heating Fuel dropdown
-		String[] HeatingFuelString = { " Propane ", " Natural Gas " };
+		String[] HeatingFuelString = { "-Choose Fuel-"," Propane ", " Natural Gas " };
 
 		// Labels for Side Wall Fans
 		JLabel SideWallFans = new JLabel("Side Wall Fans");
 		JLabel SideFanAmt = new JLabel("  Number of Fans:  ");
 		JLabel SideFanThroughput = new JLabel("  Throughtput (cfm):  ");
 		JLabel SideFanPower = new JLabel("  Power (W):  ");
+		
 		// Labels for Tunnel Fans
 		JLabel TunnelFans = new JLabel("Tunnel Fans");
 		JLabel TunnelFanAmt = new JLabel("  Number of Fans:  ");
 		JLabel TunnelFanThroughput = new JLabel("  Throughtput (cfm):  ");
 		JLabel TunnelFanPower = new JLabel("  Power (W):  ");
+		
 		// Label for Heating Fuel
 		JLabel HeatingFuel = new JLabel("Heating Fuel:  ");
+		
 		// Labels for Cooling Fan info
 		JLabel CoolFanUsed = new JLabel("Cooling Fans Used?  ");
-		JLabel CellTotalArea = new JLabel("  Total Area of Cells (ft^2):  ");
+		JLabel CellTotalArea = new JLabel("Total Area of Cells (ft^2):  ");
+		
 		// Label for Sprinkler Usage
 		JLabel SprinklersUsed = new JLabel("Sprinklers Used?  ");
 
@@ -344,6 +551,96 @@ public class loadInputMethods {
 		CellAreaField.setName("Area_Of_Cells");
 		SprinklerCheck.setName("Sprinklers_Used");
 
+
+
+
+		layout.setHorizontalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(SideWallFans)
+				.addComponent(SideFanAmt)
+				.addComponent(SideFanThroughput)
+				.addComponent(SideFanPower)
+				.addComponent(TunnelFans)
+				.addComponent(TunnelFanAmt)
+				.addComponent(TunnelFanThroughput)
+				.addComponent(TunnelFanPower)
+				.addComponent(HeatingFuel)
+				.addComponent(CoolFanUsed)
+				.addComponent(CellTotalArea)
+				.addComponent(SprinklersUsed)
+				.addComponent(blankspace)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(SideFanAmtField)
+				.addComponent(SideFanThroughField)
+				.addComponent(SideFanPowerField)
+				.addComponent(TunnelFanAmtField)
+				.addComponent(TunnelFanThroughField)
+				.addComponent(TunnelFanPowerField)
+				.addComponent(HeatingFuelDrop)
+				.addComponent(CoolFanCheck)
+				.addComponent(CellAreaField)
+				.addComponent(SprinklerCheck)
+			)
+			
+		);
+
+
+
+		layout.setVerticalGroup(layout.createSequentialGroup()
+			.addComponent(SideWallFans)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(SideFanAmt)
+				.addComponent(SideFanAmtField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(SideFanThroughput)
+				.addComponent(SideFanThroughField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(SideFanPower)
+				.addComponent(SideFanPowerField)
+			)
+			.addComponent(blankspace)
+			.addComponent(TunnelFans)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(TunnelFanAmt)
+				.addComponent(TunnelFanAmtField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(TunnelFanThroughput)
+				.addComponent(TunnelFanThroughField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(TunnelFanPower)
+				.addComponent(TunnelFanPowerField)
+			)
+			.addComponent(blankspace)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(HeatingFuel)
+				.addComponent(HeatingFuelDrop)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(SprinklersUsed)
+				.addComponent(SprinklerCheck)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(CoolFanUsed)
+				.addComponent(CoolFanCheck)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(CellTotalArea)
+				.addComponent(CellAreaField)
+			)
+		);
+
+		layout.linkSize(SwingConstants.VERTICAL, blankspace, SideWallFans, SideFanAmt, SideFanThroughput, SideFanPower, TunnelFans, TunnelFanAmt, TunnelFanThroughput, TunnelFanPower, HeatingFuel, CoolFanUsed, CellTotalArea, SprinklersUsed,SideFanAmtField, SideFanThroughField, SideFanPowerField, TunnelFanAmtField, TunnelFanThroughField, TunnelFanPowerField, HeatingFuelDrop, CoolFanCheck, CellAreaField, SprinklerCheck);
+		layout.linkSize(SwingConstants.HORIZONTAL, blankspace, SideWallFans, SideFanAmt, SideFanThroughput, SideFanPower, TunnelFans, TunnelFanAmt, TunnelFanThroughput, TunnelFanPower, HeatingFuel, CoolFanUsed, CellTotalArea, SprinklersUsed);
+		layout.linkSize(SwingConstants.HORIZONTAL, SideFanAmtField, SideFanThroughField, SideFanPowerField, TunnelFanAmtField, TunnelFanThroughField, TunnelFanPowerField, HeatingFuelDrop, CoolFanCheck, CellAreaField, SprinklerCheck);
+
+		
+		//previous
+		/*
 		SideFanAmtField.setMaximumSize(new Dimension(40,20));
 		SideFanThroughField.setMaximumSize(new Dimension(40,20));
 		SideFanPowerField.setMaximumSize(new Dimension(40,20));
@@ -443,9 +740,17 @@ public class loadInputMethods {
 		// top.add(Box.createHorizontalStrut(300));
 
 		BarnHeatCool.add(top);
+		
+		*/
 	}
 
 	public static void loadBarnWater(JPanel BarnWater, IOclass ioclass) {
+
+		GroupLayout layout = new GroupLayout(BarnWater);
+		BarnWater.setLayout(layout);
+		layout.setAutoCreateGaps(true);
+		layout.setAutoCreateContainerGaps(true);
+
 
 		JLabel WellAmount = new JLabel("  Amount from Well (%):  ");
 		JLabel PipedAmount = new JLabel("  Amount Piped In (%):  ");
@@ -479,7 +784,57 @@ public class loadInputMethods {
 		FlowrateField.setName("Flowrate");
 
 		// Settings and layouts
-		WellAmountField.setColumns(10);
+		
+		layout.setHorizontalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(WellAmount)
+				.addComponent(PipedAmount)
+				.addComponent(SurfaceWaterAmount)
+				.addComponent(WaterPumpPower)
+				.addComponent(MaxFlowrate)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(WellAmountField)
+				.addComponent(PipedAmoutField)
+				.addComponent(SurfaceWaterField)
+				.addComponent(WaterPumpField)
+				.addComponent(FlowrateField)
+			)
+			
+		);
+
+
+
+		layout.setVerticalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(WellAmount)
+				.addComponent(WellAmountField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(PipedAmount)
+				.addComponent(PipedAmoutField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(SurfaceWaterAmount)
+				.addComponent(SurfaceWaterField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(WaterPumpPower)
+				.addComponent(WaterPumpField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(MaxFlowrate)
+				.addComponent(FlowrateField)
+			)
+		);
+
+		WellAmountField.setColumns(5);
+		layout.linkSize(SwingConstants.VERTICAL, WellAmount,PipedAmount,SurfaceWaterAmount,WaterPumpPower,MaxFlowrate, WellAmountField, PipedAmoutField,SurfaceWaterField, WaterPumpField, FlowrateField);
+		layout.linkSize(SwingConstants.HORIZONTAL, WellAmount,PipedAmount,SurfaceWaterAmount,WaterPumpPower,MaxFlowrate);
+		layout.linkSize(SwingConstants.HORIZONTAL, WellAmountField, PipedAmoutField,SurfaceWaterField, WaterPumpField, FlowrateField);
+
+		//previous methods		--can be deleted once we are sure to use the new method
+		/*WellAmountField.setColumns(10);
 		WellAmountField.setMaximumSize(new Dimension(50, 50));
 		PipedAmoutField.setMaximumSize(new Dimension(55, 50));
 		SurfaceWaterField.setMaximumSize(new Dimension(55, 50));
@@ -509,9 +864,17 @@ public class loadInputMethods {
 		top.add(fieldsBox);
 		
 		BarnWater.add(top);
+		*/
 	}
 
 	public static void loadBarnLighting(JPanel BarnLighting, IOclass ioclass) {
+
+
+		GroupLayout layout = new GroupLayout(BarnLighting);
+		BarnLighting.setLayout(layout);
+		layout.setAutoCreateGaps(true);
+		layout.setAutoCreateContainerGaps(true);
+
 
 		JLabel ConstantLight = new JLabel(
 				"  Lights Left on Constantly (Total Watts):  ");
@@ -536,6 +899,45 @@ public class loadInputMethods {
 		TotalTimeField.setName("Total_Time");
 
 		// Settings and layouts
+		
+		layout.setHorizontalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(ConstantLight)
+				.addComponent(PartialLight)
+				.addComponent(TotalTime)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(ConstantLightField)
+				.addComponent(PartialLightField)
+				.addComponent(TotalTimeField)
+			)
+			
+		);
+
+
+
+		layout.setVerticalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(ConstantLight)
+				.addComponent(ConstantLightField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(PartialLight)
+				.addComponent(PartialLightField)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(TotalTime)
+				.addComponent(TotalTimeField)
+			)
+		);
+
+		ConstantLightField.setColumns(5);
+		layout.linkSize(SwingConstants.VERTICAL, ConstantLight, PartialLight, TotalTime, ConstantLightField, PartialLightField, TotalTimeField);
+		layout.linkSize(SwingConstants.HORIZONTAL, ConstantLight, PartialLight, TotalTime);
+		layout.linkSize(SwingConstants.HORIZONTAL, ConstantLightField, PartialLightField, TotalTimeField);
+
+		//previous methods		--can be deleted once we are sure to use the new method
+		/*
 		ConstantLightField.setMaximumSize(new Dimension(50,50));
 		PartialLightField.setMaximumSize(new Dimension(50,50));
 		TotalTimeField.setMaximumSize(new Dimension(50,50));
@@ -560,10 +962,19 @@ public class loadInputMethods {
 		top.add(TotalTimeBox);
 
 		BarnLighting.add(top);
+		*/
 	}
 
 	public static void loadWastePanel(JPanel wasteData, IOclass ioclass) {
-		String[] LitterUseStrings = { " Fertilizer ", " Animal Feed ",
+	
+	
+		GroupLayout layout = new GroupLayout(wasteData);
+		wasteData.setLayout(layout);
+		layout.setAutoCreateGaps(true);
+		layout.setAutoCreateContainerGaps(true);
+
+	
+		String[] LitterUseStrings = { "-Choose Litter Use-"," Fertilizer ", " Animal Feed ",
 				" Fuel Source " };
 
 		JLabel LitterUse = new JLabel("  End Use of Litter:  ");
@@ -584,6 +995,37 @@ public class loadInputMethods {
 		LitterCleanoutField.setName("Litter_Cleanout");
 
 		// Settings and layouts
+		
+		layout.setHorizontalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(LitterUse)
+				.addComponent(LitterCleanout)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(LitterUseDrop)
+				.addComponent(LitterCleanoutField)
+			)
+			
+		);
+
+
+		layout.setVerticalGroup(layout.createSequentialGroup()
+			.addGroup(layout.createParallelGroup()
+				.addComponent(LitterUse)
+				.addComponent(LitterUseDrop)
+			)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(LitterCleanout)
+				.addComponent(LitterCleanoutField)
+			)
+		);
+
+		layout.linkSize(SwingConstants.VERTICAL, LitterUse, LitterCleanout, LitterUseDrop, LitterCleanoutField);
+		layout.linkSize(SwingConstants.HORIZONTAL, LitterUse, LitterCleanout);
+		layout.linkSize(SwingConstants.HORIZONTAL, LitterUseDrop, LitterCleanoutField);
+
+		//previous methods		--can be deleted once we are sure to use the new method
+		/*
 		LitterUseDrop.setMaximumSize(LitterUseDrop.getPreferredSize());
 		LitterCleanoutField.setMaximumSize(new Dimension(50,50));
 
@@ -606,6 +1048,7 @@ public class loadInputMethods {
 		top.add(Box.createVerticalStrut(10));
 
 		wasteData.add(top);
+		*/
 	}
 
 }

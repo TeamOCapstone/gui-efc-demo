@@ -73,11 +73,18 @@ public class IOclass {
             }
             
             //Not sure how to make the program load the checkbox states correctly
-            /*for(int i=0; i<checkBoxes.size(); i++){
+            for(int i=0; i<checkBoxes.size(); i++){
                 tagname = checkBoxes.get(i).getName();
                 eElement = (Element) doc.getElementsByTagName(tagname).item(0);
-                checkBoxes.get(i).setSelected(eElement.getElementsByTagName("value").item(0).getTextContent());
-            }*/
+                
+                if(eElement.getElementsByTagName("value").item(0).getTextContent().equals("true")){
+                	checkBoxes.get(i).setSelected(true);
+                }
+                else{
+                	checkBoxes.get(i).setSelected(false);
+                }
+                	
+            }
             
         } catch (Exception e) {e.printStackTrace();}
         
@@ -116,16 +123,24 @@ public class IOclass {
                 newElement.appendChild(newValueElement);
             }
             
-            //Not sure which method to use to get Checkboxes to work here either
-            /*for(int i=0; i<checkBoxes.size(); i++){
+            for(int i=0; i<checkBoxes.size(); i++){
                 tagname = checkBoxes.get(i).getName();
                 newElement = doc.createElement(tagname);
                 rootElement.appendChild(newElement);
                 
                 newValueElement = doc.createElement("value");
-                newValueElement.appendChild(doc.createTextNode(checkBoxes.get(i).isSelected()));
+                
+                if(checkBoxes.get(i).isSelected()){
+    	            newValueElement.appendChild(doc.createTextNode("true"));
+                }
+                else{
+	                newValueElement.appendChild(doc.createTextNode("false"));
+                }
+                
+                
                 newElement.appendChild(newValueElement);
-            }*/
+            }
+            
             
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();

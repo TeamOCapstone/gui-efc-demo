@@ -169,6 +169,26 @@ public class PoultryDemo extends JFrame{
 		});
 		topToolBar.add(tbButton);
 		topToolBar.addSeparator();
+		
+		
+		
+		// main tool bar --> Trigger BUTTON
+		tbButton = new JButton(new ImageIcon(
+				this.getClass().getResource("resources/run.png")));
+		tbButton.setToolTipText("TriggerToolTip");
+		tbButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//new help frame popup
+				JFrame TroubleFrame = new JFrame();
+				TroubleFrame.setSize(400, 300);
+				TroubleFrame.setTitle("Error Found Frame");
+				//pop up center of existing main frame
+				TroubleFrame.setLocationRelativeTo(topFrame);
+				TroubleFrame.setVisible(true);
+			}
+		});
+		topToolBar.add(tbButton);
+		topToolBar.addSeparator();
 		return topToolBar;
 	}
 
@@ -280,6 +300,11 @@ public class PoultryDemo extends JFrame{
         } else {
             System.out.println("File access cancelled by user.");
         }
+    }
+    
+    private void TriggerActionPerformed(java.awt.event.ActionEvent evt){
+    
+    
     }
     
 
