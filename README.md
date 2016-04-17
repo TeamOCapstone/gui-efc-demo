@@ -19,7 +19,4 @@ Problems with the current program:
 6) Not so much a problem, but previous XML documents created from previous iterations of the program do not work with later versions. 
 
 
-testing branch merge
-new update 
-branch update 2
-master change 3
+test b4 push
