@@ -56,7 +56,9 @@ public class PoultryDemo extends JFrame{
 		// barn panel
 		JTabbedPane barnPanel = createBarnPanel();
 		// waste panel
-		JTabbedPane wastePanel = createWastePanel();		
+		JTabbedPane wastePanel = createWastePanel();
+		// result panel
+		JTabbedPane resultPanel = createResultPanel();
 		
 		//add card panels to card layout
 		desktopPane.add(homePane, "home panel");
@@ -64,6 +66,7 @@ public class PoultryDemo extends JFrame{
 		desktopPane.add(barnPanel, "barn panel");
 		desktopPane.add(feedPanel, "feed panel");
 		desktopPane.add(wastePanel, "waste panel");
+		desktopPane.add(resultPanel, "result panel");
 		desktopPane.setBackground(getForeground());
 		CardLayout cardLayout = (CardLayout) desktopPane.getLayout();
 		
@@ -174,7 +177,7 @@ public class PoultryDemo extends JFrame{
 		
 		// main tool bar --> Trigger BUTTON
 		tbButton = new JButton(new ImageIcon(
-				this.getClass().getResource("resources/run.png")));
+				this.getClass().getResource("resources/refresh.png")));
 		tbButton.setToolTipText("TriggerToolTip");
 		tbButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -189,6 +192,21 @@ public class PoultryDemo extends JFrame{
 		});
 		topToolBar.add(tbButton);
 		topToolBar.addSeparator();
+		
+		
+		// main tool bar --> RESULT BUTTON
+		tbButton = new JButton(new ImageIcon(
+				this.getClass().getResource("resources/run.png")));
+		tbButton.setToolTipText("ResultToolTip");
+		tbButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				cardLayout.show(desktopPane, "result panel");
+			}
+		});
+		topToolBar.add(tbButton);
+		topToolBar.addSeparator();
+		
+		
 		return topToolBar;
 	}
 
@@ -309,7 +327,54 @@ public class PoultryDemo extends JFrame{
     
 
 	/*           Create-Internal-Pane Methods             */
-	
+    private JTabbedPane createResultPanel(){
+		JTabbedPane resultPanel = new JTabbedPane();
+		
+		FlowLayout birdFlowLayout = new FlowLayout(FlowLayout.LEFT);
+		birdFlowLayout.setHgap(10);  //horizontal gap between input boxes
+		birdFlowLayout.setVgap(30);  //vertical
+		
+		//Summary panels on the bird window
+		JPanel resultSummary = new JPanel();
+		resultSummary.setLayout(birdFlowLayout);
+		resultSummary.setBackground(Color.WHITE);
+		loadInputMethods.loadResultSummaryPanel(resultSummary, ioclass);
+		resultSummary.setVisible(true);
+		
+		//Broiler Performance panels on the bird window
+		JPanel resultBroiler = new JPanel();
+		resultBroiler.setLayout(birdFlowLayout);
+		resultBroiler.setBackground(Color.WHITE);
+		loadInputMethods.loadResultBroilerPanel(resultBroiler, ioclass);
+		resultBroiler.setVisible(true);
+                
+		resultPanel.add("Summary", resultSummary);
+		resultPanel.add("Broiler Performance", resultBroiler);
+		
+		
+        /*Leaving extra cards in code in case we need them.
+		JPanel birdCard2 = new JPanel();
+		birdCard2.setLayout(birdFlowLayout);
+		birdCard2.setBackground(new Color(90, 0, 0));
+		birdCard2.setVisible(true);
+		
+		JPanel birdCard3 = new JPanel();
+		birdCard3.setLayout(birdFlowLayout);
+		birdCard3.setBackground(new Color(64, 0, 0));
+		birdCard3.setVisible(true);
+		
+		JPanel birdCard4 = new JPanel();
+		birdCard4.setLayout(birdFlowLayout);
+		birdCard4.setBackground(new Color(32, 0, 0));
+		birdCard4.setVisible(true);
+		
+		birdPanel.add("Bird Card 2", birdCard2);
+		birdPanel.add("Bird Card 3", birdCard3);
+		birdPanel.add("Bird Card 4", birdCard4);*/
+		
+		return resultPanel;
+	}//end create bird panel
+    
 	private JTabbedPane createWastePanel() {
 		JTabbedPane wastePanel = new JTabbedPane();
 		

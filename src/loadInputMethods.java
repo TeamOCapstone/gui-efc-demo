@@ -1051,4 +1051,159 @@ public class loadInputMethods {
 		*/
 	}
 
+	public static void loadResultSummaryPanel(JPanel resultPanel, IOclass ioclass) {
+
+		GroupLayout layout = new GroupLayout(resultPanel);
+		resultPanel.setLayout(layout);
+		layout.setAutoCreateGaps(true);
+		layout.setAutoCreateContainerGaps(true);
+		
+		// the buttons to create PDF and Excel
+		javax.swing.JButton btnCreatePdf = new javax.swing.JButton();
+		javax.swing.JButton btnCreateExc = new javax.swing.JButton();
+		
+		// labels of the buttons
+		btnCreatePdf.setText("Create PDF Report");
+		btnCreateExc.setText("Create Excel Report");
+		
+		// actions of the buttons
+		btnCreatePdf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            	//btnCreatePdfActionPerformed(evt);
+            	JOptionPane.showMessageDialog(null, "Done later: create functionality to create PDF");
+            }
+        });
+		btnCreateExc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            	//btnCreatePdfActionPerformed(evt);
+            	JOptionPane.showMessageDialog(null, "Done later: create functionality to create Excel");
+            }
+        });
+		
+		// Settings and layouts
+		layout.setHorizontalGroup(
+				layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+	            .addGroup(layout.createSequentialGroup()
+	                .addGap(20, 20, 20)
+	                .addComponent(btnCreatePdf)
+	                .addGap(70, 70, 70)
+	                .addComponent(btnCreateExc)
+	                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+	        );
+			layout.setVerticalGroup(
+				layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+	            .addGroup(layout.createSequentialGroup()
+	                .addGap(35, 35, 35)
+	                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+	                    .addComponent(btnCreatePdf)
+	                    .addComponent(btnCreateExc))
+	                .addContainerGap(294, Short.MAX_VALUE))
+	        );
+	
+
+	}// END loadResultSummaryPanel
+
+	public static void loadResultBroilerPanel(JPanel resultPanel, IOclass ioclass) {
+		
+		GroupLayout layout = new GroupLayout(resultPanel);
+		resultPanel.setLayout(layout);
+		layout.setAutoCreateGaps(true);
+		layout.setAutoCreateContainerGaps(true);
+		
+		// making the graph
+		javax.swing.JInternalFrame graph = new javax.swing.JInternalFrame();
+		graph.setTitle("The graph is inside");
+        graph.setVisible(true);
+        
+        javax.swing.GroupLayout graphLayout = new javax.swing.GroupLayout(graph.getContentPane());
+        graph.getContentPane().setLayout(graphLayout);
+        graphLayout.setHorizontalGroup(
+            graphLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 476, Short.MAX_VALUE)
+        );
+        graphLayout.setVerticalGroup(
+            graphLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 296, Short.MAX_VALUE)
+        );
+        
+        
+        // the finalBodyWeight 
+        javax.swing.JLabel finalBodyWeight = new javax.swing.JLabel();
+        finalBodyWeight.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        finalBodyWeight.setText("Final body Weight:     lb");
+        finalBodyWeight.setToolTipText("");
+        finalBodyWeight.setAlignmentX(0.5F);
+        finalBodyWeight.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        
+        
+        // report table
+        javax.swing.JScrollPane reportTable = new javax.swing.JScrollPane();
+        javax.swing.JTable jTable1 = new javax.swing.JTable();
+                
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+                new Object [][] {
+                    {null, null, null, null},
+                    {null, null, null, null},
+                    {null, null, null, null}
+                },
+                new String [] {
+                    "Day", "Initial body weight (g)", "MEI (kcal)", "Daily Gain (g)"
+                }
+            ) {
+                Class[] types = new Class [] {
+                    java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class
+                };
+                boolean[] canEdit = new boolean [] {
+                    true, false, false, false
+                };
+
+                public Class getColumnClass(int columnIndex) {
+                    return types [columnIndex];
+                }
+
+                public boolean isCellEditable(int rowIndex, int columnIndex) {
+                    return canEdit [columnIndex];
+                }
+            });
+            reportTable.setViewportView(jTable1);
+            if (jTable1.getColumnModel().getColumnCount() > 0) {
+                jTable1.getColumnModel().getColumn(0).setHeaderValue("Day");
+                jTable1.getColumnModel().getColumn(1).setHeaderValue("Initial body weight (g)"); // NOI18N
+                jTable1.getColumnModel().getColumn(2).setHeaderValue("MEI (kcal)");
+                jTable1.getColumnModel().getColumn(3).setHeaderValue("Daily Gain (g)");
+            }
+	
+            
+            layout.setHorizontalGroup(
+            		layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 66, Short.MAX_VALUE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(graph, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(98, 98, 98))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(reportTable, javax.swing.GroupLayout.PREFERRED_SIZE, 585, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(36, 36, 36))))
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(201, 201, 201)
+                    .addComponent(finalBodyWeight, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            );
+            layout.setVerticalGroup(
+            		layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(graph, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(finalBodyWeight, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(35, 35, 35)
+                    .addComponent(reportTable, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            );
+	
+
+	}// END loadResultBroilerPanel
+
+	
 }
