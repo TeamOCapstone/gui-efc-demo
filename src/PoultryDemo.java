@@ -346,10 +346,18 @@ public class PoultryDemo extends JFrame{
 		resultBroiler.setLayout(birdFlowLayout);
 		resultBroiler.setBackground(Color.WHITE);
 		loadInputMethods.loadResultBroilerPanel(resultBroiler, ioclass);
-		resultBroiler.setVisible(true);
+		resultBroiler.setVisible(true);             
+		
+		//FeedConsumption panels on the bird window
+		JPanel resultFeed = new JPanel();
+		resultFeed.setLayout(birdFlowLayout);
+		resultFeed.setBackground(Color.WHITE);
+		loadInputMethods.loadResultFeedPanel(resultFeed, ioclass);
+		resultFeed.setVisible(true);
                 
 		resultPanel.add("Summary", resultSummary);
 		resultPanel.add("Broiler Performance", resultBroiler);
+		resultPanel.add("Feed Consumption", resultFeed);
 		
 		
         /*Leaving extra cards in code in case we need them.

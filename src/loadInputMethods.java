@@ -3,6 +3,8 @@ import java.awt.Component;
 import java.awt.Dimension;
 import javax.swing.*;
 import javax.swing.border.Border;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 
 public class loadInputMethods {
 
@@ -1173,7 +1175,7 @@ public class loadInputMethods {
                 jTable1.getColumnModel().getColumn(3).setHeaderValue("Daily Gain (g)");
             }
 	
-            
+         // Settings and layouts
             layout.setHorizontalGroup(
             		layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
@@ -1205,5 +1207,86 @@ public class loadInputMethods {
 
 	}// END loadResultBroilerPanel
 
+	public static void loadResultFeedPanel(JPanel resultPanel, IOclass ioclass) {
+		
+		GroupLayout layout = new GroupLayout(resultPanel);
+		resultPanel.setLayout(layout);
+		layout.setAutoCreateGaps(true);
+		layout.setAutoCreateContainerGaps(true);
+		
+		// top information
+		javax.swing.JLabel lInformation = new javax.swing.JLabel();
+		lInformation.setText("Average Total Feed Consumption:  _____ lb/year");
+        lInformation.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));		
+		
+		// bottom information
+		javax.swing.JLabel jLabel1 = new javax.swing.JLabel();
+	    javax.swing.JLabel jLabel2 = new javax.swing.JLabel();;	    
+	    javax.swing.JLabel jLabel3 = new javax.swing.JLabel();;	    
+	    javax.swing.JLabel jLabel4 = new javax.swing.JLabel();;
+	    javax.swing.JLabel jLabel5 = new javax.swing.JLabel();;
+	    jLabel1.setText("Food Delivery");
+	    jLabel2.setText("Load Per Trip:   ____ lb wet");
+	    jLabel3.setText("Distance to Feed Mill:  ____ mi");
+	    jLabel4.setText("Trips per Year:    _______");
+	    jLabel5.setText("Diesel Used:       _______ gallons");
+	    
+	    // mid table
+	    javax.swing.JScrollPane jScrollPane1 = new javax.swing.JScrollPane();;	    
+	    javax.swing.JTable tFoodResult = new javax.swing.JTable();;
 	
+	    TableModel dataModel = new DefaultTableModel(new Object[][]{{"1-1","1-2"},{"2-1","2-2"}}, new Object[]{"Feed Ingredient","Dry Basis"});
+	    tFoodResult.setModel(dataModel);
+	    
+	    jScrollPane1.setViewportView(tFoodResult);
+	    
+	    // Settings and layouts
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap(13, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(34, 34, 34)
+                                .addComponent(lInformation))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(49, 49, 49)
+                                .addComponent(jLabel1)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(83, 83, 83)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(lInformation)
+                .addGap(30, 30, 30)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel4)
+                .addGap(26, 26, 26)
+                .addComponent(jLabel5)
+                .addContainerGap(108, Short.MAX_VALUE))
+        );
+
+	}// END loadResultFeedPanel
+
 }
