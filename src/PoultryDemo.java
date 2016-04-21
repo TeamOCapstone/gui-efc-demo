@@ -21,6 +21,9 @@ public class PoultryDemo extends JFrame{
     //one class that holds references to all inputs (and future outputs) w/methods for IO
     IOclass ioclass = new IOclass();
     
+    //Variable to keep track of the current panel - Used for Help Window
+    int panelCount = 0;
+    
     class MyCustomFilter extends javax.swing.filechooser.FileFilter {
         @Override
         public boolean accept(File file) {
@@ -102,6 +105,7 @@ public class PoultryDemo extends JFrame{
 		tbButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				cardLayout.show(desktopPane, "home panel");
+                                panelCount = 0;
 			}
 		});
 		topToolBar.add(tbButton);
@@ -114,6 +118,7 @@ public class PoultryDemo extends JFrame{
 		tbButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				cardLayout.show(desktopPane, "bird panel");
+                                panelCount = 1;
 			}
 		});
 		topToolBar.add(tbButton);
@@ -126,6 +131,7 @@ public class PoultryDemo extends JFrame{
 		tbButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				cardLayout.show(desktopPane, "feed panel");
+                                panelCount = 2;
 			}
 		});
 		topToolBar.add(tbButton);
@@ -138,6 +144,7 @@ public class PoultryDemo extends JFrame{
 		tbButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				cardLayout.show(desktopPane, "barn panel");
+                                panelCount = 3;
 			}
 		});
 		topToolBar.add(tbButton);
@@ -150,6 +157,7 @@ public class PoultryDemo extends JFrame{
 		tbButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				cardLayout.show(desktopPane, "waste panel");
+                                panelCount = 4;
 			}
 		});
 		topToolBar.add(tbButton);
@@ -161,13 +169,63 @@ public class PoultryDemo extends JFrame{
 		tbButton.setToolTipText("HelpToolTip");
 		tbButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//new help frame popup
-				JFrame helpFrame = new JFrame();
+                            //A large amount of code is thrown here for the Help Frame
+                            //Not sure how to pull this down into it's own chunk of code
+                            
+                            //new help frame popup
+                            JFrame helpFrame = new JFrame();
+                            helpFrame.setLayout(new BorderLayout());
+                            JPanel helpPanel = new JPanel();
+                            
+                            JButton nextButton = new JButton("Next");
+                            nextButton.setToolTipText("Move to the next panel");
+                            nextButton.addActionListener(new ActionListener(){
+                                public void actionPerformed(ActionEvent e) {
+                                    if (panelCount < 5) //count goes up to 5 because I include a count for the output
+                                        panelCount++;
+                                    if (panelCount == 0)
+                                        cardLayout.show(desktopPane,"home panel");
+                                    if (panelCount == 1)
+                                        cardLayout.show(desktopPane,"bird panel");
+                                    if (panelCount == 2)
+                                        cardLayout.show(desktopPane,"feed panel");
+                                    if (panelCount == 3)
+                                        cardLayout.show(desktopPane,"barn panel");
+                                    if (panelCount == 4)
+                                        cardLayout.show(desktopPane,"waste panel");
+                                }
+                            });
+                            
+                            JButton previousButton = new JButton("Previous");
+                            previousButton.setToolTipText("Move to the previous panel");
+                            previousButton.addActionListener(new ActionListener(){
+                                public void actionPerformed(ActionEvent e) {
+                                    if (panelCount > 0)
+                                        panelCount--;
+                                    if (panelCount == 0)
+                                        cardLayout.show(desktopPane,"home panel");
+                                    if (panelCount == 1)
+                                        cardLayout.show(desktopPane,"bird panel");
+                                    if (panelCount == 2)
+                                        cardLayout.show(desktopPane,"feed panel");
+                                    if (panelCount == 3)
+                                        cardLayout.show(desktopPane,"barn panel");
+                                    if (panelCount == 4)
+                                        cardLayout.show(desktopPane,"waste panel");
+                                }
+                            });
+                                
 				helpFrame.setSize(400, 300);
 				helpFrame.setTitle("Help Frame");
 				//pop up center of existing main frame
 				helpFrame.setLocationRelativeTo(topFrame);
 				helpFrame.setVisible(true);
+                                
+                                previousButton.setBounds(10,10,0,80);
+                                nextButton.setBounds(10,10,20,80);
+                                helpPanel.add(previousButton);
+                                helpPanel.add(nextButton);
+                                helpFrame.add(helpPanel);
 			}
 		});
 		topToolBar.add(tbButton);
@@ -327,6 +385,7 @@ public class PoultryDemo extends JFrame{
     
 
 	/*           Create-Internal-Pane Methods             */
+    
     private JTabbedPane createResultPanel(){
 		JTabbedPane resultPanel = new JTabbedPane();
 		
