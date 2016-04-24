@@ -155,6 +155,54 @@ public class IOclass {
         } catch (Exception e) {e.printStackTrace();}
         
     }
+    
+    public String[] getCountyList(String StateAbbr, String filename){
+    
+    	String[] countyList = {"","",""};
+    
+        try{
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(new File(filename));
+            
+            doc.getDocumentElement().normalize();
+            Element stateElement;
+            Element eElement2;
+            
+            stateElement = (Element) doc.getElementsByTagName(StateAbbr).item(0);
+            
+            
+            NodeList list = stateElement.getElementsByTagName("county");
+            
+            
+            
+            
+            countyList = new String[list.getLength()];
+            
+            for(int i=0;i<list.getLength(); i++){
+                countyList[i] = stateElement.getElementsByTagName("county").item(i).getTextContent();
+   }
+
+            
+        } catch (Exception e) {e.printStackTrace();}
+     
+            return countyList;
+            	
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
