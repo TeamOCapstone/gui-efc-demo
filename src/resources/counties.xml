@@ -1,0 +1,3634 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<states updated="2007-10-17">
+	<AL>
+			<county>Autauga</county>
+			<county>Baldwin</county>
+			<county>Barbour</county>
+			<county>Bibb</county>
+			<county>Blount</county>
+			<county>Bullock</county>
+			<county>Butler</county>
+			<county>Calhoun</county>
+			<county>Chambers</county>
+			<county>Cherokee</county>
+			<county>Chilton</county>
+			<county>Choctaw</county>
+			<county>Clarke</county>
+			<county>Clay</county>
+			<county>Cleburne</county>
+			<county>Coffee</county>
+			<county>Colbert</county>
+			<county>Conecuh</county>
+			<county>Coosa</county>
+			<county>Covington</county>
+			<county>Crenshaw</county>
+			<county>Cullman</county>
+			<county>Dale</county>
+			<county>Dallas</county>
+			<county>DeKalb</county>
+			<county>Elmore</county>
+			<county>Escambia</county>
+			<county>Etowah</county>
+			<county>Fayette</county>
+			<county>Franklin</county>
+			<county>Geneva</county>
+			<county>Greene</county>
+			<county>Hale</county>
+			<county>Henry</county>
+			<county>Houston</county>
+			<county>Jackson</county>
+			<county>Jefferson</county>
+			<county>Lamar</county>
+			<county>Lauderdale</county>
+			<county>Lawrence</county>
+			<county>Lee</county>
+			<county>Limestone</county>
+			<county>Lowndes</county>
+			<county>Macon</county>
+			<county>Madison</county>
+			<county>Marengo</county>
+			<county>Marion</county>
+			<county>Marshall</county>
+			<county>Mobile</county>
+			<county>Monroe</county>
+			<county>Montgomery</county>
+			<county>Morgan</county>
+			<county>Perry</county>
+			<county>Pickens</county>
+			<county>Pike</county>
+			<county>Randolph</county>
+			<county>Russell</county>
+			<county>Shelby</county>
+			<county>St. Clair</county>
+			<county>Sumter</county>
+			<county>Talladega</county>
+			<county>Tallapoosa</county>
+			<county>Tuscaloosa</county>
+			<county>Walker</county>
+			<county>Washington</county>
+			<county>Wilcox</county>
+			<county>Winston</county>
+	</AL>
+	<AK>
+			<county>Anchorage Borough</county>
+			<county>Bethel Census Area</county>
+			<county>Bristol Bay Borough</county>
+			<county>Dillingham Census Area</county>
+			<county>Fairbanks North Star Borough</county>
+			<county>Haines Borough</county>
+			<county>Juneau Borough</county>
+			<county>Kenai Peninsula Borough</county>
+			
+			<county>Ketchikan Gateway Borough</county>
+			<county>Kodiak Island Borough</county>
+			<county>Matanuska-Susitna Borough</county>
+			<county>Nome Census Area</county>
+			<county>North Slope Borough</county>
+			<county>Prince of Wales-Outer Ketchikan Census A</county>
+			<county>Sitka Borough</county>
+			<county>Skagway-Hoonah-Angoon Census Area</county>
+			<county>Southeast Fairbanks Census Area</county>
+			<county>Valdez-Cordova Census Area</county>
+			<county>Wade Hampton Census Area</county>
+			<county>Wrangell-Petersburg Census Area</county>
+			<county>Yakutat Borough</county>
+			<county>Yukon-Koyukuk Census Area</county>
+	</AK>
+	<AZ>
+			<county>Apache</county>
+			<county>Cochise</county>
+			<county>Coconino</county>
+			<county>Gila</county>
+			<county>Graham</county>
+			<county>Greenlee</county>
+			<county>La Paz</county>
+			<county>Maricopa</county>
+			<county>Mohave</county>
+			<county>Navajo</county>
+			<county>Pima</county>
+			<county>Pinal</county>
+			<county>Santa Cruz</county>
+			<county>Yavapai</county>
+			<county>Yuma</county>
+	</AZ>
+	<AR>
+			<county>Arkansas</county>
+			<county>Ashley</county>
+			<county>Baxter</county>
+			<county>Benton</county>
+			<county>Boone</county>
+			<county>Bradley</county>
+			<county>Calhoun</county>
+			<county>Carroll</county>
+			<county>Chicot</county>
+			<county>Clark</county>
+			<county>Clay</county>
+			<county>Cleburne</county>
+			<county>Cleveland</county>
+			<county>Columbia</county>
+			<county>Conway</county>
+			<county>Craighead</county>
+			<county>Crawford</county>
+			<county>Crittenden</county>
+			<county>Cross</county>
+			<county>Dallas</county>
+			<county>Desha</county>
+			<county>Drew</county>
+			<county>Faulkner</county>
+			<county>Franklin</county>
+			<county>Fulton</county>
+			<county>Garland</county>
+			<county>Grant</county>
+			<county>Greene</county>
+			<county>Hempstead</county>
+			<county>Hot Spring</county>
+			<county>Howard</county>
+			<county>Independence</county>
+			<county>Izard</county>
+			<county>Jackson</county>
+			<county>Jefferson</county>
+			<county>Johnson</county>
+			<county>Lafayette</county>
+			<county>Lawrence</county>
+			<county>Lee</county>
+			<county>Lincoln</county>
+			<county>Little River</county>
+			<county>Logan</county>
+			<county>Lonoke</county>
+			<county>Madison</county>
+			<county>Marion</county>
+			<county>Miller</county>
+			<county>Mississippi</county>
+			<county>Monroe</county>
+			<county>Montgomery</county>
+			<county>Nevada</county>
+			<county>Newton</county>
+			<county>Ouachita</county>
+			<county>Perry</county>
+			<county>Phillips</county>
+			<county>Pike</county>
+			<county>Poinsett</county>
+			<county>Polk</county>
+			<county>Pope</county>
+			<county>Prairie</county>
+			<county>Pulaski</county>
+			<county>Randolph</county>
+			<county>Saline</county>
+			<county>Scott</county>
+			<county>Searcy</county>
+			<county>Sebastian</county>
+			<county>Sevier</county>
+			<county>Sharp</county>
+			<county>St. Francis</county>
+			<county>Stone</county>
+			<county>Union</county>
+			<county>Van Buren</county>
+			<county>Washington</county>
+			<county>White</county>
+			<county>Woodruff</county>
+			<county>Yell</county>
+	</AR>	
+	<CA>
+			<county>Alameda</county>
+			<county>Alpine</county>
+			<county>Amador</county>
+			<county>Butte</county>
+			<county>Calaveras</county>			
+			<county>Colusa</county>
+			<county>Contra Costa</county>
+			<county>Del Norte</county>
+			<county>El Dorado</county>
+			<county>Fresno</county>
+			<county>Glenn</county>			
+			<county>Humboldt</county>
+			<county>Imperial</county>
+			<county>Inyo</county>
+			<county>Kern</county>
+			<county>Kings</county>
+			<county>Lake</county>			
+			<county>Lassen</county>
+			<county>Los Angeles</county>
+			<county>Madera</county>
+			<county>Marin</county>
+			<county>Mariposa</county>
+			<county>Mendocino</county>			
+			<county>Merced</county>
+			<county>Modoc</county>
+			<county>Mono</county>
+			<county>Monterey</county>
+			<county>Napa</county>
+			<county>Nevada</county>			
+			<county>Orange</county>
+			<county>Placer</county>
+			<county>Plumas</county>
+			<county>Riverside</county>
+			<county>Sacramento</county>
+			<county>San Benito</county>			
+			<county>San Bernardino</county>
+			<county>San Diego</county>
+			<county>San Francisco</county>
+			<county>San Joaquin</county>
+			<county>San Luis Obispo</county>
+			<county>San Mateo</county>			
+			<county>Santa Barbara</county>
+			<county>Santa Clara</county>
+			<county>Santa Cruz</county>
+			<county>Shasta</county>
+			<county>Sierra</county>
+			<county>Siskiyou</county>			
+			<county>Solano</county>
+			<county>Sonoma</county>
+			<county>Stanislaus</county>
+			<county>Sutter</county>
+			<county>Tehama</county>
+			<county>Trinity</county>			
+			<county>Tulare</county>
+			<county>Tuolumne</county>
+			<county>Ventura</county>
+			<county>Yolo</county>
+			<county>Yuba</county>
+	</CA>
+	<CO>
+			<county>Adams</county>
+			<county>Alamosa</county>
+			<county>Arapahoe</county>
+			<county>Archuleta</county>
+			<county>Baca</county>
+			<county>Bent</county>
+			<county>Boulder</county>
+			<county>Broomfield</county>
+			<county>Chaffee</county>
+			<county>Cheyenne</county>
+			<county>Clear Creek</county>
+			<county>Conejos</county>
+			<county>Costilla</county>
+			<county>Crowley</county>
+			<county>Custer</county>
+			<county>Delta</county>
+			<county>Denver</county>
+			<county>Dolores</county>
+			<county>Douglas</county>
+			<county>Eagle</county>
+			<county>El Paso</county>
+			<county>Elbert</county>
+			<county>Fremont</county>
+			<county>Garfield</county>
+			<county>Gilpin</county>
+			<county>Grand</county>
+			<county>Gunnison</county>
+			<county>Hinsdale</county>
+			<county>Huerfano</county>
+			<county>Jackson</county>
+			<county>Jefferson</county>
+			<county>Kiowa</county>
+			<county>Kit Carson</county>
+			<county>La Plata</county>
+			<county>Lake</county>
+			<county>Larimer</county>
+			<county>Las Animas</county>
+			<county>Lincoln</county>
+			<county>Logan</county>
+			<county>Mesa</county>
+			<county>Mineral</county>
+			<county>Moffat</county>
+			<county>Montezuma</county>
+			<county>Montrose</county>
+			<county>Morgan</county>
+			<county>Otero</county>
+			<county>Ouray</county>
+			<county>Park</county>
+			<county>Phillips</county>
+			<county>Pitkin</county>
+			<county>Prowers</county>
+			<county>Pueblo</county>
+			<county>Rio Blanco</county>
+			<county>Rio Grande</county>
+			<county>Routt</county>
+			<county>Saguache</county>
+			<county>San Juan</county>
+			<county>San Miguel</county>
+			<county>Sedgwick</county>
+			<county>Summit</county>
+			<county>Teller</county>
+			<county>Washington</county>
+			<county>Weld</county>
+			<county>Yuma</county>
+	</CO>
+	<CT>
+				<county>Fairfield</county>
+				<county>Hartford</county>
+				<county>Litchfield</county>
+				<county>Middlesex</county>
+				<county>New Haven</county>
+				<county>New London</county>
+				<county>Tolland</county>
+				<county>Windham</county>
+	</CT>
+	<DE>
+				<county>Kent</county>
+				<county>New Castle</county>
+				<county>Sussex</county>
+	</DE>
+	<FL>
+				<county>Alachua</county>
+				<county>Baker</county>
+				<county>Bay</county>
+				<county>Bradford</county>
+				<county>Brevard</county>
+				<county>Broward</county>
+				<county>Calhoun</county>
+				<county>Charlotte</county>
+				<county>Citrus</county>
+				<county>Clay</county>
+				<county>Collier</county>
+				<county>Columbia</county>
+				<county>DeSoto</county>
+				<county>Dixie</county>
+				<county>Duval</county>
+				<county>Escambia</county>
+				<county>Flagler</county>
+				<county>Franklin</county>
+				<county>Gadsden</county>
+				<county>Gilchrist</county>
+				<county>Glades</county>
+				<county>Gulf</county>
+				<county>Hamilton</county>
+				<county>Hardee</county>
+				<county>Hendry</county>
+				<county>Hernando</county>
+				<county>Highlands</county>
+				<county>Hillsborough</county>
+				<county>Holmes</county>
+				<county>Indian River</county>
+				<county>Jackson</county>
+				<county>Jefferson</county>
+				<county>Lafayette</county>
+				<county>Lake</county>
+				<county>Lee</county>
+				<county>Leon</county>
+				<county>Levy</county>
+				<county>Liberty</county>
+				<county>Madison</county>
+				<county>Manatee</county>
+				<county>Marion</county>
+				<county>Martin</county>
+				<county>Miami-Dade</county>
+				<county>Monroe</county>
+				<county>Nassau</county>
+				<county>Okaloosa</county>
+				<county>Okeechobee</county>
+				<county>Orange</county>
+				<county>Osceola</county>
+				<county>Palm Beach</county>
+				<county>Pasco</county>
+				<county>Pinellas</county>
+				<county>Polk</county>
+				<county>Putnam</county>
+				<county>Santa Rosa</county>
+				<county>Sarasota</county>
+				<county>Seminole</county>
+				<county>St. Johns</county>
+				<county>St. Lucie</county>
+				<county>Sumter</county>
+				<county>Suwannee</county>
+				<county>Taylor</county>
+				<county>Union</county>
+				<county>Volusia</county>
+				<county>Wakulla</county>
+				<county>Walton</county>
+				<county>Washington</county>
+	</FL>
+	<GA>
+				<county>Appling</county>
+				<county>Atkinson</county>
+				<county>Bacon</county>
+				<county>Baker</county>
+				<county>Baldwin</county>
+
+				<county>Banks</county>
+				<county>Barrow</county>
+				<county>Bartow</county>
+				<county>Ben Hill</county>
+				<county>Berrien</county>
+				<county>Bibb</county>
+
+				<county>Bleckley</county>
+				<county>Brantley</county>
+				<county>Brooks</county>
+				<county>Bryan</county>
+				<county>Bulloch</county>
+				<county>Burke</county>
+
+				<county>Butts</county>
+				<county>Calhoun</county>
+				<county>Camden</county>
+				<county>Candler</county>
+				<county>Carroll</county>
+				<county>Catoosa</county>
+
+				<county>Charlton</county>
+				<county>Chatham</county>
+				<county>Chattahoochee</county>
+				<county>Chattooga</county>
+				<county>Cherokee</county>
+				<county>Clarke</county>
+
+				<county>Clay</county>
+				<county>Clayton</county>
+				<county>Clinch</county>
+				<county>Cobb</county>
+				<county>Coffee</county>
+				<county>Colquitt</county>
+
+				<county>Columbia</county>
+				<county>Cook</county>
+				<county>Coweta</county>
+				<county>Crawford</county>
+				<county>Crisp</county>
+				<county>Dade</county>
+
+				<county>Dawson</county>
+				<county>Decatur</county>
+				<county>DeKalb</county>
+				<county>Dodge</county>
+				<county>Dooly</county>
+				<county>Dougherty</county>
+
+				<county>Douglas</county>
+				<county>Early</county>
+				<county>Echols</county>
+				<county>Effingham</county>
+				<county>Elbert</county>
+				<county>Emanuel</county>
+
+				<county>Evans</county>
+				<county>Fannin</county>
+				<county>Fayette</county>
+				<county>Floyd</county>
+				<county>Forsyth</county>
+				<county>Franklin</county>
+
+				<county>Fulton</county>
+				<county>Gilmer</county>
+				<county>Glascock</county>
+				<county>Glynn</county>
+				<county>Gordon</county>
+				<county>Grady</county>
+
+				<county>Greene</county>
+				<county>Gwinnett</county>
+				<county>Habersham</county>
+				<county>Hall</county>
+				<county>Hancock</county>
+				<county>Haralson</county>
+
+				<county>Harris</county>
+				<county>Hart</county>
+				<county>Heard</county>
+				<county>Henry</county>
+				<county>Houston</county>
+				<county>Irwin</county>
+
+				<county>Jackson</county>
+				<county>Jasper</county>
+				<county>Jeff Davis</county>
+				<county>Jefferson</county>
+				<county>Jenkins</county>
+				<county>Johnson</county>
+
+				<county>Jones</county>
+				<county>Lamar</county>
+				<county>Lanier</county>
+				<county>Laurens</county>
+				<county>Lee</county>
+				<county>Liberty</county>
+
+				<county>Lincoln</county>
+				<county>Long</county>
+				<county>Lowndes</county>
+				<county>Lumpkin</county>
+				<county>Macon</county>
+				<county>Madison</county>
+
+				<county>Marion</county>
+				<county>McDuffie</county>
+				<county>McIntosh</county>
+				<county>Meriwether</county>
+				<county>Miller</county>
+				<county>Mitchell</county>
+
+				<county>Monroe</county>
+				<county>Montgomery</county>
+				<county>Morgan</county>
+				<county>Murray</county>
+				<county>Muscogee</county>
+				<county>Newton</county>
+
+				<county>Oconee</county>
+				<county>Oglethorpe</county>
+				<county>Paulding</county>
+				<county>Peach</county>
+				<county>Pickens</county>
+				<county>Pierce</county>
+
+				<county>Pike</county>
+				<county>Polk</county>
+				<county>Pulaski</county>
+				<county>Putnam</county>
+				<county>Quitman</county>
+				<county>Rabun</county>
+
+				<county>Randolph</county>
+				<county>Richmond</county>
+				<county>Rockdale</county>
+				<county>Schley</county>
+				<county>Screven</county>
+				<county>Seminole</county>
+
+				<county>Spalding</county>
+				<county>Stephens</county>
+				<county>Stewart</county>
+				<county>Sumter</county>
+				<county>Talbot</county>
+				<county>Taliaferro</county>
+
+				<county>Tattnall</county>
+				<county>Taylor</county>
+				<county>Telfair</county>
+				<county>Terrell</county>
+				<county>Thomas</county>
+				<county>Tift</county>
+
+				<county>Toombs</county>
+				<county>Towns</county>
+				<county>Treutlen</county>
+				<county>Troup</county>
+				<county>Turner</county>
+				<county>Twiggs</county>
+
+				<county>Union</county>
+				<county>Upson</county>
+				<county>Walker</county>
+				<county>Walton</county>
+				<county>Ware</county>
+				<county>Warren</county>
+
+				<county>Washington</county>
+				<county>Wayne</county>
+				<county>Webster</county>
+				<county>Wheeler</county>
+				<county>White</county>
+				<county>Whitfield</county>
+
+				<county>Wilcox</county>
+				<county>Wilkes</county>
+				<county>Wilkinson</county>
+				<county>Worth</county>
+	</GA>
+	<HI>
+				<county>Hawaii</county>
+				<county>Honolulu</county>
+				<county>Kalawao</county>
+				<county>Kauai</county>
+				<county>Maui</county>
+	</HI>
+	<ID>
+				<county>Ada</county>
+				<county>Adams</county>
+				<county>Bannock</county>
+				<county>Bear Lake</county>
+				<county>Benewah</county>
+
+				<county>Bingham</county>
+				<county>Blaine</county>
+				<county>Boise</county>
+				<county>Bonner</county>
+				<county>Bonneville</county>
+				<county>Boundary</county>
+
+				<county>Butte</county>
+				<county>Camas</county>
+				<county>Canyon</county>
+				<county>Caribou</county>
+				<county>Cassia</county>
+				<county>Clark</county>
+
+				<county>Clearwater</county>
+				<county>Custer</county>
+				<county>Elmore</county>
+				<county>Franklin</county>
+				<county>Fremont</county>
+				<county>Gem</county>
+
+				<county>Gooding</county>
+				<county>Idaho</county>
+				<county>Jefferson</county>
+				<county>Jerome</county>
+				<county>Kootenai</county>
+				<county>Latah</county>
+
+				<county>Lemhi</county>
+				<county>Lewis</county>
+				<county>Lincoln</county>
+				<county>Madison</county>
+				<county>Minidoka</county>
+				<county>Nez Perce</county>
+
+				<county>Oneida</county>
+				<county>Owyhee</county>
+				<county>Payette</county>
+				<county>Power</county>
+				<county>Shoshone</county>
+				<county>Teton</county>
+
+				<county>Twin Falls</county>
+				<county>Valley</county>
+				<county>Washington</county>
+	</ID>
+	<IL>
+				<county>Adams</county>
+				<county>Alexander</county>
+				<county>Bond</county>
+				<county>Boone</county>
+				<county>Brown</county>
+
+				<county>Bureau</county>
+				<county>Calhoun</county>
+				<county>Carroll</county>
+				<county>Cass</county>
+				<county>Champaign</county>
+				<county>Christian</county>
+
+				<county>Clark</county>
+				<county>Clay</county>
+				<county>Clinton</county>
+				<county>Coles</county>
+				<county>Cook</county>
+				<county>Crawford</county>
+
+				<county>Cumberland</county>
+				<county>De Witt</county>
+				<county>DeKalb</county>
+				<county>Douglas</county>
+				<county>DuPage</county>
+				<county>Edgar</county>
+
+				<county>Edwards</county>
+				<county>Effingham</county>
+				<county>Fayette</county>
+				<county>Ford</county>
+				<county>Franklin</county>
+				<county>Fulton</county>
+
+				<county>Gallatin</county>
+				<county>Greene</county>
+				<county>Grundy</county>
+				<county>Hamilton</county>
+				<county>Hancock</county>
+				<county>Hardin</county>
+
+				<county>Henderson</county>
+				<county>Henry</county>
+				<county>Iroquois</county>
+				<county>Jackson</county>
+				<county>Jasper</county>
+				<county>Jefferson</county>
+
+				<county>Jersey</county>
+				<county>Jo Daviess</county>
+				<county>Johnson</county>
+				<county>Kane</county>
+				<county>Kankakee</county>
+				<county>Kendall</county>
+
+				<county>Knox</county>
+				<county>La Salle</county>
+				<county>Lake</county>
+				<county>Lawrence</county>
+				<county>Lee</county>
+				<county>Livingston</county>
+
+				<county>Logan</county>
+				<county>Macon</county>
+				<county>Macoupin</county>
+				<county>Madison</county>
+				<county>Marion</county>
+				<county>Marshall</county>
+
+				<county>Mason</county>
+				<county>Massac</county>
+				<county>McDonough</county>
+				<county>McHenry</county>
+				<county>McLean</county>
+				<county>Menard</county>
+
+				<county>Mercer</county>
+				<county>Monroe</county>
+				<county>Montgomery</county>
+				<county>Morgan</county>
+				<county>Moultrie</county>
+				<county>Ogle</county>
+
+				<county>Peoria</county>
+				<county>Perry</county>
+				<county>Piatt</county>
+				<county>Pike</county>
+				<county>Pope</county>
+				<county>Pulaski</county>
+
+				<county>Putnam</county>
+				<county>Randolph</county>
+				<county>Richland</county>
+				<county>Rock Island</county>
+				<county>Saline</county>
+				<county>Sangamon</county>
+
+				<county>Schuyler</county>
+				<county>Scott</county>
+				<county>Shelby</county>
+				<county>St. Clair</county>
+				<county>Stark</county>
+				<county>Stephenson</county>
+
+				<county>Tazewell</county>
+				<county>Union</county>
+				<county>Vermilion</county>
+				<county>Wabash</county>
+				<county>Warren</county>
+				<county>Washington</county>
+
+				<county>Wayne</county>
+				<county>White</county>
+				<county>Whiteside</county>
+				<county>Will</county>
+				<county>Williamson</county>
+				<county>Winnebago</county>
+
+				<county>Woodford</county>
+	</IL>
+	<IN>
+				<county>Adams</county>
+				<county>Allen</county>
+				<county>Bartholomew</county>
+				<county>Benton</county>
+				<county>Blackford</county>
+
+				<county>Boone</county>
+				<county>Brown</county>
+				<county>Carroll</county>
+				<county>Cass</county>
+				<county>Clark</county>
+				<county>Clay</county>
+
+				<county>Clinton</county>
+				<county>Crawford</county>
+				<county>Daviess</county>
+				<county>De Kalb</county>
+				<county>Dearborn</county>
+				<county>Decatur</county>
+
+				<county>Delaware</county>
+				<county>Dubois</county>
+				<county>Elkhart</county>
+				<county>Fayette</county>
+				<county>Floyd</county>
+				<county>Fountain</county>
+
+				<county>Franklin</county>
+				<county>Fulton</county>
+				<county>Gibson</county>
+				<county>Grant</county>
+				<county>Greene</county>
+				<county>Hamilton</county>
+
+				<county>Hancock</county>
+				<county>Harrison</county>
+				<county>Hendricks</county>
+				<county>Henry</county>
+				<county>Howard</county>
+				<county>Huntington</county>
+
+				<county>Jackson</county>
+				<county>Jasper</county>
+				<county>Jay</county>
+				<county>Jefferson</county>
+				<county>Jennings</county>
+				<county>Johnson</county>
+
+				<county>Knox</county>
+				<county>Kosciusko</county>
+				<county>La Porte</county>
+				<county>Lagrange</county>
+				<county>Lake</county>
+				<county>Lawrence</county>
+
+				<county>Madison</county>
+				<county>Marion</county>
+				<county>Marshall</county>
+				<county>Martin</county>
+				<county>Miami</county>
+				<county>Monroe</county>
+
+				<county>Montgomery</county>
+				<county>Morgan</county>
+				<county>Newton</county>
+				<county>Noble</county>
+				<county>Ohio</county>
+				<county>Orange</county>
+
+				<county>Owen</county>
+				<county>Parke</county>
+				<county>Perry</county>
+				<county>Pike</county>
+				<county>Porter</county>
+				<county>Posey</county>
+
+				<county>Pulaski</county>
+				<county>Putnam</county>
+				<county>Randolph</county>
+				<county>Ripley</county>
+				<county>Rush</county>
+				<county>Scott</county>
+
+				<county>Shelby</county>
+				<county>Spencer</county>
+				<county>St. Joseph</county>
+				<county>Starke</county>
+				<county>Steuben</county>
+				<county>Sullivan</county>
+
+				<county>Switzerland</county>
+				<county>Tippecanoe</county>
+				<county>Tipton</county>
+				<county>Union</county>
+				<county>Vanderburgh</county>
+				<county>Vermillion</county>
+
+				<county>Vigo</county>
+				<county>Wabash</county>
+				<county>Warren</county>
+				<county>Warrick</county>
+				<county>Washington</county>
+				<county>Wayne</county>
+
+				<county>Wells</county>
+				<county>White</county>
+				<county>Whitley</county>
+	</IN>
+	<IA>
+				<county>Adair</county>
+				<county>Adams</county>
+				<county>Allamakee</county>
+				<county>Appanoose</county>
+				<county>Audubon</county>
+
+				<county>Benton</county>
+				<county>Black Hawk</county>
+				<county>Boone</county>
+				<county>Bremer</county>
+				<county>Buchanan</county>
+				<county>Buena Vista</county>
+
+				<county>Butler</county>
+				<county>Calhoun</county>
+				<county>Carroll</county>
+				<county>Cass</county>
+				<county>Cedar</county>
+				<county>Cerro Gordo</county>
+
+				<county>Cherokee</county>
+				<county>Chickasaw</county>
+				<county>Clarke</county>
+				<county>Clay</county>
+				<county>Clayton</county>
+				<county>Clinton</county>
+
+				<county>Crawford</county>
+				<county>Dallas</county>
+				<county>Davis</county>
+				<county>Decatur</county>
+				<county>Delaware</county>
+				<county>Des Moines</county>
+
+				<county>Dickinson</county>
+				<county>Dubuque</county>
+				<county>Emmet</county>
+				<county>Fayette</county>
+				<county>Floyd</county>
+				<county>Franklin</county>
+
+				<county>Fremont</county>
+				<county>Greene</county>
+				<county>Grundy</county>
+				<county>Guthrie</county>
+				<county>Hamilton</county>
+				<county>Hancock</county>
+
+				<county>Hardin</county>
+				<county>Harrison</county>
+				<county>Henry</county>
+				<county>Howard</county>
+				<county>Humboldt</county>
+				<county>Ida</county>
+
+				<county>Iowa</county>
+				<county>Jackson</county>
+				<county>Jasper</county>
+				<county>Jefferson</county>
+				<county>Johnson</county>
+				<county>Jones</county>
+
+				<county>Keokuk</county>
+				<county>Kossuth</county>
+				<county>Lee</county>
+				<county>Linn</county>
+				<county>Louisa</county>
+				<county>Lucas</county>
+
+				<county>Lyon</county>
+				<county>Madison</county>
+				<county>Mahaska</county>
+				<county>Marion</county>
+				<county>Marshall</county>
+				<county>Mills</county>
+
+				<county>Mitchell</county>
+				<county>Monona</county>
+				<county>Monroe</county>
+				<county>Montgomery</county>
+				<county>Muscatine</county>
+				<county>O'Brien</county>
+
+				<county>Osceola</county>
+				<county>Page</county>
+				<county>Palo Alto</county>
+				<county>Plymouth</county>
+				<county>Pocahontas</county>
+				<county>Polk</county>
+
+				<county>Pottawattamie</county>
+				<county>Poweshiek</county>
+				<county>Ringgold</county>
+				<county>Sac</county>
+				<county>Scott</county>
+				<county>Shelby</county>
+
+				<county>Sioux</county>
+				<county>Story</county>
+				<county>Tama</county>
+				<county>Taylor</county>
+				<county>Union</county>
+				<county>Van Buren</county>
+
+				<county>Wapello</county>
+				<county>Warren</county>
+				<county>Washington</county>
+				<county>Wayne</county>
+				<county>Webster</county>
+				<county>Winnebago</county>
+
+				<county>Winneshiek</county>
+				<county>Woodbury</county>
+				<county>Worth</county>
+				<county>Wright</county>
+	</IA>
+	<KS>
+				<county>Allen</county>
+				<county>Anderson</county>
+				<county>Atchison</county>
+				<county>Barber</county>
+				<county>Barton</county>
+
+				<county>Bourbon</county>
+				<county>Brown</county>
+				<county>Butler</county>
+				<county>Chase</county>
+				<county>Chautauqua</county>
+				<county>Cherokee</county>
+
+				<county>Cheyenne</county>
+				<county>Clark</county>
+				<county>Clay</county>
+				<county>Cloud</county>
+				<county>Coffey</county>
+				<county>Comanche</county>
+
+				<county>Cowley</county>
+				<county>Crawford</county>
+				<county>Decatur</county>
+				<county>Dickinson</county>
+				<county>Doniphan</county>
+				<county>Douglas</county>
+
+				<county>Edwards</county>
+				<county>Elk</county>
+				<county>Ellis</county>
+				<county>Ellsworth</county>
+				<county>Finney</county>
+				<county>Ford</county>
+
+				<county>Franklin</county>
+				<county>Geary</county>
+				<county>Gove</county>
+				<county>Graham</county>
+				<county>Grant</county>
+				<county>Gray</county>
+
+				<county>Greeley</county>
+				<county>Greenwood</county>
+				<county>Hamilton</county>
+				<county>Harper</county>
+				<county>Harvey</county>
+				<county>Haskell</county>
+
+				<county>Hodgeman</county>
+				<county>Jackson</county>
+				<county>Jefferson</county>
+				<county>Jewell</county>
+				<county>Johnson</county>
+				<county>Kearny</county>
+
+				<county>Kingman</county>
+				<county>Kiowa</county>
+				<county>Labette</county>
+				<county>Lane</county>
+				<county>Leavenworth</county>
+				<county>Lincoln</county>
+
+				<county>Linn</county>
+				<county>Logan</county>
+				<county>Lyon</county>
+				<county>Marion</county>
+				<county>Marshall</county>
+				<county>McPherson</county>
+
+				<county>Meade</county>
+				<county>Miami</county>
+				<county>Mitchell</county>
+				<county>Montgomery</county>
+				<county>Morris</county>
+				<county>Morton</county>
+
+				<county>Nemaha</county>
+				<county>Neosho</county>
+				<county>Ness</county>
+				<county>Norton</county>
+				<county>Osage</county>
+				<county>Osborne</county>
+
+				<county>Ottawa</county>
+				<county>Pawnee</county>
+				<county>Phillips</county>
+				<county>Pottawatomie</county>
+				<county>Pratt</county>
+				<county>Rawlins</county>
+
+				<county>Reno</county>
+				<county>Republic</county>
+				<county>Rice</county>
+				<county>Riley</county>
+				<county>Rooks</county>
+				<county>Rush</county>
+
+				<county>Russell</county>
+				<county>Saline</county>
+				<county>Scott</county>
+				<county>Sedgwick</county>
+				<county>Seward</county>
+				<county>Shawnee</county>
+
+				<county>Sheridan</county>
+				<county>Sherman</county>
+				<county>Smith</county>
+				<county>Stafford</county>
+				<county>Stanton</county>
+				<county>Stevens</county>
+
+				<county>Sumner</county>
+				<county>Thomas</county>
+				<county>Trego</county>
+				<county>Wabaunsee</county>
+				<county>Wallace</county>
+				<county>Washington</county>
+
+				<county>Wichita</county>
+				<county>Wilson</county>
+				<county>Woodson</county>
+				<county>Wyandotte</county>
+	</KS>
+	<KY>
+				<county>Adair</county>
+				<county>Allen</county>
+				<county>Anderson</county>
+				<county>Ballard</county>
+				<county>Barren</county>
+
+				<county>Bath</county>
+				<county>Bell</county>
+				<county>Boone</county>
+				<county>Bourbon</county>
+				<county>Boyd</county>
+				<county>Boyle</county>
+
+				<county>Bracken</county>
+				<county>Breathitt</county>
+				<county>Breckenridge</county>
+				<county>Bullitt</county>
+				<county>Butler</county>
+				<county>Caldwell</county>
+
+				<county>Calloway</county>
+				<county>Campbell</county>
+				<county>Carlisle</county>
+				<county>Carroll</county>
+				<county>Carter</county>
+				<county>Casey</county>
+
+				<county>Christian</county>
+				<county>Clark</county>
+				<county>Clay</county>
+				<county>Clinton</county>
+				<county>Crittenden</county>
+				<county>Cumberland</county>
+
+				<county>Daviess</county>
+				<county>Edmonson</county>
+				<county>Elliott</county>
+				<county>Estill</county>
+				<county>Fayette</county>
+				<county>Fleming</county>
+
+				<county>Floyd</county>
+				<county>Franklin</county>
+				<county>Fulton</county>
+				<county>Gallatin</county>
+				<county>Garrard</county>
+				<county>Grant</county>
+
+				<county>Graves</county>
+				<county>Grayson</county>
+				<county>Green</county>
+				<county>Greenup</county>
+				<county>Hancock</county>
+				<county>Hardin</county>
+
+				<county>Harlan</county>
+				<county>Harrison</county>
+				<county>Hart</county>
+				<county>Henderson</county>
+				<county>Henry</county>
+				<county>Hickman</county>
+
+				<county>Hopkins</county>
+				<county>Jackson</county>
+				<county>Jefferson</county>
+				<county>Jessamine</county>
+				<county>Johnson</county>
+				<county>Kenton</county>
+
+				<county>Knott</county>
+				<county>Knox</county>
+				<county>Larue</county>
+				<county>Laurel</county>
+				<county>Lawrence</county>
+				<county>Lee</county>
+
+				<county>Leslie</county>
+				<county>Letcher</county>
+				<county>Lewis</county>
+				<county>Lincoln</county>
+				<county>Livingston</county>
+				<county>Logan</county>
+
+				<county>Lyon</county>
+				<county>Madison</county>
+				<county>Magoffin</county>
+				<county>Marion</county>
+				<county>Marshall</county>
+				<county>Martin</county>
+
+				<county>Mason</county>
+				<county>McCracken</county>
+				<county>McCreary</county>
+				<county>McLean</county>
+				<county>Meade</county>
+				<county>Menifee</county>
+
+				<county>Mercer</county>
+				<county>Metcalfe</county>
+				<county>Monroe</county>
+				<county>Montgomery</county>
+				<county>Morgan</county>
+				<county>Muhlenberg</county>
+
+				<county>Nelson</county>
+				<county>Nicholas</county>
+				<county>Ohio</county>
+				<county>Oldham</county>
+				<county>Owen</county>
+				<county>Owsley</county>
+
+				<county>Pendleton</county>
+				<county>Perry</county>
+				<county>Pike</county>
+				<county>Powell</county>
+				<county>Pulaski</county>
+				<county>Robertson</county>
+
+				<county>Rockcastle</county>
+				<county>Rowan</county>
+				<county>Russell</county>
+				<county>Scott</county>
+				<county>Shelby</county>
+				<county>Simpson</county>
+
+				<county>Spencer</county>
+				<county>Taylor</county>
+				<county>Todd</county>
+				<county>Trigg</county>
+				<county>Trimble</county>
+				<county>Union</county>
+
+				<county>Warren</county>
+				<county>Washington</county>
+				<county>Wayne</county>
+				<county>Webster</county>
+				<county>Whitley</county>
+				<county>Wolfe</county>
+
+				<county>Woodford</county>
+	</KY>
+	<LA>
+				<county>Acadia Parish</county>
+				<county>Allen Parish</county>
+				<county>Ascension Parish</county>
+				<county>Assumption Parish</county>
+				<county>Avoyelles Parish</county>
+
+				<county>Beauregard Parish</county>
+				<county>Bienville Parish</county>
+				<county>Bossier Parish</county>
+				<county>Caddo Parish</county>
+				<county>Calcasieu Parish</county>
+				<county>Caldwell Parish</county>
+
+				<county>Cameron Parish</county>
+				<county>Catahoula Parish</county>
+				<county>Claiborne Parish</county>
+				<county>Concordia Parish</county>
+				<county>De Soto Parish</county>
+				<county>East Baton Rouge Parish</county>
+
+				<county>East Carroll Parish</county>
+				<county>East Feliciana Parish</county>
+				<county>Evangeline Parish</county>
+				<county>Franklin Parish</county>
+				<county>Grant Parish</county>
+				<county>Iberia Parish</county>
+
+				<county>Iberville Parish</county>
+				<county>Jackson Parish</county>
+				<county>Jefferson Davis Parish</county>
+				<county>Jefferson Parish</county>
+				<county>La Salle Parish</county>
+				<county>Lafayette Parish</county>
+
+				<county>Lafourche Parish</county>
+				<county>Lincoln Parish</county>
+				<county>Livingston Parish</county>
+				<county>Madison Parish</county>
+				<county>Morehouse Parish</county>
+				<county>Natchitoches Parish</county>
+
+				<county>Orleans Parish</county>
+				<county>Ouachita Parish</county>
+				<county>Plaquemines Parish</county>
+				<county>Pointe Coupee Parish</county>
+				<county>Rapides Parish</county>
+				<county>Red River Parish</county>
+
+				<county>Richland Parish</county>
+				<county>Sabine Parish</county>
+				<county>St. Bernard Parish</county>
+				<county>St. Charles Parish</county>
+				<county>St. Helena Parish</county>
+				<county>St. James Parish</county>
+
+				<county>St. John the Baptist Parish</county>
+				<county>St. Landry Parish</county>
+				<county>St. Martin Parish</county>
+				<county>St. Mary Parish</county>
+				<county>St. Tammany Parish</county>
+				<county>Tangipahoa Parish</county>
+
+				<county>Tensas Parish</county>
+				<county>Terrebonne Parish</county>
+				<county>Union Parish</county>
+				<county>Vermilion Parish</county>
+				<county>Vernon Parish</county>
+				<county>Washington Parish</county>
+
+				<county>Webster Parish</county>
+				<county>West Baton Rouge Parish</county>
+				<county>West Carroll Parish</county>
+				<county>West Feliciana Parish</county>
+				<county>Winn Parish</county>
+	</LA>
+	<ME>
+				<county>Androscoggin</county>
+				<county>Aroostook</county>
+				<county>Cumberland</county>
+				<county>Franklin</county>
+				<county>Hancock</county>
+
+				<county>Kennebec</county>
+				<county>Knox</county>
+				<county>Lincoln</county>
+				<county>Oxford</county>
+				<county>Penobscot</county>
+				<county>Piscataquis</county>
+
+				<county>Sagadahoc</county>
+				<county>Somerset</county>
+				<county>Waldo</county>
+				<county>Washington</county>
+				<county>York</county>
+	</ME>
+	<MD>
+				<county>Allegany</county>
+				<county>Anne Arundel</county>
+				<county>Baltimore City</county>
+				<county>Baltimore</county>
+				<county>Calvert</county>
+
+				<county>Caroline</county>
+				<county>Carroll</county>
+				<county>Cecil</county>
+				<county>Charles</county>
+				<county>Dorchester</county>
+				<county>Frederick</county>
+
+				<county>Garrett</county>
+				<county>Harford</county>
+				<county>Howard</county>
+				<county>Kent</county>
+				<county>Montgomery</county>
+				<county>Prince George's</county>
+
+				<county>Queen Anne's</county>
+				<county>Somerset</county>
+				<county>St. Mary's</county>
+				<county>Talbot</county>
+				<county>Washington</county>
+				<county>Wicomico</county>
+
+				<county>Worcester</county>
+	</MD>
+	<MA>
+				<county>Barnstable</county>
+				<county>Berkshire</county>
+				<county>Bristol</county>
+				<county>Dukes</county>
+				<county>Essex</county>
+
+				<county>Franklin</county>
+				<county>Hampden</county>
+				<county>Hampshire</county>
+				<county>Middlesex</county>
+				<county>Nantucket</county>
+				<county>Norfolk</county>
+
+				<county>Plymouth</county>
+				<county>Suffolk</county>
+				<county>Worcester</county>
+	</MA>
+	<MI>
+				<county>Alcona</county>
+				<county>Alger</county>
+				<county>Allegan</county>
+				<county>Alpena</county>
+				<county>Antrim</county>
+
+				<county>Arenac</county>
+				<county>Baraga</county>
+				<county>Barry</county>
+				<county>Bay</county>
+				<county>Benzie</county>
+				<county>Berrien</county>
+
+				<county>Branch</county>
+				<county>Calhoun</county>
+				<county>Cass</county>
+				<county>Charlevoix</county>
+				<county>Cheboygan</county>
+				<county>Chippewa</county>
+
+				<county>Clare</county>
+				<county>Clinton</county>
+				<county>Crawford</county>
+				<county>Delta</county>
+				<county>Dickinson</county>
+				<county>Eaton</county>
+
+				<county>Emmet</county>
+				<county>Genesee</county>
+				<county>Gladwin</county>
+				<county>Gogebic</county>
+				<county>Grand Traverse</county>
+				<county>Gratiot</county>
+
+				<county>Hillsdale</county>
+				<county>Houghton</county>
+				<county>Huron</county>
+				<county>Ingham</county>
+				<county>Ionia</county>
+				<county>Iosco</county>
+
+				<county>Iron</county>
+				<county>Isabella</county>
+				<county>Jackson</county>
+				<county>Kalamazoo</county>
+				<county>Kalkaska</county>
+				<county>Kent</county>
+
+				<county>Keweenaw</county>
+				<county>Lake</county>
+				<county>Lapeer</county>
+				<county>Leelanau</county>
+				<county>Lenawee</county>
+				<county>Livingston</county>
+
+				<county>Luce</county>
+				<county>Mackinac</county>
+				<county>Macomb</county>
+				<county>Manistee</county>
+				<county>Marquette</county>
+				<county>Mason</county>
+
+				<county>Mecosta</county>
+				<county>Menominee</county>
+				<county>Midland</county>
+				<county>Missaukee</county>
+				<county>Monroe</county>
+				<county>Montcalm</county>
+
+				<county>Montmorency</county>
+				<county>Muskegon</county>
+				<county>Newaygo</county>
+				<county>Oakland</county>
+				<county>Oceana</county>
+				<county>Ogemaw</county>
+
+				<county>Ontonagon</county>
+				<county>Osceola</county>
+				<county>Oscoda</county>
+				<county>Otsego</county>
+				<county>Ottawa</county>
+				<county>Presque Isle</county>
+
+				<county>Roscommon</county>
+				<county>Saginaw</county>
+				<county>Sanilac</county>
+				<county>Schoolcraft</county>
+				<county>Shiawassee</county>
+				<county>St. Clair</county>
+
+				<county>St. Joseph</county>
+				<county>Tuscola</county>
+				<county>Van Buren</county>
+				<county>Washtenaw</county>
+				<county>Wayne</county>
+				<county>Wexford</county>
+	</MI>
+	<MN>
+				<county>Aitkin</county>
+				<county>Anoka</county>
+				<county>Becker</county>
+				<county>Beltrami</county>
+				<county>Benton</county>
+
+				<county>Big Stone</county>
+				<county>Blue Earth</county>
+				<county>Brown</county>
+				<county>Carlton</county>
+				<county>Carver</county>
+				<county>Cass</county>
+
+				<county>Chippewa</county>
+				<county>Chisago</county>
+				<county>Clay</county>
+				<county>Clearwater</county>
+				<county>Cook</county>
+				<county>Cottonwood</county>
+
+				<county>Crow Wing</county>
+				<county>Dakota</county>
+				<county>Dodge</county>
+				<county>Douglas</county>
+				<county>Faribault</county>
+				<county>Fillmore</county>
+
+				<county>Freeborn</county>
+				<county>Goodhue</county>
+				<county>Grant</county>
+				<county>Hennepin</county>
+				<county>Houston</county>
+				<county>Hubbard</county>
+
+				<county>Isanti</county>
+				<county>Itasca</county>
+				<county>Jackson</county>
+				<county>Kanabec</county>
+				<county>Kandiyohi</county>
+				<county>Kittson</county>
+
+				<county>Koochiching</county>
+				<county>Lac qui Parle</county>
+				<county>Lake of the Woods</county>
+				<county>Lake</county>
+				<county>Le Sueur</county>
+				<county>Lincoln</county>
+
+				<county>Lyon</county>
+				<county>Mahnomen</county>
+				<county>Marshall</county>
+				<county>Martin</county>
+				<county>McLeod</county>
+				<county>Meeker</county>
+
+				<county>Mille Lacs</county>
+				<county>Morrison</county>
+				<county>Mower</county>
+				<county>Murray</county>
+				<county>Nicollet</county>
+				<county>Nobles</county>
+
+				<county>Norman</county>
+				<county>Olmsted</county>
+				<county>Otter Tail</county>
+				<county>Pennington</county>
+				<county>Pine</county>
+				<county>Pipestone</county>
+
+				<county>Polk</county>
+				<county>Pope</county>
+				<county>Ramsey</county>
+				<county>Red Lake</county>
+				<county>Redwood</county>
+				<county>Renville</county>
+
+				<county>Rice</county>
+				<county>Rock</county>
+				<county>Roseau</county>
+				<county>Scott</county>
+				<county>Sherburne</county>
+				<county>Sibley</county>
+
+				<county>St. Louis</county>
+				<county>Stearns</county>
+				<county>Steele</county>
+				<county>Stevens</county>
+				<county>Swift</county>
+				<county>Todd</county>
+
+				<county>Traverse</county>
+				<county>Wabasha</county>
+				<county>Wadena</county>
+				<county>Waseca</county>
+				<county>Washington</county>
+				<county>Watonwan</county>
+
+				<county>Wilkin</county>
+				<county>Winona</county>
+				<county>Wright</county>
+				<county>Yellow Medicine</county>
+	</MN>
+	<MS>
+				<county>Adams</county>
+				<county>Alcorn</county>
+				<county>Amite</county>
+				<county>Attala</county>
+				<county>Benton</county>
+
+				<county>Bolivar</county>
+				<county>Calhoun</county>
+				<county>Carroll</county>
+				<county>Chickasaw</county>
+				<county>Choctaw</county>
+				<county>Claiborne</county>
+
+				<county>Clarke</county>
+				<county>Clay</county>
+				<county>Coahoma</county>
+				<county>Copiah</county>
+				<county>Covington</county>
+				<county>DeSoto</county>
+
+				<county>Forrest</county>
+				<county>Franklin</county>
+				<county>George</county>
+				<county>Greene</county>
+				<county>Grenada</county>
+				<county>Hancock</county>
+
+				<county>Harrison</county>
+				<county>Hinds</county>
+				<county>Holmes</county>
+				<county>Humphreys</county>
+				<county>Issaquena</county>
+				<county>Itawamba</county>
+
+				<county>Jackson</county>
+				<county>Jasper</county>
+				<county>Jefferson</county>
+				<county>Jefferson Davis</county>
+				<county>Jones</county>
+				<county>Kemper</county>
+
+				<county>Lafayette</county>
+				<county>Lamar</county>
+				<county>Lauderdale</county>
+				<county>Lawrence</county>
+				<county>Leake</county>
+				<county>Lee</county>
+
+				<county>Leflore</county>
+				<county>Lincoln</county>
+				<county>Lowndes</county>
+				<county>Madison</county>
+				<county>Marion</county>
+				<county>Marshall</county>
+
+				<county>Monroe</county>
+				<county>Montgomery</county>
+				<county>Neshoba</county>
+				<county>Newton</county>
+				<county>Noxubee</county>
+				<county>Oktibbeha</county>
+
+				<county>Panola</county>
+				<county>Pearl River</county>
+				<county>Perry</county>
+				<county>Pike</county>
+				<county>Pontotoc</county>
+				<county>Prentiss</county>
+
+				<county>Quitman</county>
+				<county>Rankin</county>
+				<county>Scott</county>
+				<county>Sharkey</county>
+				<county>Simpson</county>
+				<county>Smith</county>
+
+				<county>Stone</county>
+				<county>Sunflower</county>
+				<county>Tallahatchie</county>
+				<county>Tate</county>
+				<county>Tippah</county>
+				<county>Tishomingo</county>
+
+				<county>Tunica</county>
+				<county>Union</county>
+				<county>Walthall</county>
+				<county>Warren</county>
+				<county>Washington</county>
+				<county>Wayne</county>
+
+				<county>Webster</county>
+				<county>Wilkinson</county>
+				<county>Winston</county>
+				<county>Yalobusha</county>
+				<county>Yazoo</county>
+	</MS>
+	<MO>
+				<county>Adair</county>
+				<county>Andrew</county>
+				<county>Atchison</county>
+				<county>Audrain</county>
+				<county>Barry</county>
+
+				<county>Barton</county>
+				<county>Bates</county>
+				<county>Benton</county>
+				<county>Bollinger</county>
+				<county>Boone</county>
+				<county>Buchanan</county>
+
+				<county>Butler</county>
+				<county>Caldwell</county>
+				<county>Callaway</county>
+				<county>Camden</county>
+				<county>Cape Girardeau</county>
+				<county>Carroll</county>
+
+				<county>Carter</county>
+				<county>Cass</county>
+				<county>Cedar</county>
+				<county>Chariton</county>
+				<county>Christian</county>
+				<county>Clark</county>
+
+				<county>Clay</county>
+				<county>Clinton</county>
+				<county>Cole</county>
+				<county>Cooper</county>
+				<county>Crawford</county>
+				<county>Dade</county>
+
+				<county>Dallas</county>
+				<county>Daviess</county>
+				<county>Dent</county>
+				<county>DeKalb</county>
+				<county>Douglas</county>
+				<county>Dunklin</county>
+
+				<county>Franklin</county>
+				<county>Gasconade</county>
+				<county>Gentry</county>
+				<county>Greene</county>
+				<county>Grundy</county>
+				<county>Harrison</county>
+
+				<county>Henry</county>
+				<county>Hickory</county>
+				<county>Holt</county>
+				<county>Howard</county>
+				<county>Howell</county>
+				<county>Iron</county>
+
+				<county>Jackson</county>
+				<county>Jasper</county>
+				<county>Jefferson</county>
+				<county>Johnson</county>
+				<county>Knox</county>
+				<county>Laclede</county>
+
+				<county>Lafayette</county>
+				<county>Lawrence</county>
+				<county>Lewis</county>
+				<county>Lincoln</county>
+				<county>Linn</county>
+				<county>Livingston</county>
+
+				<county>Macon</county>
+				<county>Madison</county>
+				<county>Maries</county>
+				<county>Marion</county>
+				<county>McDonald</county>
+				<county>Mercer</county>
+
+				<county>Miller</county>
+				<county>Mississippi</county>
+				<county>Moniteau</county>
+				<county>Monroe</county>
+				<county>Montgomery</county>
+				<county>Morgan</county>
+
+				<county>New Madrid</county>
+				<county>Newton</county>
+				<county>Nodaway</county>
+				<county>Oregon</county>
+				<county>Osage</county>
+				<county>Ozark</county>
+
+				<county>Pemiscot</county>
+				<county>Perry</county>
+				<county>Pettis</county>
+				<county>Phelps</county>
+				<county>Pike</county>
+				<county>Platte</county>
+
+				<county>Polk</county>
+				<county>Pulaski</county>
+				<county>Putnam</county>
+				<county>Ralls</county>
+				<county>Randolph</county>
+				<county>Ray</county>
+
+				<county>Reynolds</county>
+				<county>Ripley</county>
+				<county>Saline</county>
+				<county>Schuyler</county>
+				<county>Scotland</county>
+				<county>Scott</county>
+
+				<county>Shannon</county>
+				<county>Shelby</county>
+				<county>St. Charles</county>
+				<county>St. Clair</county>
+				<county>St. Francois</county>
+				<county>St. Louis city</county>
+
+				<county>St. Louis</county>
+				<county>Ste. Genevieve</county>
+				<county>Stoddard</county>
+				<county>Stone</county>
+				<county>Sullivan</county>
+				<county>Taney</county>
+
+				<county>Texas</county>
+				<county>Vernon</county>
+				<county>Warren</county>
+				<county>Washington</county>
+				<county>Wayne</county>
+				<county>Webster</county>
+
+				<county>Worth</county>
+				<county>Wright</county>
+	</MO>
+	<MT>
+				<county>Beaverhead</county>
+				<county>Big Horn</county>
+				<county>Blaine</county>
+				<county>Broadwater</county>
+				<county>Carbon</county>
+
+				<county>Carter</county>
+				<county>Cascade</county>
+				<county>Chouteau</county>
+				<county>Custer</county>
+				<county>Daniels</county>
+				<county>Dawson</county>
+
+				<county>Deer Lodge</county>
+				<county>Fallon</county>
+				<county>Fergus</county>
+				<county>Flathead</county>
+				<county>Gallatin</county>
+				<county>Garfield</county>
+
+				<county>Glacier</county>
+				<county>Golden Valley</county>
+				<county>Granite</county>
+				<county>Hill</county>
+				<county>Jefferson</county>
+				<county>Judith Basin</county>
+
+				<county>Lake</county>
+				<county>Lewis and Clark</county>
+				<county>Liberty</county>
+				<county>Lincoln</county>
+				<county>Madison</county>
+				<county>McCone</county>
+
+				<county>Meagher</county>
+				<county>Mineral</county>
+				<county>Missoula</county>
+				<county>Musselshell</county>
+				<county>Park</county>
+				<county>Petroleum</county>
+
+				<county>Phillips</county>
+				<county>Pondera</county>
+				<county>Powder River</county>
+				<county>Powell</county>
+				<county>Prairie</county>
+				<county>Ravalli</county>
+
+				<county>Richland</county>
+				<county>Roosevelt</county>
+				<county>Rosebud</county>
+				<county>Sanders</county>
+				<county>Sheridan</county>
+				<county>Silver Bow</county>
+
+				<county>Stillwater</county>
+				<county>Sweet Grass</county>
+				<county>Teton</county>
+				<county>Toole</county>
+				<county>Treasure</county>
+				<county>Valley</county>
+
+				<county>Wheatland</county>
+				<county>Wibaux</county>
+				<county>Yellowstone</county>
+	</MT>
+	<NE>
+				<county>Adams</county>
+				<county>Antelope</county>
+				<county>Arthur</county>
+				<county>Banner</county>
+				<county>Blaine</county>
+
+				<county>Boone</county>
+				<county>Box Butte</county>
+				<county>Boyd</county>
+				<county>Brown</county>
+				<county>Buffalo</county>
+				<county>Burt</county>
+
+				<county>Butler</county>
+				<county>Cass</county>
+				<county>Cedar</county>
+				<county>Chase</county>
+				<county>Cherry</county>
+				<county>Cheyenne</county>
+
+				<county>Clay</county>
+				<county>Colfax</county>
+				<county>Cuming</county>
+				<county>Custer</county>
+				<county>Dakota</county>
+				<county>Dawes</county>
+
+				<county>Dawson</county>
+				<county>Deuel</county>
+				<county>Dixon</county>
+				<county>Dodge</county>
+				<county>Douglas</county>
+				<county>Dundy</county>
+
+				<county>Fillmore</county>
+				<county>Franklin</county>
+				<county>Frontier</county>
+				<county>Furnas</county>
+				<county>Gage</county>
+				<county>Garden</county>
+
+				<county>Garfield</county>
+				<county>Gosper</county>
+				<county>Grant</county>
+				<county>Greeley</county>
+				<county>Hall</county>
+				<county>Hamilton</county>
+
+				<county>Harlan</county>
+				<county>Hayes</county>
+				<county>Hitchcock</county>
+				<county>Holt</county>
+				<county>Hooker</county>
+				<county>Howard</county>
+
+				<county>Jefferson</county>
+				<county>Johnson</county>
+				<county>Kearney</county>
+				<county>Keith</county>
+				<county>Keya Paha</county>
+				<county>Kimball</county>
+
+				<county>Knox</county>
+				<county>Lancaster</county>
+				<county>Lincoln</county>
+				<county>Logan</county>
+				<county>Loup</county>
+				<county>Madison</county>
+
+				<county>McPherson</county>
+				<county>Merrick</county>
+				<county>Morrill</county>
+				<county>Nance</county>
+				<county>Nemaha</county>
+				<county>Nuckolls</county>
+
+				<county>Otoe</county>
+				<county>Pawnee</county>
+				<county>Perkins</county>
+				<county>Phelps</county>
+				<county>Pierce</county>
+				<county>Platte</county>
+
+				<county>Polk</county>
+				<county>Red Willow</county>
+				<county>Richardson</county>
+				<county>Rock</county>
+				<county>Saline</county>
+				<county>Sarpy</county>
+
+				<county>Saunders</county>
+				<county>Scotts Bluff</county>
+				<county>Seward</county>
+				<county>Sheridan</county>
+				<county>Sherman</county>
+				<county>Sioux</county>
+
+				<county>Stanton</county>
+				<county>Thayer</county>
+				<county>Thomas</county>
+				<county>Thurston</county>
+				<county>Valley</county>
+				<county>Washington</county>
+
+				<county>Wayne</county>
+				<county>Webster</county>
+				<county>Wheeler</county>
+				<county>York</county>
+	</NE>
+	<NV>
+				<county>Churchill</county>
+				<county>Clark</county>
+				<county>Douglas</county>
+				<county>Elko</county>
+				<county>Esmeralda</county>
+
+				<county>Eureka</county>
+				<county>Humboldt</county>
+				<county>Lander</county>
+				<county>Lincoln</county>
+				<county>Lyon</county>
+				<county>Mineral</county>
+
+				<county>Nye</county>
+				<county>Pershing</county>
+				<county>Storey</county>
+				<county>Washoe</county>
+				<county>White Pine</county>
+	</NV>
+	<NH>
+				<county>Belknap</county>
+				<county>Carroll</county>
+				<county>Cheshire</county>
+				<county>Coos</county>
+				<county>Grafton</county>
+
+				<county>Hillsboro</county>
+				<county>Merrimack</county>
+				<county>Rockingham</county>
+				<county>Strafford</county>
+				<county>Sullivan</county>
+	</NH>
+	<NJ>
+				<county>Atlantic</county>
+				<county>Bergen</county>
+				<county>Burlington</county>
+				<county>Camden</county>
+				<county>Cape May</county>
+
+				<county>Cumberland</county>
+				<county>Essex</county>
+				<county>Gloucester</county>
+				<county>Hudson</county>
+				<county>Hunterdon</county>
+				<county>Mercer</county>
+
+				<county>Middlesex</county>
+				<county>Monmouth</county>
+				<county>Morris</county>
+				<county>Ocean</county>
+				<county>Passaic</county>
+				<county>Salem</county>
+
+				<county>Somerset</county>
+				<county>Sussex</county>
+				<county>Union</county>
+				<county>Warren</county>
+	</NJ>
+	<NM>
+				<county>Bernalillo</county>
+				<county>Catron</county>
+				<county>Chaves</county>
+				<county>Cibola</county>
+				<county>Colfax</county>
+
+				<county>Curry</county>
+				<county>DeBaca</county>
+				<county>Dona Ana</county>
+				<county>Eddy</county>
+				<county>Grant</county>
+				<county>Guadalupe</county>
+
+				<county>Harding</county>
+				<county>Hidalgo</county>
+				<county>Lea</county>
+				<county>Lincoln</county>
+				<county>Los Alamos</county>
+				<county>Luna</county>
+
+				<county>McKinley</county>
+				<county>Mora</county>
+				<county>Otero</county>
+				<county>Quay</county>
+				<county>Rio Arriba</county>
+				<county>Roosevelt</county>
+
+				<county>San Juan</county>
+				<county>San Miguel</county>
+				<county>Sandoval</county>
+				<county>Santa Fe</county>
+				<county>Sierra</county>
+				<county>Socorro</county>
+
+				<county>Taos</county>
+				<county>Torrance</county>
+				<county>Union</county>
+				<county>Valencia</county>
+	</NM>
+	<NY>
+				<county>Albany</county>
+				<county>Allegany</county>
+				<county>Bronx</county>
+				<county>Broome</county>
+				<county>Cattaraugus</county>
+
+				<county>Cayuga</county>
+				<county>Chautauqua</county>
+				<county>Chemung</county>
+				<county>Chenango</county>
+				<county>Clinton</county>
+				<county>Columbia</county>
+
+				<county>Cortland</county>
+				<county>Delaware</county>
+				<county>Dutchess</county>
+				<county>Erie</county>
+				<county>Essex</county>
+				<county>Franklin</county>
+
+				<county>Fulton</county>
+				<county>Genesee</county>
+				<county>Greene</county>
+				<county>Hamilton</county>
+				<county>Herkimer</county>
+				<county>Jefferson</county>
+
+				<county>Kings</county>
+				<county>Lewis</county>
+				<county>Livingston</county>
+				<county>Madison</county>
+				<county>Monroe</county>
+				<county>Montgomery</county>
+
+				<county>Nassau</county>
+				<county>New York</county>
+				<county>Niagara</county>
+				<county>Oneida</county>
+				<county>Onondaga</county>
+				<county>Ontario</county>
+
+				<county>Orange</county>
+				<county>Orleans</county>
+				<county>Oswego</county>
+				<county>Otsego</county>
+				<county>Putnam</county>
+				<county>Queens</county>
+
+				<county>Rensselaer</county>
+				<county>Richmond</county>
+				<county>Rockland</county>
+				<county>Saratoga</county>
+				<county>Schenectady</county>
+				<county>Schoharie</county>
+
+				<county>Schuyler</county>
+				<county>Seneca</county>
+				<county>St. Lawrence</county>
+				<county>Steuben</county>
+				<county>Suffolk</county>
+				<county>Sullivan</county>
+
+				<county>Tioga</county>
+				<county>Tompkins</county>
+				<county>Ulster</county>
+				<county>Warren</county>
+				<county>Washington</county>
+				<county>Wayne</county>
+
+				<county>Westchester</county>
+				<county>Wyoming</county>
+				<county>Yates</county>
+	</NY>
+	<NC>
+				<county>Alamance</county>
+				<county>Alexander</county>
+				<county>Alleghany</county>
+				<county>Anson</county>
+				<county>Ashe</county>
+
+				<county>Avery</county>
+				<county>Beaufort</county>
+				<county>Bertie</county>
+				<county>Bladen</county>
+				<county>Brunswick</county>
+				<county>Buncombe</county>
+
+				<county>Burke</county>
+				<county>Cabarrus</county>
+				<county>Caldwell</county>
+				<county>Camden</county>
+				<county>Carteret</county>
+				<county>Caswell</county>
+
+				<county>Catawba</county>
+				<county>Chatham</county>
+				<county>Cherokee</county>
+				<county>Chowan</county>
+				<county>Clay</county>
+				<county>Cleveland</county>
+
+				<county>Columbus</county>
+				<county>Craven</county>
+				<county>Cumberland</county>
+				<county>Currituck</county>
+				<county>Dare</county>
+				<county>Davidson</county>
+
+				<county>Davie</county>
+				<county>Duplin</county>
+				<county>Durham</county>
+				<county>Edgecombe</county>
+				<county>Forsyth</county>
+				<county>Franklin</county>
+
+				<county>Gaston</county>
+				<county>Gates</county>
+				<county>Graham</county>
+				<county>Granville</county>
+				<county>Greene</county>
+				<county>Guilford</county>
+
+				<county>Halifax</county>
+				<county>Harnett</county>
+				<county>Haywood</county>
+				<county>Henderson</county>
+				<county>Hertford</county>
+				<county>Hoke</county>
+
+				<county>Hyde</county>
+				<county>Iredell</county>
+				<county>Jackson</county>
+				<county>Johnston</county>
+				<county>Jones</county>
+				<county>Lee</county>
+
+				<county>Lenoir</county>
+				<county>Lincoln</county>
+				<county>Macon</county>
+				<county>Madison</county>
+				<county>Martin</county>
+				<county>McDowell</county>
+
+				<county>Mecklenburg</county>
+				<county>Mitchell</county>
+				<county>Montgomery</county>
+				<county>Moore</county>
+				<county>Nash</county>
+				<county>New Hanover</county>
+
+				<county>Northampton</county>
+				<county>Onslow</county>
+				<county>Orange</county>
+				<county>Pamlico</county>
+				<county>Pasquotank</county>
+				<county>Pender</county>
+
+				<county>Perquimans</county>
+				<county>Person</county>
+				<county>Pitt</county>
+				<county>Polk</county>
+				<county>Randolph</county>
+				<county>Richmond</county>
+
+				<county>Robeson</county>
+				<county>Rockingham</county>
+				<county>Rowan</county>
+				<county>Rutherford</county>
+				<county>Sampson</county>
+				<county>Scotland</county>
+
+				<county>Stanly</county>
+				<county>Stokes</county>
+				<county>Surry</county>
+				<county>Swain</county>
+				<county>Transylvania</county>
+				<county>Tyrrell</county>
+
+				<county>Union</county>
+				<county>Vance</county>
+				<county>Wake</county>
+				<county>Warren</county>
+				<county>Washington</county>
+				<county>Watauga</county>
+
+				<county>Wayne</county>
+				<county>Wilkes</county>
+				<county>Wilson</county>
+				<county>Yadkin</county>
+				<county>Yancey</county>
+	</NC>
+	<ND>
+				<county>Adams</county>
+				<county>Barnes</county>
+				<county>Benson</county>
+				<county>Billings</county>
+				<county>Bottineau</county>
+
+				<county>Bowman</county>
+				<county>Burke</county>
+				<county>Burleigh</county>
+				<county>Cass</county>
+				<county>Cavalier</county>
+				<county>Dickey</county>
+
+				<county>Divide</county>
+				<county>Dunn</county>
+				<county>Eddy</county>
+				<county>Emmons</county>
+				<county>Foster</county>
+				<county>Golden Valley</county>
+
+				<county>Grand Forks</county>
+				<county>Grant</county>
+				<county>Griggs</county>
+				<county>Hettinger</county>
+				<county>Kidder</county>
+				<county>LaMoure</county>
+
+				<county>Logan</county>
+				<county>McHenry</county>
+				<county>McIntosh</county>
+				<county>McKenzie</county>
+				<county>McLean</county>
+				<county>Mercer</county>
+
+				<county>Morton</county>
+				<county>Mountrail</county>
+				<county>Nelson</county>
+				<county>Oliver</county>
+				<county>Pembina</county>
+				<county>Pierce</county>
+
+				<county>Ramsey</county>
+				<county>Ransom</county>
+				<county>Renville</county>
+				<county>Richland</county>
+				<county>Rolette</county>
+				<county>Sargent</county>
+
+				<county>Sheridan</county>
+				<county>Sioux</county>
+				<county>Slope</county>
+				<county>Stark</county>
+				<county>Steele</county>
+				<county>Stutsman</county>
+
+				<county>Towner</county>
+				<county>Traill</county>
+				<county>Walsh</county>
+				<county>Ward</county>
+				<county>Wells</county>
+				<county>Williams</county>
+	</ND>
+	<OH>
+				<county>Adams</county>
+				<county>Allen</county>
+				<county>Ashland</county>
+				<county>Ashtabula</county>
+				<county>Athens</county>
+
+				<county>Auglaize</county>
+				<county>Belmont</county>
+				<county>Brown</county>
+				<county>Butler</county>
+				<county>Carroll</county>
+				<county>Champaign</county>
+
+				<county>Clark</county>
+				<county>Clermont</county>
+				<county>Clinton</county>
+				<county>Columbiana</county>
+				<county>Coshocton</county>
+				<county>Crawford</county>
+
+				<county>Cuyahoga</county>
+				<county>Darke</county>
+				<county>Defiance</county>
+				<county>Delaware</county>
+				<county>Erie</county>
+				<county>Fairfield</county>
+
+				<county>Fayette</county>
+				<county>Franklin</county>
+				<county>Fulton</county>
+				<county>Gallia</county>
+				<county>Geauga</county>
+				<county>Greene</county>
+
+				<county>Guernsey</county>
+				<county>Hamilton</county>
+				<county>Hancock</county>
+				<county>Hardin</county>
+				<county>Harrison</county>
+				<county>Henry</county>
+
+				<county>Highland</county>
+				<county>Hocking</county>
+				<county>Holmes</county>
+				<county>Huron</county>
+				<county>Jackson</county>
+				<county>Jefferson</county>
+
+				<county>Knox</county>
+				<county>Lake</county>
+				<county>Lawrence</county>
+				<county>Licking</county>
+				<county>Logan</county>
+				<county>Lorain</county>
+
+				<county>Lucas</county>
+				<county>Madison</county>
+				<county>Mahoning</county>
+				<county>Marion</county>
+				<county>Medina</county>
+				<county>Meigs</county>
+
+				<county>Mercer</county>
+				<county>Miami</county>
+				<county>Monroe</county>
+				<county>Montgomery</county>
+				<county>Morgan</county>
+				<county>Morrow</county>
+
+				<county>Muskingum</county>
+				<county>Noble</county>
+				<county>Ottawa</county>
+				<county>Paulding</county>
+				<county>Perry</county>
+				<county>Pickaway</county>
+
+				<county>Pike</county>
+				<county>Portage</county>
+				<county>Preble</county>
+				<county>Putnam</county>
+				<county>Richland</county>
+				<county>Ross</county>
+
+				<county>Sandusky</county>
+				<county>Scioto</county>
+				<county>Seneca</county>
+				<county>Shelby</county>
+				<county>Stark</county>
+				<county>Summit</county>
+
+				<county>Trumbull</county>
+				<county>Tuscarawas</county>
+				<county>Union</county>
+				<county>Van Wert</county>
+				<county>Vinton</county>
+				<county>Warren</county>
+
+				<county>Washington</county>
+				<county>Wayne</county>
+				<county>Williams</county>
+				<county>Wood</county>
+				<county>Wyandot</county>
+	</OH>
+	<OK>
+				<county>Adair</county>
+				<county>Alfalfa</county>
+				<county>Atoka</county>
+				<county>Beaver</county>
+				<county>Beckham</county>
+
+				<county>Blaine</county>
+				<county>Bryan</county>
+				<county>Caddo</county>
+				<county>Canadian</county>
+				<county>Carter</county>
+				<county>Cherokee</county>
+
+				<county>Choctaw</county>
+				<county>Cimarron</county>
+				<county>Cleveland</county>
+				<county>Coal</county>
+				<county>Comanche</county>
+				<county>Cotton</county>
+
+				<county>Craig</county>
+				<county>Creek</county>
+				<county>Custer</county>
+				<county>Delaware</county>
+				<county>Dewey</county>
+				<county>Ellis</county>
+
+				<county>Garfield</county>
+				<county>Garvin</county>
+				<county>Grady</county>
+				<county>Grant</county>
+				<county>Greer</county>
+				<county>Harmon</county>
+
+				<county>Harper</county>
+				<county>Haskell</county>
+				<county>Hughes</county>
+				<county>Jackson</county>
+				<county>Jefferson</county>
+				<county>Johnston</county>
+
+				<county>Kay</county>
+				<county>Kingfisher</county>
+				<county>Kiowa</county>
+				<county>Latimer</county>
+				<county>Le Flore</county>
+				<county>Lincoln</county>
+
+				<county>Logan</county>
+				<county>Love</county>
+				<county>Major</county>
+				<county>Marshall</county>
+				<county>Mayes</county>
+				<county>McClain</county>
+
+				<county>McCurtain</county>
+				<county>McIntosh</county>
+				<county>Murray</county>
+				<county>Muskogee</county>
+				<county>Noble</county>
+				<county>Nowata</county>
+
+				<county>Okfuskee</county>
+				<county>Oklahoma</county>
+				<county>Okmulgee</county>
+				<county>Osage</county>
+				<county>Ottawa</county>
+				<county>Pawnee</county>
+
+				<county>Payne</county>
+				<county>Pittsburg</county>
+				<county>Pontotoc</county>
+				<county>Pottawatomie</county>
+				<county>Pushmataha</county>
+				<county>Roger Mills</county>
+
+				<county>Rogers</county>
+				<county>Seminole</county>
+				<county>Sequoyah</county>
+				<county>Stephens</county>
+				<county>Texas</county>
+				<county>Tillman</county>
+
+				<county>Tulsa</county>
+				<county>Wagoner</county>
+				<county>Washington</county>
+				<county>Washita</county>
+				<county>Woods</county>
+				<county>Woodward</county>
+	</OK>
+	<OR>
+				<county>Baker</county>
+				<county>Benton</county>
+				<county>Clackamas</county>
+				<county>Clatsop</county>
+				<county>Columbia</county>
+
+				<county>Coos</county>
+				<county>Crook</county>
+				<county>Curry</county>
+				<county>Deschutes</county>
+				<county>Douglas</county>
+				<county>Gilliam</county>
+
+				<county>Grant</county>
+				<county>Harney</county>
+				<county>Hood River</county>
+				<county>Jackson</county>
+				<county>Jefferson</county>
+				<county>Josephine</county>
+
+				<county>Klamath</county>
+				<county>Lake</county>
+				<county>Lane</county>
+				<county>Lincoln</county>
+				<county>Linn</county>
+				<county>Malheur</county>
+
+				<county>Marion</county>
+				<county>Morrow</county>
+				<county>Multnomah</county>
+				<county>Polk</county>
+				<county>Sherman</county>
+				<county>Tillamook</county>
+
+				<county>Umatilla</county>
+				<county>Union</county>
+				<county>Wallowa</county>
+				<county>Wasco</county>
+				<county>Washington</county>
+				<county>Wheeler</county>
+
+				<county>Yamhill</county>
+	</OR>
+	<PA>
+				<county>Adams</county> (ADA)
+				<county>Allegheny</county> (ALL)
+				<county>Armstrong</county> (ARM)
+				<county>Beaver</county> (BEA)
+
+				<county>Bedford</county> (BED)
+				<county>Berks</county> (BER)
+				<county>Blair</county> (BLA)
+				<county>Bradford</county> (BRA)
+				<county>Bucks</county> (BUX)
+
+				<county>Butler</county> (BUT)
+				<county>Cambria</county> (CMB)
+				<county>Cameron</county> (CRN)
+				<county>Carbon</county> (CAR)
+				<county>Centre</county> (CEN)
+
+				<county>Chester</county> (CHE)
+				<county>Clarion</county> (CLA)
+				<county>Clearfield</county> (CLE)
+				<county>Clinton</county> (CLI)
+				<county>Columbia</county> (COL)
+
+				<county>Crawford</county> (CRA)
+				<county>Cumberland</county> (CUM)
+				<county>Dauphin</county> (DAU)
+				<county>Delaware</county> (DCO)
+				<county>Elk</county> (ELK)
+
+				<county>Erie</county> (ERI)
+				<county>Fayette</county> (FAY)
+				<county>Forest</county> (FOR)
+				<county>Franklin</county> (FRA)
+				<county>Fulton</county> (FUL)
+
+				<county>Greene</county> (GRE)
+				<county>Huntingdon</county> (HUN)
+				<county>Indiana</county> (INN)
+				<county>Jefferson</county> (JEF)
+				<county>Juniata</county> (JUN)
+
+				<county>Lackawanna</county> (LAC)
+				<county>Lancaster</county> (LAN)
+				<county>Lawrence</county> (LAW)
+				<county>Lebanon</county> (LEB)
+				<county>Lehigh</county> (LEH)
+
+				<county>Luzerne</county> (LUZ)
+				<county>Lycoming</county> (LYX)
+				<county>McKean</county> (MCK)
+				<county>Mercer</county> (MER)
+				<county>Mifflin</county> (MIF)
+
+				<county>Monroe</county> (MOE)
+				<county>Montgomery</county> (MGY)
+				<county>Montour</county> (MTR)
+				<county>Northampton</county> (NHA)
+				<county>Northumberland</county> (NUM)
+
+				<county>Perry</county> (PER)
+				<county>Philadelphia</county> (PHI)
+				<county>Pike</county> (PIK)
+				<county>Potter</county> (POT)
+				<county>Schuylkill</county> (SCH)
+
+				<county>Snyder</county> (SNY)
+				<county>Somerset</county>(SOM)
+				<county>Sullivan</county> (SUL)
+				<county>Susquehanna</county> (SUS)
+				<county>Tioga</county> (TIO)
+
+				<county>Union</county> (UNI)
+				<county>Venango</county> (VEN)
+				<county>Warren</county> (WAR)
+				<county>Washington</county> (WAS)
+				<county>Wayne</county> (WAY)
+
+				<county>Westmoreland</county> (WES)
+				<county>Wyoming</county> (WYO)
+				<county>York</county> (YOR)
+	</PA>
+	<RI>
+				<county>Bristol</county>
+				<county>Kent</county>
+				<county>Newport</county>
+				<county>Providence</county>
+				<county>Washington</county>
+	</RI>
+	<SC>
+				<county>Abbeville</county>
+				<county>Aiken</county>
+				<county>Allendale</county>
+				<county>Anderson</county>
+				<county>Bamberg</county>
+
+				<county>Barnwell</county>
+				<county>Beaufort</county>
+				<county>Berkeley</county>
+				<county>Calhoun</county>
+				<county>Charleston</county>
+				<county>Cherokee</county>
+
+				<county>Chester</county>
+				<county>Chesterfield</county>
+				<county>Clarendon</county>
+				<county>Colleton</county>
+				<county>Darlington</county>
+				<county>Dillon</county>
+
+				<county>Dorchester</county>
+				<county>Edgefield</county>
+				<county>Fairfield</county>
+				<county>Florence</county>
+				<county>Georgetown</county>
+				<county>Greenville</county>
+
+				<county>Greenwood</county>
+				<county>Hampton</county>
+				<county>Horry</county>
+				<county>Jasper</county>
+				<county>Kershaw</county>
+				<county>Lancaster</county>
+
+				<county>Laurens</county>
+				<county>Lee</county>
+				<county>Lexington</county>
+				<county>Marion</county>
+				<county>Marlboro</county>
+				<county>McCormick</county>
+
+				<county>Newberry</county>
+				<county>Oconee</county>
+				<county>Orangeburg</county>
+				<county>Pickens</county>
+				<county>Richland</county>
+				<county>Saluda</county>
+
+				<county>Spartanburg</county>
+				<county>Sumter</county>
+				<county>Union</county>
+				<county>Williamsburg</county>
+				<county>York</county>
+	</SC>
+	<SD>
+				<county>Aurora</county>
+				<county>Beadle</county>
+				<county>Bennett</county>
+				<county>Bon Homme</county>
+				<county>Brookings</county>
+
+				<county>Brown</county>
+				<county>Brule</county>
+				<county>Buffalo</county>
+				<county>Butte</county>
+				<county>Campbell</county>
+				<county>Charles Mix</county>
+
+				<county>Clark</county>
+				<county>Clay</county>
+				<county>Codington</county>
+				<county>Corson</county>
+				<county>Custer</county>
+				<county>Davison</county>
+
+				<county>Day</county>
+				<county>Deuel</county>
+				<county>Dewey</county>
+				<county>Douglas</county>
+				<county>Edmunds</county>
+				<county>Fall River</county>
+
+				<county>Faulk</county>
+				<county>Grant</county>
+				<county>Gregory</county>
+				<county>Haakon</county>
+				<county>Hamlin</county>
+				<county>Hand</county>
+
+				<county>Hanson</county>
+				<county>Harding</county>
+				<county>Hughes</county>
+				<county>Hutchinson</county>
+				<county>Hyde</county>
+				<county>Jackson</county>
+
+				<county>Jerauld</county>
+				<county>Jones</county>
+				<county>Kingsbury</county>
+				<county>Lake</county>
+				<county>Lawrence</county>
+				<county>Lincoln</county>
+
+				<county>Lyman</county>
+				<county>Marshall</county>
+				<county>McCook</county>
+				<county>McPherson</county>
+				<county>Meade</county>
+				<county>Mellette</county>
+
+				<county>Miner</county>
+				<county>Minnehaha</county>
+				<county>Moody</county>
+				<county>Pennington</county>
+				<county>Perkins</county>
+				<county>Potter</county>
+
+				<county>Roberts</county>
+				<county>Sanborn</county>
+				<county>Shannon</county>
+				<county>Spink</county>
+				<county>Stanley</county>
+				<county>Sully</county>
+
+				<county>Todd</county>
+				<county>Tripp</county>
+				<county>Turner</county>
+				<county>Union</county>
+				<county>Walworth</county>
+				<county>Yankton</county>
+
+				<county>Ziebach</county>
+	</SD>
+	<TN>
+				<county>Anderson</county>
+				<county>Bedford</county>
+				<county>Benton</county>
+				<county>Bledsoe</county>
+				<county>Blount</county>
+
+				<county>Bradley</county>
+				<county>Campbell</county>
+				<county>Cannon</county>
+				<county>Carroll</county>
+				<county>Carter</county>
+				<county>Cheatham</county>
+
+				<county>Chester</county>
+				<county>Claiborne</county>
+				<county>Clay</county>
+				<county>Cocke</county>
+				<county>Coffee</county>
+				<county>Crockett</county>
+
+				<county>Cumberland</county>
+				<county>Davidson</county>
+				<county>Decatur</county>
+				<county>DeKalb</county>
+				<county>Dickson</county>
+				<county>Dyer</county>
+
+				<county>Fayette</county>
+				<county>Fentress</county>
+				<county>Franklin</county>
+				<county>Gibson</county>
+				<county>Giles</county>
+				<county>Grainger</county>
+
+				<county>Greene</county>
+				<county>Grundy</county>
+				<county>Hamblen</county>
+				<county>Hamilton</county>
+				<county>Hancock</county>
+				<county>Hardeman</county>
+
+				<county>Hardin</county>
+				<county>Hawkins</county>
+				<county>Haywood</county>
+				<county>Henderson</county>
+				<county>Henry</county>
+				<county>Hickman</county>
+
+				<county>Houston</county>
+				<county>Humphreys</county>
+				<county>Jackson</county>
+				<county>Jefferson</county>
+				<county>Johnson</county>
+				<county>Knox</county>
+
+				<county>Lake</county>
+				<county>Lauderdale</county>
+				<county>Lawrence</county>
+				<county>Lewis</county>
+				<county>Lincoln</county>
+				<county>Loudon</county>
+
+				<county>Macon</county>
+				<county>Madison</county>
+				<county>Marion</county>
+				<county>Marshall</county>
+				<county>Maury</county>
+				<county>McMinn</county>
+
+				<county>McNairy</county>
+				<county>Meigs</county>
+				<county>Monroe</county>
+				<county>Montgomery</county>
+				<county>Moore</county>
+				<county>Morgan</county>
+
+				<county>Obion</county>
+				<county>Overton</county>
+				<county>Perry</county>
+				<county>Pickett</county>
+				<county>Polk</county>
+				<county>Putnam</county>
+
+				<county>Rhea</county>
+				<county>Roane</county>
+				<county>Robertson</county>
+				<county>Rutherford</county>
+				<county>Scott</county>
+				<county>Sequatchie</county>
+
+				<county>Sevier</county>
+				<county>Shelby</county>
+				<county>Smith</county>
+				<county>Stewart</county>
+				<county>Sullivan</county>
+				<county>Sumner</county>
+
+				<county>Tipton</county>
+				<county>Trousdale</county>
+				<county>Unicoi</county>
+				<county>Union</county>
+				<county>Van Buren</county>
+				<county>Warren</county>
+
+				<county>Washington</county>
+				<county>Wayne</county>
+				<county>Weakley</county>
+				<county>White</county>
+				<county>Williamson</county>
+				<county>Wilson</county>
+	</TN>
+	<TX>
+				<county>Anderson</county>
+				<county>Andrews</county>
+				<county>Angelina</county>
+				<county>Aransas</county>
+				<county>Archer</county>
+
+				<county>Armstrong</county>
+				<county>Atascosa</county>
+				<county>Austin</county>
+				<county>Bailey</county>
+				<county>Bandera</county>
+				<county>Bastrop</county>
+
+				<county>Baylor</county>
+				<county>Bee</county>
+				<county>Bell</county>
+				<county>Bexar</county>
+				<county>Blanco</county>
+				<county>Borden</county>
+
+				<county>Bosque</county>
+				<county>Bowie</county>
+				<county>Brazoria</county>
+				<county>Brazos</county>
+				<county>Brewster</county>
+				<county>Briscoe</county>
+
+				<county>Brooks</county>
+				<county>Brown</county>
+				<county>Burleson</county>
+				<county>Burnet</county>
+				<county>Caldwell</county>
+				<county>Calhoun</county>
+
+				<county>Callahan</county>
+				<county>Cameron</county>
+				<county>Camp</county>
+				<county>Carson</county>
+				<county>Cass</county>
+				<county>Castro</county>
+
+				<county>Chambers</county>
+				<county>Cherokee</county>
+				<county>Childress</county>
+				<county>Clay</county>
+				<county>Cochran</county>
+				<county>Coke</county>
+
+				<county>Coleman</county>
+				<county>Collin</county>
+				<county>Collingsworth</county>
+				<county>Colorado</county>
+				<county>Comal</county>
+				<county>Comanche</county>
+
+				<county>Concho</county>
+				<county>Cooke</county>
+				<county>Coryell</county>
+				<county>Cottle</county>
+				<county>Crane</county>
+				<county>Crockett</county>
+
+				<county>Crosby</county>
+				<county>Culberson</county>
+				<county>Dallam</county>
+				<county>Dallas</county>
+				<county>Dawson</county>
+				<county>Deaf Smith</county>
+
+				<county>Delta</county>
+				<county>Denton</county>
+				<county>DeWitt</county>
+				<county>Dickens</county>
+				<county>Dimmit</county>
+				<county>Donley</county>
+
+				<county>Duval</county>
+				<county>Eastland</county>
+				<county>Ector</county>
+				<county>Edwards</county>
+				<county>El Paso</county>
+				<county>Ellis</county>
+
+				<county>Erath</county>
+				<county>Falls</county>
+				<county>Fannin</county>
+				<county>Fayette</county>
+				<county>Fisher</county>
+				<county>Floyd</county>
+
+				<county>Foard</county>
+				<county>Fort Bend</county>
+				<county>Franklin</county>
+				<county>Freestone</county>
+				<county>Frio</county>
+				<county>Gaines</county>
+
+				<county>Galveston</county>
+				<county>Garza</county>
+				<county>Gillespie</county>
+				<county>Glasscock</county>
+				<county>Goliad</county>
+				<county>Gonzales</county>
+
+				<county>Gray</county>
+				<county>Grayson</county>
+				<county>Gregg</county>
+				<county>Grimes</county>
+				<county>Guadalupe</county>
+				<county>Hale</county>
+
+				<county>Hall</county>
+				<county>Hamilton</county>
+				<county>Hansford</county>
+				<county>Hardeman</county>
+				<county>Hardin</county>
+				<county>Harris</county>
+
+				<county>Harrison</county>
+				<county>Hartley</county>
+				<county>Haskell</county>
+				<county>Hays</county>
+				<county>Hemphill</county>
+				<county>Henderson</county>
+
+				<county>Hidalgo</county>
+				<county>Hill</county>
+				<county>Hockley</county>
+				<county>Hood</county>
+				<county>Hopkins</county>
+				<county>Houston</county>
+
+				<county>Howard</county>
+				<county>Hudspeth</county>
+				<county>Hunt</county>
+				<county>Hutchinson</county>
+				<county>Irion</county>
+				<county>Jack</county>
+
+				<county>Jackson</county>
+				<county>Jasper</county>
+				<county>Jeff Davis</county>
+				<county>Jefferson</county>
+				<county>Jim Hogg</county>
+				<county>Jim Wells</county>
+
+				<county>Johnson</county>
+				<county>Jones</county>
+				<county>Karnes</county>
+				<county>Kaufman</county>
+				<county>Kendall</county>
+				<county>Kenedy</county>
+
+				<county>Kent</county>
+				<county>Kerr</county>
+				<county>Kimble</county>
+				<county>King</county>
+				<county>Kinney</county>
+				<county>Kleberg</county>
+
+				<county>Knox</county>
+				<county>La Salle</county>
+				<county>Lamar</county>
+				<county>Lamb</county>
+				<county>Lampasas</county>
+				<county>Lavaca</county>
+
+				<county>Lee</county>
+				<county>Leon</county>
+				<county>Liberty</county>
+				<county>Limestone</county>
+				<county>Lipscomb</county>
+				<county>Live Oak</county>
+
+				<county>Llano</county>
+				<county>Loving</county>
+				<county>Lubbock</county>
+				<county>Lynn</county>
+				<county>Madison</county>
+				<county>Marion</county>
+
+				<county>Martin</county>
+				<county>Mason</county>
+				<county>Matagorda</county>
+				<county>Maverick</county>
+				<county>McCulloch</county>
+				<county>McLennan</county>
+
+				<county>McMullen</county>
+				<county>Medina</county>
+				<county>Menard</county>
+				<county>Midland</county>
+				<county>Milam</county>
+				<county>Mills</county>
+
+				<county>Mitchell</county>
+				<county>Montague</county>
+				<county>Montgomery</county>
+				<county>Moore</county>
+				<county>Morris</county>
+				<county>Motley</county>
+
+				<county>Nacogdoches</county>
+				<county>Navarro</county>
+				<county>Newton</county>
+				<county>Nolan</county>
+				<county>Nueces</county>
+				<county>Ochiltree</county>
+
+				<county>Oldham</county>
+				<county>Orange</county>
+				<county>Palo Pinto</county>
+				<county>Panola</county>
+				<county>Parker</county>
+				<county>Parmer</county>
+
+				<county>Pecos</county>
+				<county>Polk</county>
+				<county>Potter</county>
+				<county>Presidio</county>
+				<county>Rains</county>
+				<county>Randall</county>
+
+				<county>Reagan</county>
+				<county>Real</county>
+				<county>Red River</county>
+				<county>Reeves</county>
+				<county>Refugio</county>
+				<county>Roberts</county>
+
+				<county>Robertson</county>
+				<county>Rockwall</county>
+				<county>Runnels</county>
+				<county>Rusk</county>
+				<county>Sabine</county>
+				<county>San Augustine</county>
+
+				<county>San Jacinto</county>
+				<county>San Patricio</county>
+				<county>San Saba</county>
+				<county>Schleicher</county>
+				<county>Scurry</county>
+				<county>Shackelford</county>
+
+				<county>Shelby</county>
+				<county>Sherman</county>
+				<county>Smith</county>
+				<county>Somervell</county>
+				<county>Starr</county>
+				<county>Stephens</county>
+
+				<county>Sterling</county>
+				<county>Stonewall</county>
+				<county>Sutton</county>
+				<county>Swisher</county>
+				<county>Tarrant</county>
+				<county>Taylor</county>
+
+				<county>Terrell</county>
+				<county>Terry</county>
+				<county>Throckmorton</county>
+				<county>Titus</county>
+				<county>Tom Green</county>
+				<county>Travis</county>
+
+				<county>Trinity</county>
+				<county>Tyler</county>
+				<county>Upshur</county>
+				<county>Upton</county>
+				<county>Uvalde</county>
+				<county>Val Verde</county>
+
+				<county>Van Zandt</county>
+				<county>Victoria</county>
+				<county>Walker</county>
+				<county>Waller</county>
+				<county>Ward</county>
+				<county>Washington</county>
+
+				<county>Webb</county>
+				<county>Wharton</county>
+				<county>Wheeler</county>
+				<county>Wichita</county>
+				<county>Wilbarger</county>
+				<county>Willacy</county>
+
+				<county>Williamson</county>
+				<county>Wilson</county>
+				<county>Winkler</county>
+				<county>Wise</county>
+				<county>Wood</county>
+				<county>Yoakum</county>
+
+				<county>Young</county>
+				<county>Zapata</county>
+				<county>Zavala</county>
+	</TX>
+	<UT>
+				<county>Beaver</county>
+				<county>Box Elder</county>
+				<county>Cache</county>
+				<county>Carbon</county>
+				<county>Daggett</county>
+
+				<county>Davis</county>
+				<county>Duchesne</county>
+				<county>Emery</county>
+				<county>Garfield</county>
+				<county>Grand</county>
+				<county>Iron</county>
+
+				<county>Juab</county>
+				<county>Kane</county>
+				<county>Millard</county>
+				<county>Morgan</county>
+				<county>Piute</county>
+				<county>Rich</county>
+
+				<county>Salt Lake</county>
+				<county>San Juan</county>
+				<county>Sanpete</county>
+				<county>Sevier</county>
+				<county>Summit</county>
+				<county>Tooele</county>
+
+				<county>Uintah</county>
+				<county>Utah</county>
+				<county>Wasatch</county>
+				<county>Washington</county>
+				<county>Wayne</county>
+				<county>Weber</county>
+	</UT>
+	<VT>
+				<county>Addison</county>
+				<county>Bennington</county>
+				<county>Caledonia</county>
+				<county>Chittenden</county>
+				<county>Essex</county>
+
+				<county>Franklin</county>
+				<county>Grand Isle</county>
+				<county>Lamoille</county>
+				<county>Orange</county>
+				<county>Orleans</county>
+				<county>Rutland</county>
+
+				<county>Washington</county>
+				<county>Windham</county>
+				<county>Windsor</county>
+	</VT>
+	<VA>
+				<county>Accomack</county>
+				<county>Albemarle</county>
+				<county>Alleghany</county>
+				<county>Amelia</county>
+				<county>Amherst</county>
+
+				<county>Appomattox</county>
+				<county>Arlington</county>
+				<county>Augusta</county>
+				<county>Bath</county>
+				<county>Bedford</county>
+				<county>Bland</county>
+
+				<county>Botetourt</county>
+				<county>Brunswick</county>
+				<county>Buchanan</county>
+				<county>Buckingham</county>
+				<county>Campbell</county>
+				<county>Caroline</county>
+
+				<county>Carroll</county>
+				<county>Charles City</county>
+				<county>Charlotte</county>
+				<county>Chesterfield</county>
+				<county>Clarke</county>
+				<county>Craig</county>
+
+				<county>Culpeper</county>
+				<county>Cumberland</county>
+				<county>Dickenson</county>
+				<county>Dinwiddie</county>
+				<county>Essex</county>
+				<county>Fairfax</county>
+
+				<county>Fauquier</county>
+				<county>Floyd</county>
+				<county>Fluvanna</county>
+				<county>Franklin</county>
+				<county>Frederick</county>
+				<county>Giles</county>
+
+				<county>Gloucester</county>
+				<county>Goochland</county>
+				<county>Grayson</county>
+				<county>Greene</county>
+				<county>Greensville</county>
+				<county>Halifax</county>
+
+				<county>Hanover</county>
+				<county>Henrico</county>
+				<county>Henry</county>
+				<county>Highland</county>
+				<county>Isle of Wight</county>
+				<county>James City</county>
+
+				<county>King and Queen</county>
+				<county>King George</county>
+				<county>King William</county>
+				<county>Lancaster</county>
+				<county>Lee</county>
+				<county>Loudoun</county>
+
+				<county>Louisa</county>
+				<county>Lunenburg</county>
+				<county>Madison</county>
+				<county>Mathews</county>
+				<county>Mecklenburg</county>
+				<county>Middlesex</county>
+
+				<county>Montgomery</county>
+				<county>Nelson</county>
+				<county>New Kent</county>
+				<county>Northampton</county>
+				<county>Northumberland</county>
+				<county>Nottoway</county>
+
+				<county>Orange</county>
+				<county>Page</county>
+				<county>Patrick</county>
+				<county>Pittsylvania</county>
+				<county>Powhatan</county>
+				<county>Prince Edward</county>
+
+				<county>Prince George</county>
+				<county>Prince William</county>
+				<county>Pulaski</county>
+				<county>Rappahannock</county>
+				<county>Richmond</county>
+				<county>Roanoke</county>
+
+				<county>Rockbridge</county>
+				<county>Rockingham</county>
+				<county>Russell</county>
+				<county>Scott</county>
+				<county>Shenandoah</county>
+				<county>Smyth</county>
+
+				<county>Southampton</county>
+				<county>Spotsylvania</county>
+				<county>Stafford</county>
+				<county>Surry</county>
+				<county>Sussex</county>
+				<county>Tazewell</county>
+
+				<county>Warren</county>
+				<county>Washington</county>
+				<county>Westmoreland</county>
+				<county>Wise</county>
+				<county>Wythe</county>
+				<county>York</county>
+	</VA>
+	<WA>
+				<county>Adams</county>
+				<county>Asotin</county>
+				<county>Benton</county>
+				<county>Chelan</county>
+				<county>Clallam</county>
+
+				<county>Clark</county>
+				<county>Columbia</county>
+				<county>Cowlitz</county>
+				<county>Douglas</county>
+				<county>Ferry</county>
+				<county>Franklin</county>
+
+				<county>Garfield</county>
+				<county>Grant</county>
+				<county>Grays Harbor</county>
+				<county>Island</county>
+				<county>Jefferson</county>
+				<county>King</county>
+
+				<county>Kitsap</county>
+				<county>Kittitas</county>
+				<county>Klickitat</county>
+				<county>Lewis</county>
+				<county>Lincoln</county>
+				<county>Mason</county>
+
+				<county>Okanogan</county>
+				<county>Pacific</county>
+				<county>Pend Oreille</county>
+				<county>Pierce</county>
+				<county>San Juan</county>
+				<county>Skagit</county>
+
+				<county>Skamania</county>
+				<county>Snohomish</county>
+				<county>Spokane</county>
+				<county>Stevens</county>
+				<county>Thurston</county>
+				<county>Wahkiakum</county>
+
+				<county>Walla Walla</county>
+				<county>Whatcom</county>
+				<county>Whitman</county>
+				<county>Yakima</county>
+	</WA>
+	<WV>
+				<county>Barbour</county>
+				<county>Berkeley</county>
+				<county>Boone</county>
+				<county>Braxton</county>
+				<county>Brooke</county>
+
+				<county>Cabell</county>
+				<county>Calhoun</county>
+				<county>Clay</county>
+				<county>Doddridge</county>
+				<county>Fayette</county>
+				<county>Gilmer</county>
+
+				<county>Grant</county>
+				<county>Greenbrier</county>
+				<county>Hampshire</county>
+				<county>Hancock</county>
+				<county>Hardy</county>
+				<county>Harrison</county>
+
+				<county>Jackson</county>
+				<county>Jefferson</county>
+				<county>Kanawha</county>
+				<county>Lewis</county>
+				<county>Lincoln</county>
+				<county>Logan</county>
+
+				<county>Marion</county>
+				<county>Marshall</county>
+				<county>Mason</county>
+				<county>McDowell</county>
+				<county>Mercer</county>
+				<county>Mineral</county>
+
+				<county>Mingo</county>
+				<county>Monongalia</county>
+				<county>Monroe</county>
+				<county>Morgan</county>
+				<county>Nicholas</county>
+				<county>Ohio</county>
+
+				<county>Pendleton</county>
+				<county>Pleasants</county>
+				<county>Pocahontas</county>
+				<county>Preston</county>
+				<county>Putnam</county>
+				<county>Raleigh</county>
+
+				<county>Randolph</county>
+				<county>Ritchie</county>
+				<county>Roane</county>
+				<county>Summers</county>
+				<county>Taylor</county>
+				<county>Tucker</county>
+
+				<county>Tyler</county>
+				<county>Upshur</county>
+				<county>Wayne</county>
+				<county>Webster</county>
+				<county>Wetzel</county>
+				<county>Wirt</county>
+
+				<county>Wood</county>
+				<county>Wyoming</county>
+	</WV>
+	<WI>
+				<county>Adams</county>
+				<county>Ashland</county>
+				<county>Barron</county>
+				<county>Bayfield</county>
+				<county>Brown</county>
+
+				<county>Buffalo</county>
+				<county>Burnett</county>
+				<county>Calumet</county>
+				<county>Chippewa</county>
+				<county>Clark</county>
+				<county>Columbia</county>
+
+				<county>Crawford</county>
+				<county>Dane</county>
+				<county>Dodge</county>
+				<county>Door</county>
+				<county>Douglas</county>
+				<county>Dunn</county>
+
+				<county>Eau Claire</county>
+				<county>Florence</county>
+				<county>Fond du Lac</county>
+				<county>Forest</county>
+				<county>Grant</county>
+				<county>Green</county>
+
+				<county>Green Lake</county>
+				<county>Iowa</county>
+				<county>Iron</county>
+				<county>Jackson</county>
+				<county>Jefferson</county>
+				<county>Juneau</county>
+
+				<county>Kenosha</county>
+				<county>Kewaunee</county>
+				<county>La Crosse</county>
+				<county>Lafayette</county>
+				<county>Langlade</county>
+				<county>Lincoln</county>
+
+				<county>Manitowoc</county>
+				<county>Marathon</county>
+				<county>Marinette</county>
+				<county>Marquette</county>
+				<county>Menominee</county>
+				<county>Milwaukee</county>
+
+				<county>Monroe</county>
+				<county>Oconto</county>
+				<county>Oneida</county>
+				<county>Outagamie</county>
+				<county>Ozaukee</county>
+				<county>Pepin</county>
+
+				<county>Pierce</county>
+				<county>Polk</county>
+				<county>Portage</county>
+				<county>Price</county>
+				<county>Racine</county>
+				<county>Richland</county>
+
+				<county>Rock</county>
+				<county>Rusk</county>
+				<county>Sauk</county>
+				<county>Sawyer</county>
+				<county>Shawano</county>
+				<county>Sheboygan</county>
+
+				<county>St. Croix</county>
+				<county>Taylor</county>
+				<county>Trempealeau</county>
+				<county>Vernon</county>
+				<county>Vilas</county>
+				<county>Walworth</county>
+
+				<county>Washburn</county>
+				<county>Washington</county>
+				<county>Waukesha</county>
+				<county>Waupaca</county>
+				<county>Waushara</county>
+				<county>Winnebago</county>
+
+				<county>Wood</county>
+	</WI>
+	<WY>
+				<county>Albany</county>
+				<county>Big Horn</county>
+				<county>Campbell</county>
+				<county>Carbon</county>
+				<county>Converse</county>
+
+				<county>Crook</county>
+				<county>Fremont</county>
+				<county>Goshen</county>
+				<county>Hot Springs</county>
+				<county>Johnson</county>
+				<county>Laramie</county>
+
+				<county>Lincoln</county>
+				<county>Natrona</county>
+				<county>Niobrara</county>
+				<county>Park</county>
+				<county>Platte</county>
+				<county>Sheridan</county>
+
+				<county>Sublette</county>
+				<county>Sweetwater</county>
+				<county>Teton</county>
+				<county>Uinta</county>
+				<county>Washakie</county>
+				<county>Weston</county>
+	</WY>
+</states>
