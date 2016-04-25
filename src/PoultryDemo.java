@@ -39,7 +39,7 @@ public class PoultryDemo extends JFrame{
 	public PoultryDemo() {
 		
 		// main frame
-		topFrame.setSize(600, 500);
+		topFrame.setSize(750, 600);
 		topFrame.setTitle("Poultry Demo");
 		topFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		topFrame.setLocationRelativeTo(null); //center on screen
