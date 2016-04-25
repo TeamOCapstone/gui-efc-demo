@@ -7,6 +7,11 @@ import javax.swing.border.Border;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.*;
+
 import java.awt.ItemSelectable;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
@@ -14,7 +19,10 @@ import java.awt.event.ItemListener;
 public class loadInputMethods {
 
 	static JComboBox<String> barnCountyInputBox;
+	static JTabbedPane phase;
+	static int numberOfPhases;
 	static Border blackline = BorderFactory.createLineBorder(Color.black);
+	static IOclass inoutclass;
 
 	public static void loadBirdDataPanel(JPanel birdPanel, IOclass ioclass) {
 
@@ -96,10 +104,11 @@ public class loadInputMethods {
 
 
 
-	}// END loadBirdDataPanel
+	}
 
 	public static void loadFeedIngredPanel(JPanel feedIngredientsPanel, IOclass ioclass) {
 
+		inoutclass = ioclass;
 
 		GroupLayout layout = new GroupLayout(feedIngredientsPanel);
 		feedIngredientsPanel.setLayout(layout);
@@ -107,62 +116,42 @@ public class loadInputMethods {
 		layout.setAutoCreateContainerGaps(true);
 
 
-//for multiple ingredients
-/*
-		JButton ingredientButton = new JButton("Add New Ingredient");
-		JPanel buttonPane = new JPanel();
-		buttonPane.setLayout(new BoxLayout(buttonPane, BoxLayout.LINE_AXIS));
-		// buttonPane.setBorder(BorderFactory.createEmptyBorder(10, 10, 10,
-		// 10));
-		buttonPane.add(Box.createHorizontalGlue());
-
-		JTextField ingredientsField = new JTextField("Enter Ingredient Name");
-		JTextField percentIngedField = new JTextField("%");
-
-		ioclass.addInput(ingredientsField);
-		ioclass.addInput(percentIngedField);
-
-		ingredientsField.setName("Ingredients");
-		percentIngedField.setName("Percentage_Sign");
-
-
-*/
-
-
-		// labels on the left
 		JLabel numPhasesLabel = new JLabel("  Number of Feeding Phases:  ");
-		JLabel phaseNameLabel = new JLabel("  Phase Name:  ");
-		JLabel numDaysPerPhaseLabel = new JLabel("  Number of Days in Phase:  ");
-
-		// input areas on the right
-		JTextField numPhasesField = new JTextField();
-		JTextField phaseNameField = new JTextField();
-		JTextField numDaysPerPhaseField = new JTextField();
-
+		final JTextField numPhasesField = new JTextField();
 		ioclass.addInput(numPhasesField);
-		ioclass.addInput(phaseNameField);
-		ioclass.addInput(numDaysPerPhaseField);
-
-		// naming IO components with the same name they will have in the XML
-		// file
 		numPhasesField.setName("Number_Of_Phases");
-		phaseNameField.setName("Phase_Name");
-		numDaysPerPhaseField.setName("Days_Per_Phase");
+
+		JButton setPhaseNumber = new JButton("Set");
+		ioclass.addPhaseButton(setPhaseNumber);
+		
+		phase = new JTabbedPane();
+
+
+		setPhaseNumber.addActionListener(new ActionListener() {
+         	public void actionPerformed(ActionEvent e) {
+         		numberOfPhases = Integer.parseInt(numPhasesField.getText());
+         		phase.removeAll();
+         		inoutclass.removePhaseInfo();
+            	for(int i=0;i<numberOfPhases;i++){
+            		JPanel phasePanel = new JPanel();
+            		loadPhasePanel(phasePanel, inoutclass, i);
+            		phase.add("Phase "+(i+1), phasePanel);
+            	}
+         	}
+      	});
 
 		// Settings and layout
 		
 		
-		layout.setHorizontalGroup(layout.createSequentialGroup()
-			.addGroup(layout.createParallelGroup()
+		layout.setHorizontalGroup(layout.createParallelGroup()
+			.addGroup(layout.createSequentialGroup()
 				.addComponent(numPhasesLabel)
-				.addComponent(phaseNameLabel)
-				.addComponent(numDaysPerPhaseLabel)
-			)
-			.addGroup(layout.createParallelGroup()
 				.addComponent(numPhasesField)
-				.addComponent(phaseNameField)
-				.addComponent(numDaysPerPhaseField)
+				.addComponent(setPhaseNumber)
 			)
+			.addGroup(layout.createSequentialGroup()
+			)
+			.addComponent(phase)
 			
 		);
 
@@ -170,24 +159,101 @@ public class loadInputMethods {
 			.addGroup(layout.createParallelGroup()
 				.addComponent(numPhasesLabel)
 				.addComponent(numPhasesField)
+				.addComponent(setPhaseNumber)
 			)
+			.addComponent(phase)
+		);
+		
+		numPhasesField.setColumns(5);
+		layout.linkSize(SwingConstants.VERTICAL, numPhasesLabel, numPhasesField, setPhaseNumber);
+		layout.linkSize(SwingConstants.HORIZONTAL, numPhasesField, setPhaseNumber);
+
+
+	}
+	
+	private static void loadPhasePanel(JPanel phase, IOclass ioclass, int phaseNumber){
+	
+		GroupLayout layout = new GroupLayout(phase);
+		phase.setLayout(layout);
+		layout.setAutoCreateGaps(true);
+		layout.setAutoCreateContainerGaps(true);
+
+		JLabel phaseNameLabel = new JLabel("  Phase Name:  ");
+		JLabel numDaysInPhaseLabel = new JLabel("  Number of Days in Phase:  ");
+		JLabel spacer = new JLabel("");
+
+		// Inputs themselves
+		JTextField phaseNameField = new JTextField();
+		JTextField numDaysInPhaseField = new JTextField();
+
+		// naming IO components with the same name they will have in the XML file
+		phaseNameField.setName("PhaseName"+phaseNumber);
+		numDaysInPhaseField.setName("DaysInPhase"+phaseNumber);
+
+		ioclass.addInput(phaseNameField,true);
+		ioclass.addInput(numDaysInPhaseField,true);
+
+		final IngredientsPanel ingredientsPanel = new IngredientsPanel(ioclass, phaseNumber);
+		
+		JButton addIngredientButton = new JButton("Add Ingredient");
+		JButton removeIngredientButton = new JButton("Remove Ingredient");
+
+		addIngredientButton.setName("addFeedButton"+phaseNumber);
+		ioclass.addFeedButton(addIngredientButton);
+	
+		addIngredientButton.addActionListener(new ActionListener() {
+         	public void actionPerformed(ActionEvent e) {ingredientsPanel.addIngredient();}
+      	});
+      	
+		removeIngredientButton.addActionListener(new ActionListener() {
+         	public void actionPerformed(ActionEvent e) {ingredientsPanel.removeIngredient();}
+      	});
+
+
+		// Settings and layouts
+		
+		layout.setHorizontalGroup(layout.createParallelGroup()
+			.addComponent(ingredientsPanel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+			.addGroup(layout.createSequentialGroup()
+				.addGroup(layout.createParallelGroup()
+					.addComponent(phaseNameLabel)
+					.addComponent(numDaysInPhaseLabel)
+				)
+				.addGroup(layout.createParallelGroup()
+					.addComponent(phaseNameField)
+					.addComponent(numDaysInPhaseField)
+				)
+			)
+			.addGroup(layout.createSequentialGroup()
+				.addComponent(addIngredientButton)
+				.addComponent(removeIngredientButton)
+			)
+			.addComponent(spacer)
+		);
+
+		layout.setVerticalGroup(layout.createSequentialGroup()
 			.addGroup(layout.createParallelGroup()
 				.addComponent(phaseNameLabel)
 				.addComponent(phaseNameField)
 			)
 			.addGroup(layout.createParallelGroup()
-				.addComponent(numDaysPerPhaseLabel)
-				.addComponent(numDaysPerPhaseField)
+				.addComponent(numDaysInPhaseLabel)
+				.addComponent(numDaysInPhaseField)
+			)
+			.addComponent(spacer)
+			.addComponent(ingredientsPanel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+			.addGroup(layout.createParallelGroup()
+				.addComponent(addIngredientButton)
+				.addComponent(removeIngredientButton)
 			)
 		);
-		
-		numPhasesField.setColumns(5);
-		layout.linkSize(SwingConstants.VERTICAL, numPhasesLabel, numPhasesField, phaseNameLabel, phaseNameField, numDaysPerPhaseLabel, numDaysPerPhaseField);
-		layout.linkSize(SwingConstants.HORIZONTAL, numPhasesLabel,  phaseNameLabel,  numDaysPerPhaseLabel);
-		layout.linkSize(SwingConstants.HORIZONTAL, numPhasesField,  phaseNameField,  numDaysPerPhaseField);
 
+		phaseNameField.setColumns(15);
+		layout.linkSize(SwingConstants.VERTICAL, spacer, numDaysInPhaseLabel, phaseNameLabel, numDaysInPhaseField, phaseNameField);
+		layout.linkSize(SwingConstants.HORIZONTAL,numDaysInPhaseLabel, phaseNameLabel);
+		layout.linkSize(SwingConstants.HORIZONTAL, numDaysInPhaseField, phaseNameField);
 
-	}// end loadFeedIngredPanel
+	}
 
 	public static void loadFeedShippingPanel(JPanel feedShippingPanel, IOclass ioclass) {
 
@@ -243,7 +309,7 @@ public class loadInputMethods {
 		layout.linkSize(SwingConstants.HORIZONTAL, feedDistanceField, feedMassDelField);
 
 		
-	}// end loadFeedShippingPanel
+	}
 
 	public static void loadBarnLocSizePanel(JPanel BarnLocationSize, IOclass ioclass) {
 
@@ -360,7 +426,7 @@ public class loadInputMethods {
 		layout.linkSize(SwingConstants.HORIZONTAL, barnStateInputBox, barnCountyInputBox, barnHeightField, barnWidthField, barnLengthField);
 
 		
-	}// END loadBirdDataPanel
+	}
 
 	public static void loadBarnHeatCoolPanel(JPanel BarnHeatCool, IOclass ioclass) {
 	
@@ -792,7 +858,7 @@ public class loadInputMethods {
 	        );
 	
 
-	}// END loadResultSummaryPanel
+	}
 
 	public static void loadResultBroilerPanel(JPanel resultPanel, IOclass ioclass) {
 		
@@ -894,7 +960,7 @@ public class loadInputMethods {
             );
 	
 
-	}// END loadResultBroilerPanel
+	}
 
 	public static void loadResultFeedPanel(JPanel resultPanel, IOclass ioclass) {
 		
@@ -976,6 +1042,6 @@ public class loadInputMethods {
                 .addContainerGap(108, Short.MAX_VALUE))
         );
 
-	}// END loadResultFeedPanel
+	}
 
 }
