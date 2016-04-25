@@ -9,7 +9,6 @@ import java.io.IOException;
 
 import com.sun.glass.events.KeyEvent;
 
-
 //
 //
 //Icons courtesy http://www.aha-soft.com/
@@ -251,14 +250,26 @@ public class PoultryDemo extends JFrame{
 		topToolBar.add(tbButton);
 		topToolBar.addSeparator();
 		
-		
 		// main tool bar --> RESULT BUTTON
+		//The result button currently calls the results panel as well as
+		//calling the main function in Calculator_Call.java,
+		//which executes a dummy c++ program
 		tbButton = new JButton(new ImageIcon(
 				this.getClass().getResource("resources/run.png")));
 		tbButton.setToolTipText("ResultToolTip");
 		tbButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
+				try {
+					//dummy cpp calculator call
+					Calculator_Call.main(null);
+				} catch (InterruptedException e1) {
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
 				cardLayout.show(desktopPane, "result panel");
+				
 			}
 		});
 		topToolBar.add(tbButton);
@@ -418,27 +429,6 @@ public class PoultryDemo extends JFrame{
 		resultPanel.add("Broiler Performance", resultBroiler);
 		resultPanel.add("Feed Consumption", resultFeed);
 		
-		
-        /*Leaving extra cards in code in case we need them.
-		JPanel birdCard2 = new JPanel();
-		birdCard2.setLayout(birdFlowLayout);
-		birdCard2.setBackground(new Color(90, 0, 0));
-		birdCard2.setVisible(true);
-		
-		JPanel birdCard3 = new JPanel();
-		birdCard3.setLayout(birdFlowLayout);
-		birdCard3.setBackground(new Color(64, 0, 0));
-		birdCard3.setVisible(true);
-		
-		JPanel birdCard4 = new JPanel();
-		birdCard4.setLayout(birdFlowLayout);
-		birdCard4.setBackground(new Color(32, 0, 0));
-		birdCard4.setVisible(true);
-		
-		birdPanel.add("Bird Card 2", birdCard2);
-		birdPanel.add("Bird Card 3", birdCard3);
-		birdPanel.add("Bird Card 4", birdCard4);*/
-		
 		return resultPanel;
 	}//end create bird panel
     
@@ -453,27 +443,6 @@ public class PoultryDemo extends JFrame{
                 
 		wastePanel.add("Waste Data", wasteData);
 		
-                //Removing these extra cards, leaving them in case we need them                
-                
-		/*JPanel wasteCard2 = new JPanel();
-		wasteCard2.setLayout(new FlowLayout(FlowLayout.LEFT));
-		wasteCard2.setVisible(true);
-		wasteCard2.setBackground(new Color(0,0,169));
-		
-		JPanel wasteCard3 = new JPanel();
-		wasteCard3.setLayout(new FlowLayout(FlowLayout.LEFT));
-		wasteCard3.setVisible(true);
-		wasteCard3.setBackground(new Color(0,0,128));
-		
-		JPanel wasteCard4 = new JPanel();
-		wasteCard4.setLayout(new FlowLayout(FlowLayout.LEFT));
-		wasteCard4.setVisible(true);
-		wasteCard4.setBackground(new Color(0,0,64));*/                
-
-		/*wastePanel.add("Barn Card 2", wasteCard2);
-		wastePanel.add("Barn Card 3", wasteCard3);
-		wastePanel.add("Barn Card 4", wasteCard4);*/
-	
 		return wastePanel;
 	}//end create waste pane
 	
@@ -553,27 +522,7 @@ public class PoultryDemo extends JFrame{
 		birdDataPanel.setVisible(true);
                 
 		birdPanel.add("Bird Data", birdDataPanel);
-		
-                /*Leaving extra cards in code in case we need them.
-		JPanel birdCard2 = new JPanel();
-		birdCard2.setLayout(birdFlowLayout);
-		birdCard2.setBackground(new Color(90, 0, 0));
-		birdCard2.setVisible(true);
-		
-		JPanel birdCard3 = new JPanel();
-		birdCard3.setLayout(birdFlowLayout);
-		birdCard3.setBackground(new Color(64, 0, 0));
-		birdCard3.setVisible(true);
-		
-		JPanel birdCard4 = new JPanel();
-		birdCard4.setLayout(birdFlowLayout);
-		birdCard4.setBackground(new Color(32, 0, 0));
-		birdCard4.setVisible(true);
-		
-		birdPanel.add("Bird Card 2", birdCard2);
-		birdPanel.add("Bird Card 3", birdCard3);
-		birdPanel.add("Bird Card 4", birdCard4);*/
-		
+
 		return birdPanel;
 	}//end create bird panel
 	
@@ -596,9 +545,6 @@ public class PoultryDemo extends JFrame{
 		homeFrame.setVisible(true);
 		mainPane.add(homeFrame);
 		
-		//the WTF frame that makes home frame visible
-		//homeFrame = new JInternalFrame("WTF", true, true, true, true);
-		//mainPane.add(homeFrame);
 	}
 	
 	private JDesktopPane createDesktopPane() {
