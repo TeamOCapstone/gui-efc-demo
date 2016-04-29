@@ -22,6 +22,7 @@ public class PoultryDemo extends JFrame{
     
     //Variable to keep track of the current panel - Used for Help Window
     int panelCount = 0;
+    boolean outputCalc = false;
     
     class MyCustomFilter extends javax.swing.filechooser.FileFilter {
         @Override
@@ -192,6 +193,8 @@ public class PoultryDemo extends JFrame{
                                         cardLayout.show(desktopPane,"barn panel");
                                     if (panelCount == 4)
                                         cardLayout.show(desktopPane,"waste panel");
+                                    if ((panelCount == 5)&&(outputCalc == true))
+                                        cardLayout.show(desktopPane,"result panel");
                                 }
                             });
                             
@@ -211,9 +214,12 @@ public class PoultryDemo extends JFrame{
                                         cardLayout.show(desktopPane,"barn panel");
                                     if (panelCount == 4)
                                         cardLayout.show(desktopPane,"waste panel");
+                                    if ((panelCount == 5)&&(outputCalc == true))
+                                        cardLayout.show(desktopPane,"result panel");
                                 }
                             });
-                                
+                            
+                            
 				helpFrame.setSize(400, 300);
 				helpFrame.setTitle("Help Frame");
 				//pop up center of existing main frame
@@ -238,13 +244,32 @@ public class PoultryDemo extends JFrame{
 		tbButton.setToolTipText("TriggerToolTip");
 		tbButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+                                try {
+					//dummy cpp calculator call
+					Calculator_Call.main(null);
+				} catch (InterruptedException e1) {
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+                                
+                                //This allows searches for the output XML file
+                                //I expand on this next function on line 304
+                                //OpenActionPerformed(e);
+                                outputCalc = true;
+                            
+                                /*  
+                                This block of code can be utilized for displaying any
+                                errors found while attempting to calculate, or before
+                                calculating. 
+                                
 				//new help frame popup
 				JFrame TroubleFrame = new JFrame();
 				TroubleFrame.setSize(400, 300);
 				TroubleFrame.setTitle("Error Found Frame");
 				//pop up center of existing main frame
 				TroubleFrame.setLocationRelativeTo(topFrame);
-				TroubleFrame.setVisible(true);
+				TroubleFrame.setVisible(true);*/
 			}
 		});
 		topToolBar.add(tbButton);
@@ -259,7 +284,7 @@ public class PoultryDemo extends JFrame{
 		tbButton.setToolTipText("ResultToolTip");
 		tbButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+                            if (outputCalc == false) {
 				try {
 					//dummy cpp calculator call
 					Calculator_Call.main(null);
@@ -268,7 +293,33 @@ public class PoultryDemo extends JFrame{
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
+                                
+                                //-------------------------------------------------
+                                //Re-using this OpenActionPerformed function for ease of coding
+                                //You can make a new function that auto-selects
+                                //a certain file in a certain location but 
+                                //re-using this will reduce any errors for me while
+                                //attempting to implement this.
+                                
+                                //Initially I had planned to use a variation of this function
+                                //to read an XML file. However I found out that I would not
+                                //be able to implement this in time due to some faults in code.
+                                //Eventually, this OpenActionPerformed function should be
+                                //replaced with a function that finds the output XML file
+                                //created by the computational engine. When it loads, the 
+                                //output panel should be populated. 
+                                
+                                //OpenActionPerformed(e);
+                                
 				cardLayout.show(desktopPane, "result panel");
+                                outputCalc = true;
+                            }
+                            //This prevents the user from recalculating every time
+                            //this button is pushed. This can be easily taken out
+                            //or altered if this feature is not desired. 
+                            //outputCalc boolean declaration is on line 25
+                            else
+                                cardLayout.show(desktopPane, "result panel");
 				
 			}
 		});

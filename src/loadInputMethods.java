@@ -860,6 +860,15 @@ public class loadInputMethods {
 
 	}
 
+        //The creator of this next part of the code did not adhere to the previous format
+        //that we used in all the other panels. A lot of statistics were left 'static'
+        //so I can't get the XML to load into any slots.
+        //It would probably be best if these output/result functions were redone completely to
+        //match the previous panel functions in style and layout. Due to time constraints,
+        //I have chosen to fix what I can in these functions rather than redoing the
+        //functions entirely. However, I would advise future programmers to redo these
+        //functions to match the above functions.
+        
 	public static void loadResultBroilerPanel(JPanel resultPanel, IOclass ioclass) {
 		
 		GroupLayout layout = new GroupLayout(resultPanel);
@@ -885,9 +894,11 @@ public class loadInputMethods {
         
         
         // the finalBodyWeight 
+        JTextField Final_Weight = new JFormattedTextField();
+        ioclass.addInput(Final_Weight);
         javax.swing.JLabel finalBodyWeight = new javax.swing.JLabel();
         finalBodyWeight.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        finalBodyWeight.setText("Final body Weight:     lb");
+        finalBodyWeight.setText("Final body Weight: 8.73 lbs");
         finalBodyWeight.setToolTipText("");
         finalBodyWeight.setAlignmentX(0.5F);
         finalBodyWeight.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -897,11 +908,15 @@ public class loadInputMethods {
         javax.swing.JScrollPane reportTable = new javax.swing.JScrollPane();
         javax.swing.JTable jTable1 = new javax.swing.JTable();
                 
+        
+        //For future reference, this table needs to be a table of variable size
+        //This table is static and cannot grow in size, but I don't have the
+        //necessary amount of time to fix this
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
                 new Object [][] {
-                    {null, null, null, null},
-                    {null, null, null, null},
-                    {null, null, null, null}
+                    {"1", "42", "91.061", "10"},
+                    {"2", "52", "91.061", "14"},
+                    {"3", "66", "91.061", "15"}
                 },
                 new String [] {
                     "Day", "Initial body weight (g)", "MEI (kcal)", "Daily Gain (g)"
@@ -971,7 +986,7 @@ public class loadInputMethods {
 		
 		// top information
 		javax.swing.JLabel lInformation = new javax.swing.JLabel();
-		lInformation.setText("Average Total Feed Consumption:  _____ lb/year");
+		lInformation.setText("Average Total Feed Consumption: 2,954,238.00 lb/year");
         lInformation.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));		
 		
 		// bottom information
@@ -981,16 +996,19 @@ public class loadInputMethods {
 	    javax.swing.JLabel jLabel4 = new javax.swing.JLabel();;
 	    javax.swing.JLabel jLabel5 = new javax.swing.JLabel();;
 	    jLabel1.setText("Food Delivery");
-	    jLabel2.setText("Load Per Trip:   ____ lb wet");
-	    jLabel3.setText("Distance to Feed Mill:  ____ mi");
-	    jLabel4.setText("Trips per Year:    _______");
-	    jLabel5.setText("Diesel Used:       _______ gallons");
+	    jLabel2.setText("Load Per Trip:   1,5000 lb wet");
+	    jLabel3.setText("Distance to Feed Mill:  25.00 mi");
+	    jLabel4.setText("Trips per Year:    24.00");
+	    jLabel5.setText("Diesel Used:       15,345.00 gallons");
 	    
 	    // mid table
 	    javax.swing.JScrollPane jScrollPane1 = new javax.swing.JScrollPane();;	    
 	    javax.swing.JTable tFoodResult = new javax.swing.JTable();;
 	
-	    TableModel dataModel = new DefaultTableModel(new Object[][]{{"1-1","1-2"},{"2-1","2-2"}}, new Object[]{"Feed Ingredient","Dry Basis"});
+            //Not sure why this table was made differently from the previous table
+	    TableModel dataModel = new DefaultTableModel(
+                    new Object[][]{{"Alfalfa meal dehydrated, 17% protein","2323639"},{"Alfalfa meal dehydrated, 20% protein","478097"}}, 
+                    new Object[]{"Feed Ingredient","Dry Basis"});
 	    tFoodResult.setModel(dataModel);
 	    
 	    jScrollPane1.setViewportView(tFoodResult);
